@@ -1,0 +1,36 @@
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env/
+
+# Node
+node_modules/
+.next/
+out/
+dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large or generated data (keep samples only)
+data/raw/*.csv
+!data/raw/.gitkeep
+data/analyzed/*.json
+!data/analyzed/.gitkeep
+
+# Deck exports (optional — remove if you want PDF in repo)
+deck/*.pdf
