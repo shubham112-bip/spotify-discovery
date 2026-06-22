@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     const scopes = 'user-top-read playlist-modify-public playlist-modify-private';
-    const authUrl = `https://accounts.spotify.com/authorize?client_id=${config.clientId}&response_type=code&redirect_uri=${encodeURIComponent(config.redirectUri)}&scope=${encodeURIComponent(scopes)}`;
+    const authUrl = `https://accounts.spotify.com/authorize?client_id=${config.clientId}&response_type=code&redirect_uri=${encodeURIComponent(config.redirectUri)}&scope=${encodeURIComponent(scopes)}&show_dialog=true`;
     window.location.href = authUrl;
   });
 
