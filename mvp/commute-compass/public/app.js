@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const apiToggleBtn = document.getElementById('apiToggleBtn');
   const apiContent = document.getElementById('apiContent');
   const geminiApiKeyInput = document.getElementById('geminiApiKey');
+  const geminiModelSelect = document.getElementById('geminiModel');
 
   const loaderMessage = document.getElementById('loaderMessage');
   const step1 = document.getElementById('step1');
@@ -157,13 +158,57 @@ document.addEventListener('DOMContentLoaded', () => {
     apiContent.classList.toggle('show');
   });
 
+  // Fetch available models from Google AI Studio dynamically
+  async function loadAvailableModels() {
+    const apiKey = geminiApiKeyInput.value.trim();
+    if (!apiKey) return;
+
+    try {
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
+      if (!response.ok) return;
+      const data = await response.json();
+      if (data.models && data.models.length > 0) {
+        // Filter models that support generateContent
+        const generateModels = data.models.filter(m => 
+          m.supportedGenerationMethods && m.supportedGenerationMethods.includes('generateContent')
+        );
+
+        if (generateModels.length > 0) {
+          // Clear previous options
+          geminiModelSelect.innerHTML = '';
+          generateModels.forEach(m => {
+            const opt = document.createElement('option');
+            opt.value = m.name; // e.g. "models/gemini-1.5-flash"
+            opt.textContent = m.displayName || m.name.replace('models/', '');
+            geminiModelSelect.appendChild(opt);
+          });
+          
+          // Auto-select a flash model if available, prioritizing gemini-1.5-flash
+          const flashOpt = Array.from(geminiModelSelect.options).find(o => o.value.includes('gemini-1.5-flash'));
+          if (flashOpt) {
+            geminiModelSelect.value = flashOpt.value;
+          } else {
+            const genericFlashOpt = Array.from(geminiModelSelect.options).find(o => o.value.toLowerCase().includes('flash'));
+            if (genericFlashOpt) {
+              geminiModelSelect.value = genericFlashOpt.value;
+            }
+          }
+        }
+      }
+    } catch (err) {
+      console.warn('Could not load models dynamically:', err);
+    }
+  }
+
   // Manage loaded Gemini API Key
   const storedKey = localStorage.getItem('gemini_api_key');
   if (storedKey) {
     geminiApiKeyInput.value = storedKey;
+    loadAvailableModels();
   }
   geminiApiKeyInput.addEventListener('input', (e) => {
     localStorage.setItem('gemini_api_key', e.target.value);
+    loadAvailableModels();
   });
 
   // Helper function to handle screen swaps
@@ -182,6 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mood = document.querySelector('input[name="mood"]:checked').value;
     const adventure = adventureSlider.value;
     const userApiKey = geminiApiKeyInput.value.trim();
+    const geminiModel = geminiModelSelect.value;
 
     // Trigger Loading Screen
     showScreen(loadingScreen);
@@ -199,6 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body: JSON.stringify({
           spotify_access_token: spotifyToken,
           gemini_api_key: userApiKey || null,
+          gemini_model: geminiModel,
           mood,
           duration,
           adventure

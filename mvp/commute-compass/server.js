@@ -65,6 +65,7 @@ app.post('/api/generate-session', async (req, res) => {
     const {
       spotify_access_token,
       gemini_api_key,
+      gemini_model,
       mood,
       duration,
       adventure
@@ -141,7 +142,8 @@ Output:
 You must output a single, raw JSON object matching the JSON Schema provided. Do not wrap the JSON in Markdown formatting codeblocks. Do not include any introductory or concluding text.`;
 
     // 4. Query Gemini API
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+    const modelName = gemini_model || 'models/gemini-1.5-flash';
+    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/${modelName}:generateContent?key=${apiKey}`;
     const geminiPayload = {
       contents: [{
         parts: [{ text: systemPrompt }]
