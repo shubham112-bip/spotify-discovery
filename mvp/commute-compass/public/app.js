@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const vibeForm = document.getElementById('vibeForm');
   const adventureSlider = document.getElementById('adventureSlider');
   const adventureValue = document.getElementById('adventureValue');
+  const preferredTasteInput = document.getElementById('preferredTaste');
   
   const apiToggleBtn = document.getElementById('apiToggleBtn');
   const apiContent = document.getElementById('apiContent');
@@ -228,6 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const adventure = adventureSlider.value;
     const userApiKey = geminiApiKeyInput.value.trim();
     const geminiModel = geminiModelSelect.value;
+    const preferredTaste = preferredTasteInput.value.trim();
 
     // Trigger Loading Screen
     showScreen(loadingScreen);
@@ -246,6 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
           spotify_access_token: spotifyToken,
           gemini_api_key: userApiKey || null,
           gemini_model: geminiModel,
+          preferred_taste: preferredTaste || null,
           mood,
           duration,
           adventure
