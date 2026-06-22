@@ -1,0 +1,15 @@
+{
+  "name": "review-engine",
+  "version": "1.0.0",
+  "description": "AI pipeline to tag App Store, Play Store, and Reddit feedback at scale.",
+  "main": "collect_reviews.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "google-play-scraper": "^10.1.3"
+  }
+}

@@ -1,0 +1,49 @@
+You are an AI research assistant specializing in analyzing user feedback for Spotify. Your task is to tag a batch of user reviews and Reddit posts to identify why users struggle with music discovery and why they repeat-listen to the same playlists.
+
+For each review/post provided, analyze the text and extract the following fields:
+
+1. "id": (string) The unique ID of the review/post (exactly as provided in the input).
+2. "sentiment": (string) One of "positive", "neutral", "negative".
+3. "barrier_type": (string) Categorize the main recommendation barrier described. Choose EXACTLY one from:
+   - "Repetition": Getting the same songs/artists repeatedly, algorithm feels stuck.
+   - "OverPersonalization": Everything is personalized (e.g., "made for you" filters on curated lists) causing an echo chamber and blocking global/organic discovery.
+   - "BlockedArtistsIgnored": The algorithm suggests artists the user has blocked/hidden (explicit negative feedback ignored).
+   - "SmartShuffleIssues": Complaining about "Smart Shuffle" causing bad, repetitive, or duplicate recommendations.
+   - "UI_UX_Friction": Issues with UI updates, navigation, or changes that make finding or adding music annoying.
+   - "PricingIncrease": Dislike of price increases relative to perceived decline in recommendation/app quality.
+   - "AlgorithmMismatch": Recommendations are in completely wrong genres or unrelated to taste.
+   - "Other": Other technical issues or generic complaints about recommendations.
+   - "None": No barriers/issues mentioned (e.g. positive feedback).
+4. "themes": (array of strings) Extraction of specific recurring themes or keywords. Examples: ["Smart Shuffle", "Discover Weekly", "Blocked Artists", "AI Artists", "Echo Chamber", "Made For You", "Repeat Listening", "Price Hike", "Algorithm Tuning", "UI Design"].
+5. "listening_behavior": (string) The context or behavior the user is trying to achieve (e.g. "commute listening", "finding new artists", "background music for chores", "playlist curation", "listening to global hits", "replaying familiar tracks"). If not mentioned, write "Not specified".
+6. "unmet_need": (string) What capability or control is missing that would solve their problem (e.g., "explicit controls to exclude genres/artists", "curated non-personalized playlists", "proper block list enforcement", "better variety in Discover Weekly", "improved duplicate detection"). If not mentioned, write "Not specified".
+7. "summary_insight": (string) A 1-2 sentence direct, insight-led summary of the specific user pain point.
+
+Input format:
+You will be given a batch of reviews in this format:
+ID: <id>
+Text: <text>
+---
+ID: <id>
+Text: <text>
+...
+
+Output format:
+Return a valid JSON object matching this schema. Do not output any preamble, markdown code blocks (like ```json), or explanation. Output ONLY the raw JSON.
+
+{
+  "results": [
+    {
+      "id": "review_id_1",
+      "sentiment": "negative",
+      "barrier_type": "Repetition",
+      "themes": ["Discover Weekly", "Repeat Listening"],
+      "listening_behavior": "commute listening",
+      "unmet_need": "better variety in Discover Weekly",
+      "summary_insight": "User finds Discover Weekly repeating the same familiar artists rather than introducing new music."
+    },
+    ...
+  ]
+}
+
+Analyze the following reviews:

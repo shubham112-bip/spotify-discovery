@@ -1,0 +1,146 @@
+Analyze the following batch of 40 user reviews for Spotify. Identify if they describe any recommendations or discovery barriers.
+Return ONLY a markdown table with the following 7 columns:
+ID | Sentiment | Barrier Type | Themes | Listening Behavior | Unmet Need | Summary Insight
+
+Guidelines:
+- ID: EXACTLY the ID provided for each review. Do not change, modify, or truncate the ID.
+- Sentiment: "positive", "neutral", or "negative".
+- Barrier Type: Categorize the main recommendation/discovery barrier. Choose EXACTLY one from:
+  * "Repetition" (getting same songs/playlists repeatedly, algorithm feels stuck)
+  * "OverPersonalization" (everything is tailored, echo chambers, lack of organic discovery)
+  * "BlockedArtistsIgnored" (algorithm plays blocked/hidden artists)
+  * "SmartShuffleIssues" (complaints about smart shuffle repeating or playing bad songs)
+  * "UI_UX_Friction" (navigation, layout changes, adding music is annoying)
+  * "PricingIncrease" (dislike of price increases vs. quality)
+  * "AlgorithmMismatch" (totally wrong genres/moods, unrelated recommendations)
+  * "Other" (other technical issues/complaints about recommendations)
+  * "None" (no barrier mentioned, e.g., positive review, simple audio bug)
+- Themes: A comma-separated list of keywords (e.g. "Discover Weekly", "Smart Shuffle", "Price Hike", "Repeat Listening").
+- Listening Behavior: Context/goal user wants (e.g. "commute listening", "background music", "finding new artists", "playlist curation", or "Not specified").
+- Unmet Need: What control/feature is missing (e.g. "exclude genres", "better block list", "more variety", or "Not specified").
+- Summary Insight: A 1-2 sentence summary of the specific user pain point.
+
+CRITICAL: Return ONLY the raw markdown table (starting with the header row). Do not include introductory text, code block backticks (like ```), or conclusion text.
+
+Batch to analyze:
+================
+ID: 246a6930-8c51-4f57-a65f-e17dd3cede1c
+Text: very useless only listening to the ads
+---
+ID: d1adf43f-df3c-4f22-ae99-f0df35a76c97
+Text: it's pretty decent on pc but on mobile it just straight up sucks. I can't listen to albums in order without paying, I can't loop my damn playlists without Spotify adding songs I did not put in there, and the shuffling algorithm sucks. you have no idea how many times I had the same artist played back to back to back in a big playlists with over 1k and hearings songs that I JUST added. edit: I am NOT wasting more money just to listen to my favorite songs. I hate how greedy it is
+---
+ID: 086bc5b5-936b-478a-8f0a-8ab5b82f6dc4
+Text: not a nice update
+---
+ID: e87dfb9c-954e-4311-82e8-c609db8ee696
+Text: The new widget app doesn't work. And as off today it's telling me I have to switch. The old one worked perfectly. Please review.
+---
+ID: 203f23d6-cae0-419a-9f28-388e28f1da45
+Text: it's now broke for me I keep getting problems it will stop at the end of a song and won't play anything so I closed it and it sorted it for a few songs then went back to doing it again, so I reset my phone, and now I just have a black screen, won't open, so I uninstalled it and reinstalled it same thing, so it's completely broke for me I've been a subscriber for many years even though the problems. I'm starting to look elsewhere now these problems keep persisting.
+---
+ID: 64bdfd7c-a26f-49e1-a43c-e68bf230a7fb
+Text: why removing the 4x1 widget?
+---
+ID: e742314b-58e2-4929-a058-dd10b0e8c4b1
+Text: ads are terrible app showed 3 adds continuously and when it touched a song it shows me another add horrible adds ka bhi limit rako yaar
+---
+ID: 566c8d7c-a6b1-4226-aa12-f4d898624987
+Text: usually love it and its features, its new widget is nearly unfunctional and im getting sick of being asked to use an ai prompt to make a playlist
+---
+ID: 5a557a77-ed1d-492e-b3af-0a687bd3e96f
+Text: ads too much bro
+---
+ID: d74376e2-8dae-44d1-a4dd-ccdaba5e13bf
+Text: Aight, heres the thing. i Love spotify and i enjoy music a lot. But... When i go to edit my playlist and try to move the songs from one place to the other i cant choose freely, it only goes to the bottom or top, no inbetween, and i really dislike that. because i like to have things in an order and if i cant i cant enjoy listening to music. so please spotify, fix it so i can add songs to my playlist🙏❤️
+---
+ID: 90989f1c-3475-4ec1-81ef-a9a41b2cce0f
+Text: Spotify is basically unusable without Spotify premium. You can't even listen to full albums without it shuffling in random songs.
+---
+ID: 7bef606b-78c7-47c8-94b9-85aae64e9c68
+Text: will not actually open, it just stays on a black screen, and its not due to internet. please fix this, I genuinely enjoy this app and hate that it has this issue. it doesn't do it all the time, but often enough to get me to write about it here.
+---
+ID: 91c3aea4-342a-465a-b817-46863c4e0f42
+Text: THIS WAS VERY BAD EXPERIENCE IT WOULDNT LET ME GET INTO MY FAMILY PREMIUM FIX THIS NOW OR IM CALLING YOUR MANAGER😡😡😡😡😡😡
+---
+ID: 0f44fcc3-1932-4e9b-8903-86d7ac171ea8
+Text: have Spotify premium so why is it constantly slow loading when I try to play my offline playlists? kind of defeats the point of downloads if it barely works.
+---
+ID: 7c6674cd-e34b-4247-84df-e13f8967abdc
+Text: it stops every time you go in and out of apps it just stops and restarts the song.
+---
+ID: a594ae33-ea4d-4528-9eee-702258b9bcd5
+Text: won't open
+---
+ID: 4c6ac782-a68a-4de7-b8ec-7725dbd2ed1a
+Text: I had almost all Music apps but never really used them more then I do with Spotify. I love everything about it. I also love the mixes it makes for work outs or to clean or road trips. it keeps me going and motivated plus I hear songs from singers I never heard before that makes me want to go see them in concerts !! I love Spotify. if your looking for a music app/podcast this app is for you!!
+---
+ID: e82d5209-13b6-40a5-b422-4aab4d927acf
+Text: too much ads god😐
+---
+ID: 153b2c42-5dd8-4df9-ba96-c3412e2b88ed
+Text: Basically unusable unless you pay for premium. Absolutely disgusting, you spend more time watching ads than playing music and have no good features.
+---
+ID: 5188957f-b24c-4994-ba05-32ce2d51bfb5
+Text: Ads, every 1 Second Do better
+---
+ID: 551b864a-4d06-4b47-81d1-b0048a60834b
+Text: very, a good app for hearing music 🎶 🎵
+---
+ID: 701b7aeb-f068-42b1-a046-8a945278bd2c
+Text: the new widget constantly breaks but I'm not allowed to use the old working widget.
+---
+ID: 449f4f87-3913-46a9-aaba-6c12b4f9a477
+Text: There are 3-4 ads for every 3 songs, which is way too greedy and intrusive considering that there are ads everywhere all the time. At this point, why not give the option to watch X amount of ads to get X amount of uninterrupted amount of songs. X being chosen by us. Make a whole playlist of ads that we can listen to so that the more we listen to, the more ad-free time we get. We can even choose which ads we prefer to get and which ads we block. It's so efficient and you would make more money.
+---
+ID: d444e337-c713-4f37-9301-b1110a2010d7
+Text: They love to sensor artists on top of paying them basically nothing. They took down an entire album by Esme Rose just because some people didn't like it and got offended by it. Which is crazy because literally NOBODY is forcing them to listen to it. Spotify will never get another penny from me.
+---
+ID: 3ad60d5f-9cc5-46ad-8cdc-ef1908041eb1
+Text: the quality of the app has deteriorate over the years. you use to able to download music for free now you even pick the song you want without premium additionally there's like an ad after every song. Genuinely what happened to this app
+---
+ID: a4e54a0e-250f-4e31-beea-97a531836173
+Text: The app was great until the most recent update that forced using the new widget. It is barely functional and constantly loading with no option to use the old widget that actually worked.
+---
+ID: 885340f5-e6b3-470a-9964-37587c712573
+Text: the customer service (or lack thereof) leaves less than to be desired. I'm uninstalling this this pos app immediately. I refuse to give my money to a company who doesn't refund an unused service. Its greedy and unprofessional to have a rep condescendingly repeat policy at me while ignoring my concerns. Thanks - but no thanks. My teens tell me SoundCloud is better anyways. ✌🏻
+---
+ID: 73aae027-a64e-4b42-86ca-2a18e38eeb87
+Text: I'm not happy with changing the widget size. It takes up half my homepage.
+---
+ID: b79b73d0-55ab-4ed8-9dea-5d187147dad9
+Text: I really like Spotify, but when someone doesn't have premium it's NIGHTMARE! Every 3 songs it plays the ad and also you can't select a lot of songs every day. Another thing that I don't like it's if you're on mobile you can't remove songs from the queue if you accidentally put some songs in there and it's very frustrating. I like Spotify, but please do something about this.
+---
+ID: 97801852-53d3-4a12-bc19-3a8d68c9dbf5
+Text: So like I'm getting one song then three ads one song three ads I'm just wondering if it's a glitch or just an official app thing
+---
+ID: a8332e1c-dd16-442c-abf0-b221aca2009f
+Text: need to make security stronger for listeners phones access
+---
+ID: 280c1516-211b-4e04-85e9-ae9dda143354
+Text: Spotify has ruined the free listening experience by locking universal features like the repeat and loop buttons behind a Premium paywall. To make matters worse, the platform frequently ignores user complaints while letting song hacking run rampant, allowing hijackers to take over music and ruin your mood in real-time.
+---
+ID: 3ce5c353-5e2a-4c25-9bc4-c3353c3fda26
+Text: I wish they had less ads and made the app have more ways to gain temporary premium
+---
+ID: 75038c6a-03b7-44c0-bd89-41d59ee69d27
+Text: Scam. Garbage. Don't waste your money
+---
+ID: 46f23ebb-2945-4154-b8b3-0c20d8b73186
+Text: Yoy algorythm sucks. It,s the same songs ovet and over again. I have a 44 hour playlist that is not on shuffle. All I hear are the same selection of songs that barely scratch the eclectic mix if music I like to listen to. Fix the algorythm Spotify, or get rid of it.
+---
+ID: d46b1651-49d9-4512-bb6d-ebf10dfa845c
+Text: the new widget SUCKS. why force me to get rid of the old one when it worked fine, just to force me to get a new one that's totally broken???
+---
+ID: 16e61b9a-1a91-4fa1-87fc-8afd1758b8a7
+Text: don't want to load
+---
+ID: 0ad79ea9-3367-4046-8302-df072b5901aa
+Text: could be better if there were more less ads
+---
+ID: c47e553a-d728-47a1-9b5f-72429dafaa11
+Text: anúncios e anúncios e mais anúncios, isso é um app de música ou de anúncios? vou baixar o crackeado, viva a pirataria
+---
+ID: 7479345b-e4a4-43d9-a141-f7911f695aa3
+Text: 99% ads, 1% music, download this app if all you wanna listen to is ads, not to mention this app only wants you for your money aswell!
+---

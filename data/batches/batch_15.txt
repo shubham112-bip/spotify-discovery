@@ -1,0 +1,146 @@
+Analyze the following batch of 40 user reviews for Spotify. Identify if they describe any recommendations or discovery barriers.
+Return ONLY a markdown table with the following 7 columns:
+ID | Sentiment | Barrier Type | Themes | Listening Behavior | Unmet Need | Summary Insight
+
+Guidelines:
+- ID: EXACTLY the ID provided for each review. Do not change, modify, or truncate the ID.
+- Sentiment: "positive", "neutral", or "negative".
+- Barrier Type: Categorize the main recommendation/discovery barrier. Choose EXACTLY one from:
+  * "Repetition" (getting same songs/playlists repeatedly, algorithm feels stuck)
+  * "OverPersonalization" (everything is tailored, echo chambers, lack of organic discovery)
+  * "BlockedArtistsIgnored" (algorithm plays blocked/hidden artists)
+  * "SmartShuffleIssues" (complaints about smart shuffle repeating or playing bad songs)
+  * "UI_UX_Friction" (navigation, layout changes, adding music is annoying)
+  * "PricingIncrease" (dislike of price increases vs. quality)
+  * "AlgorithmMismatch" (totally wrong genres/moods, unrelated recommendations)
+  * "Other" (other technical issues/complaints about recommendations)
+  * "None" (no barrier mentioned, e.g., positive review, simple audio bug)
+- Themes: A comma-separated list of keywords (e.g. "Discover Weekly", "Smart Shuffle", "Price Hike", "Repeat Listening").
+- Listening Behavior: Context/goal user wants (e.g. "commute listening", "background music", "finding new artists", "playlist curation", or "Not specified").
+- Unmet Need: What control/feature is missing (e.g. "exclude genres", "better block list", "more variety", or "Not specified").
+- Summary Insight: A 1-2 sentence summary of the specific user pain point.
+
+CRITICAL: Return ONLY the raw markdown table (starting with the header row). Do not include introductory text, code block backticks (like ```), or conclusion text.
+
+Batch to analyze:
+================
+ID: 03e52813-e5d6-4c35-8c89-1608195ff78f
+Text: The overall quality and usability of the app is great and all, but what's REALLY putting me off is that new widget I'm being forced to use. The old one was actually functional, please stop forcing me to update my widget.
+---
+ID: 946a2490-0b24-4c49-8166-cb61dc97f2d3
+Text: spotify free is not that good... i can't listen any of my favourite song more than limits.if i cross the limit i can't play my opinion song ahhh.i'am a student and i don't have that much money for Spotify premium ahhh😕
+---
+ID: 56556846-5efa-4306-9f77-39904c36772c
+Text: WHY DOES SPOTIFY HAVE TO BE PREMIUM AND I DON'T LIKE IT?
+---
+ID: 3b631e5c-384f-4d84-b8a7-b9c052e7f799
+Text: free version hasn't let me choose my own song in 4 days, won't let me start the 3 month trial and the whole concept sucks going back to SoundCloud even though it's equally as bad
+---
+ID: 7193962e-30c1-493e-89ad-4b6467ae66a2
+Text: Preferred these days over amazon music and others due to more consistent title retention. My issues are with the shuffle selection which just replays the same small selection in the same order. It's more of a recent snapshot then a true shuffle. Also, as of lately the widget has been replaced it seems with a much larger version. The old slim design has been disabled it appears forcing me to use the larger. Except I'm stubborn so I'm just not going to have one at all.
+---
+ID: cb7b2ccc-d37d-43c0-a862-5f5cb699af98
+Text: the best way to listen to music on echo speaker groups when the one you want actually shows up. New widget doesn't display any album art anymore which is a shame.
+---
+ID: 50ce7bb8-9c01-438d-b247-5cf457647685
+Text: my playlist is playing the songs that I already listened to right when i resumed it. what should I do?
+---
+ID: 5d53f832-fa53-4161-ae17-e28214d49ed7
+Text: Super SLOW interface!! The app is OK, the music is good. But, grief, it takes ages to load things. Try and add a song to additional playlists—you'll wait at least 15-30 seconds for that to open. Truly awful user experience. UPDATE: Reinstalled, as recommended, and it's still super slow. Every app action is sluggish and delayed. Like a song? Wait 15 seconds or more till the UI registers that. Also, sometimes it now won't pause (button changes, music keeps playing) and has to be force stopped.
+---
+ID: 176ae73c-5b99-4505-a69a-fe67718c2fa7
+Text: It's nice! I js hate adds between my music
+---
+ID: 9febec4f-ffa7-4235-bfd0-ea4d34b4dc73
+Text: I used to use this app so much, but now it's unusable. What do you mean I only get 6 skips? What do you mean I can only choose a certain amount of songs before it doesn't allow me to pick anything I want to listen to? I cannot afford to be spending money on this monthly, that's why I am using the free service. But now everything is limited, what's up with that?
+---
+ID: 4f6d8d73-2296-4f4f-ab02-a68d7402ad6e
+Text: what's spotifys obsession with making the app as unusable and frustrating as possible, not only did you remove the feature to add a song to a playlist multiple times now your edit feature makes it so I can only move a song to the top or bottom no matter how hard to try to reset it and even when I give in and just let it move to the top it barely works, and please dont give me bs about it working because it only worked for 3 seconds and some songs until it glitched out again why just why
+---
+ID: 395e8d59-967e-4ae8-aa90-1926a3f85afe
+Text: pushes networking with friends via Jams constantly. thinly disguised advertising perhaps.
+---
+ID: 1fc2f415-6556-47e2-b92a-2617caef46b9
+Text: The new update is broken. It initially wouldn't fully complete the update, so I uninstalled and reinstalled as suggested and now I'm just getting "Something went wrong. Check your connection." My connection is fine. I've uninstalled multiple times, restarted device, clear cache, etc and nothing works. There's no point in paying for premium if I cant even open the app 🤷‍♀️
+---
+ID: 5200dc71-90ba-4348-813e-658e04cbefd3
+Text: Broken features, as usual
+---
+ID: 7b6a72d8-33e9-415b-91aa-9e3d39636b09
+Text: needs better quality control, app needs alot of improvement especially in interface. why it doesn't want to rotate with the phone, the auto play on Bluetooth connection is very annoying
+---
+ID: e47a5091-5c29-4b65-95e3-d6eb549644d7
+Text: Pandora lets you play what music you want
+---
+ID: 08e886e1-41c7-42c3-b598-00771e42c027
+Text: Free version sucks! Whenever I play my Playlist or album it always decides the order of songs which is annoying and the 6 skips per hour is super annoying and premium is really expensive while you can get the experience cheaper on apple music!
+---
+ID: 44c765f0-098e-40a3-92c1-c705df9c50de
+Text: not open Spotify
+---
+ID: fa121d22-ac26-4569-b56d-6f527b7faa66
+Text: I figured since I don't see any surveys from u guys I figure I just leave my suggestion here do u think it be possible to have the lyrics or subtitles on music videos especially since am using music to learn Russian and German at the same time some of them do but it's rare which is y I want to ask but anyway the videos quality is really amazing and I love the new video for u playlist that updates daily makes it easier to find them so I can just sat back and relax.
+---
+ID: ecbdb83d-bcf9-4c5d-8a07-f04faef15dd3
+Text: Why do I have to pay to listen to a song multiple times and to get access to audiobooks, but I like the features in general.
+---
+ID: bd86921e-65c6-4b78-a757-e64e4bf861ac
+Text: Hi! when everytime I open up a playlist or my liked songs the songs won't appear in addition I can't also play my songs too. What is this bug/glitch???
+---
+ID: f29154fc-5e6d-40ca-bd9f-6fecfb2a239d
+Text: Update widget on home screen.. okay, now it says is offline and doesn't just autoplay my downloaded music when I start driving. Why do you need internet to run the dumb widget in the first place
+---
+ID: 3aceb503-a0d7-475f-b864-4454d07af589
+Text: New Widget is Baaaad. I pay for Spotify and the new widget is infuriating as it switches music when I switch screens. Poor choice on their part. 👎
+---
+ID: 29793274-8805-4a1d-ac58-a64d394cddfb
+Text: this has been a great app until recently. the new widget takes forever to load my music. now takes a minute to load my recent searches, no matter how few or how many. the app itself now takes longer and longer to get started.
+---
+ID: e8fdc77a-deed-4731-bd54-1b6763a72e7d
+Text: Very bad experience, Absolutely trash app
+---
+ID: b9a4e8b9-e33c-4b82-a81b-b5fc60cdbfa2
+Text: love the unlimited paid version. everything else sucks.
+---
+ID: 2272dfce-03c4-4ad7-a3a6-2d1d9f82d9a9
+Text: The new widget is a major downgrade. The new widget takes forever to load, doesn't pick up where I left off, and doesn't have the quick add to playlist plus sign. The worst part is I'm forced to use the new widget because the old one isn't an option anymore.
+---
+ID: 9b21af36-354a-472e-b6a8-8004bbe6c8e6
+Text: Spotify still don't understand shuffle. Repeating the same 30 songs out of 3000 does not constitute shuffle. It's understandable to not have proper random, but if I start playing from a song, it's not supposed to fall into the same set of songs every time. I've been using Spotify for 10 years, this problem has somehow only gotten worse.
+---
+ID: 5f68f239-0eea-47a8-adba-b379d2ed60cf
+Text: I've been a Spotify user since 2018. Since then, I have had on and off premium subscriptions. Within the last 7 years, I've had one continuously. Don't get me wrong, I prefer Spotify for a reason, but on my life they will not fix some of their consistent issues. Every single time I update the app, it deletes ALL of my downloads. For the last 4 years, my homepage doesn't load correctly and I have go open + close the app until it loads correctly. Stop adding AI bs and fix literally any issue.
+---
+ID: abf1ac40-b575-46eb-be5e-2efa2810bb41
+Text: Awful. I don't mind ads, but enough with the recommended songs!
+---
+ID: 8b405d6e-4d27-46ca-a27a-0cf1362c00d6
+Text: to many ads. to pricey in current economic times
+---
+ID: 9ac87dd0-1499-40ed-a2c3-1c5f5ac86883
+Text: Ads every few songs, plays random songs when you listen to a Playlist, and you can only choose a song you want to listen to a limited amount of times per day. But dw, just buy premium and everything will be alright! (Why not just make the whole app a paid app atp)
+---
+ID: 38c8809b-3846-4c65-89d5-261b5c8ee15b
+Text: Update your spotify widget Update your spotify widget Update your spotify widget Update your spotify widget Update your spotify widget Update your spotify widget ...over and over and over, every time. Guess what? My spotify widget is updated. 🤣 Smh.
+---
+ID: 17302b1a-09b9-4432-b9c0-1fc7a8e4b8cb
+Text: Good app, except extremely overpriced, but if they can make that kind of money from an ad from a country where I'm not, be my guest... Now they have even destroyed widgets by forcing oversized. As many things, quality is moving from 5 to 0
+---
+ID: 0b55f5d9-a933-4d79-a21f-86547c221df7
+Text: why jump my playlists
+---
+ID: 4199f16b-f815-4c26-a344-42b21ee7cd85
+Text: Change your recent update immediately or else you're gonna flop soon!
+---
+ID: 7215278f-ce53-401a-9f55-abff02d99ea5
+Text: I love Spotify as I can ofc listen to music and add music with my friends and blah blah blah but it's that I can't download the songs or playlists without premium. and as I'm a minor I can buy premium and as a Asian I'd get beaten with a chappal if I ask premium. so sad. that's why 3 stars.
+---
+ID: 8a6b7487-26b2-468e-a748-0c90c1b80c51
+Text: bhoot k dar se hanuman chalisha lagane gaya tha ad akar bistar par hi mut diya dar se
+---
+ID: 35436f1b-86d5-4c88-b6d1-0678050e4d17
+Text: ads with premium?!!! I have a premium subscription, yet for some strange reason I started getting ads?!! why??? no ads on songs but with podcasts. some ads are within the podcast itself, so ok. but yesterday I had ads before the podcast..Spotify ads not related to the podcast. what is going on??
+---
+ID: df3da95a-69f5-4b39-8cda-852c48a2fab0
+Text: Forced Update no longer lets me use the old Widget. New Widget does NOT work on Samsung/Android phone. Absolutely infuriating that they don't have working widgets in 2025.
+---

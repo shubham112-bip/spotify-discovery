@@ -1,0 +1,947 @@
+ID,Sentiement,Barrier Type,Themes,Listening Behaviour ,Unmet Need ,Summary Insight
+14191436879,negative,UI_UX_Friction,"UI Changes, What's New",Not specified,Stop changing UI,User is frustrated with constant UI updates and the removal of familiar features.
+14191372666,positive,None,"Mix Option, Playlists",Playlist curation,Not specified,"User loves the app, especially the Mix option for playlists."
+14191340462,negative,Other,"Not Working, UK",Not specified,App functionality in UK,App is not working in the UK.
+14191106115,positive,None,Best App,Not specified,Not specified,User thinks it's the best app ever.
+14190389682,positive,None,"Healing, Ads",Emotional listening,Not specified,User loves the app for emotional support despite the ads.
+14190146136,negative,Other,Privacy Settings,Not specified,Permanent privacy settings,User wants permanent privacy settings instead of a 6-hour limit.
+14189896146,neutral,Other,Loading Speed,Not specified,Faster loading,App takes too long to load even with good internet.
+14189834499,negative,Other,"Crash, Offline",Not specified,Bug fixes,"Latest update broke the app, causing login and connectivity issues."
+14189767153,negative,Other,"Internet Connection, Crash",Not specified,Bug fixes,App keeps saying there is no internet connection despite good wifi.
+14189700876,negative,Other,"Crash, Podcast Order",Podcast listening,Reliable podcast playback,App crashes frequently and messes up podcast play order.
+14189409329,negative,UI_UX_Friction,"Playlists, Shuffle",Playlist curation,Play in order without premium,User is frustrated that playlists don't play in order on phones.
+14189301815,negative,OverPersonalization,"Taste Profile, Instrumentals","Background music, Reading",Reset/alter taste profile,Algorithm hard-locks onto a single genre and stops recommending new music.
+14189046889,negative,UI_UX_Friction,"Search, Disco Ball",Not specified,Better search/UI,Recent update made searching difficult and user dislikes the new disco ball icon.
+14188859100,negative,PricingIncrease,"Family Plan, Corporate Greed",Not specified,Better family plan policies,User was kicked off family plan while traveling and is angry about corporate greed.
+14188796653,neutral,Other,"Audiobooks, Listening Limit",Audiobook listening,More listening hours,User wants the listening-hour limit for audiobooks to be increased.
+14188689093,negative,UI_UX_Friction,"AI Bloat, Curation",Playlist curation,Remove AI features,User dislikes the new AI features and prefers manual playlist curation.
+14188589465,negative,UI_UX_Friction,"Podcasts, UX",Podcast listening,Better podcast tracking,App loses track of podcast progress and episodes disappear.
+14188469928,positive,None,"Calming, Relaxing",Relaxing,Not specified,User finds the app calming and relaxing.
+14188405503,positive,None,"Apple Music Comparison, Recently Added",Playlist curation,Not specified,User prefers Spotify over Apple Music and likes the recently added sorting feature.
+14189661335,negative,Other,"Log In, Stuck",Not specified,Bug fixes,App gets stuck and user cannot log in.
+14181516599,negative,AlgorithmMismatch,"Gender Assumption, ASMR",Pop songs listening,Better targeted recommendations,App recommended inappropriate content and assumed the wrong gender based on taste.
+14180018862,negative,Other,Ads,Playlist listening,Fewer ads,User is frustrated by the excessive number of ads interrupting playlists.
+14178467575,negative,Other,Ads,Not specified,Fewer ads,User feels there are too many ads and prefers other apps.
+14176686616,negative,UI_UX_Friction,"Sort Function, Playlist",Playlist curation,Ability to sort playlists,User cannot access the sort function to rearrange songs after the latest update.
+14174734872,negative,Other,Ads,Not specified,Fewer ads,User is annoyed by having to listen to long ads after just two songs.
+14173452069,negative,PricingIncrease,Expensive,Not specified,Better value for money,User feels the app is too expensive with no improvements.
+14173024400,negative,Other,Queue,Not specified,Reliable queue system,Queue keeps resetting or clearing itself completely.
+14172710188,negative,Other,Premium Subscription,Not specified,Ability to buy premium,User is having trouble purchasing a premium subscription through the app.
+14170265762,negative,PricingIncrease,"Refund, Monthly Fee",Not specified,Flexible refund policy,User is upset they couldn't get a refund for their monthly fee after canceling within a week.
+14170056717,neutral,None,Short,Not specified,Not specified,Review is too short to provide meaningful insight.
+14168748864,negative,Other,Ads,Not specified,Fewer ads,User is frustrated by getting multiple ads in a row after only a few songs.
+14166358260,negative,UI_UX_Friction,"Icon, Disco Ball",Not specified,Old icon back,User dislikes the new disco ball icon and wants the old one back.
+14165994287,neutral,UI_UX_Friction,"Own Songs, Premium",Listening to own songs,Play own songs without premium,User is frustrated they can't play their own songs without a premium subscription.
+14165123492,negative,Other,Ads,Listening to songs,Fewer ads,User finds the high quantity of ads irritating and feels forced to buy premium.
+14164816267,negative,UI_UX_Friction,"Choose Songs, Premium",Not specified,Ability to choose songs without premium,User is upset they can no longer choose specific songs without a premium subscription.
+14162055994,positive,None,"Library, Recommendations",Daily listening,Not specified,User loves the huge library and personalized recommendations.
+14158797524,positive,None,"Library, Recommendations",Discovering new music,Not specified,User praises the personalized recommendations and curated playlists for discovering new music.
+14190854676,positive,None,Swedish Pride,Not specified,Not specified,User loves the app and considers it a Swedish pride.
+14190461620,negative,Other,Updates,Not specified,Better updates,User feels the app gets worse with every update and is considering switching services.
+14189404363,negative,PricingIncrease,Expensive,Not specified,Lower price,User feels the service is terribly expensive.
+14188722982,neutral,UI_UX_Friction,Search,Not specified,Better search,User likes the app but finds it hard to search for specific songs.
+14187293398,positive,None,"Daylist, DJ playlist",Daily listening,Not specified,User loves the daylist and DJ features that adapt to their daily routine.
+14186247999,negative,UI_UX_Friction,Playlist management,Playlist curation,Easy remove button,User is frustrated by the cumbersome process of removing songs from playlists.
+14186202692,neutral,Other,"Politics, Payment",Not specified,Not specified,User likes the app but refuses to pay for premium due to the owner's political affiliations.
+14185511370,positive,Other,"Logo, Missing Music",Not specified,Specific song availability,User is glad the old logo is back but frustrated that a specific song is missing from the platform.
+14185311368,negative,Other,Ads,Not specified,Accurate ad-free time,User is annoyed that the promised 30 minutes of ad-free listening is interrupted by ads every 10 minutes.
+14184462276,negative,Other,Ads,Not specified,Fewer ads,User is frustrated by the excessive amount of visual and audio ads.
+14184297605,negative,Other,"Performance, Bugs",Not specified,Bug fixes,User is considering leaving because the app has become slow and freezes frequently.
+14183046973,negative,UI_UX_Friction,Logo,Not specified,Old logo back,User strongly dislikes the new app logo.
+14183035029,neutral,Other,"Ads, Repetitive ads",Not specified,Ad variety / fewer ads,User thinks the app is okay but is annoyed by frequent and repetitive ads.
+14183029198,negative,UI_UX_Friction,"Ads, Skip limit","Podcasts, Videos, Music",Unlimited skips,User loves the content but hates the ads and the 6-skip per hour limit on the free tier.
+14191389212,negative,PricingIncrease,"Price, Premium",Not specified,Lower price,"User feels the premium subscription is too expensive and greedy, especially for younger users."
+14190635990,negative,PricingIncrease,"Artist payout, Price Hike",Not specified,Fair artist compensation,User is upset about the subscription price increase coupled with poor payouts to artists.
+14190409364,negative,Other,Ads,Not specified,Fewer ads,User is frustrated by the overwhelming number of ads interrupting their music.
+14190107673,positive,None,Playlists,Playlist curation,Not specified,User enjoys the ability to easily save and organize favorite songs into playlists.
+14189713802,negative,Other,"Updates, Bugs",Not specified,Stable updates,User is extremely disappointed because a recent update broke the app.
+14189331549,negative,Other,Ads,Not specified,Uninterrupted listening,User finds the ads interrupting their music to be very annoying.
+14186984980,positive,None,"Discover Weekly, Playlists, Queue",Daily listening,Not specified,User considers Spotify essential for daily life and loves the weekly recommendations and features.
+14186675441,negative,Other,Ads,Not specified,Fewer ads,User is annoyed by the high frequency of ads playing after every single song.
+14185640675,neutral,AlgorithmMismatch,Weird recommendations,Not specified,Better content filtering,User politely requests the removal of weird or inappropriate songs from their feed.
+14184689259,negative,UI_UX_Friction,"Icon, UI",Not specified,Old icon back,User strongly hates the new app icon.
+14182057479,negative,AlgorithmMismatch,"UI, Bad Recommendations",Not specified,Better targeted recommendations,User dislikes the UI and is frustrated by the app pushing irrelevant music and shows.
+14181668369,neutral,PricingIncrease,Expensive,Not specified,Lower price,User thinks the app is good but too expensive.
+14181117176,negative,Other,Ads on Premium,Premium listening,Truly ad-free premium,User is angry about hearing ads despite paying for a premium subscription.
+14179562207,negative,UI_UX_Friction,"Scrolling Bug, Artist View",Not specified,Bug fixes,User is annoyed by a scrolling bug in the artist view and suggests better testing.
+14179449613,negative,AlgorithmMismatch,"AI, Slow, Bad Recommendations",Not specified,Human curation / faster app,User feels the app's quality has severely degraded due to slow performance and heavy reliance on AI.
+14179349801,negative,UI_UX_Friction,"Layout, UI",Not specified,Old layout back,User strongly dislikes the new app layout.
+14179089930,negative,UI_UX_Friction,"Free tier limits, Queue, Downloads",Not specified,Free tier features back,User is upset that basic features like queuing and downloading were removed from the free tier.
+14177801715,positive,None,Music,Not specified,Not specified,User simply loves the app and the songs.
+14189652162,negative,Other,Scam,Not specified,Not specified,User feels that Spotify is a scam.
+14188512294,negative,UI_UX_Friction,Logo,Not specified,Old logo back,User dislikes the new app logo.
+14185702928,positive,None,Premium,Daily listening,Not specified,User highly recommends premium and listens every day.
+14184486561,positive,None,"TikTok, Playlists",Playlist curation,Not specified,User loves the app and the ability to add trending TikTok songs to their playlists.
+14182986828,negative,Other,Ads,Not specified,Fewer ads,User complains about excessive advertisements.
+14181122485,negative,Other,Ads,Not specified,Fewer ads,User is considering leaving the app because of the overwhelming number of ads.
+14178686623,negative,Other,Remastered tracks,Not specified,Access to original song versions,User is frustrated by the prevalence of remastered tracks and wants the option to listen to original versions.
+14178610664,negative,UI_UX_Friction,"Ads, Forced Shuffle",Studying/Exams,"Play specific songs, skip ads",User is frustrated by unskippable ads and the inability to play specific songs on demand.
+14176999196,negative,Other,"Ads, Repetitive Ads",Playlist listening,Fewer/Varied ads,User loves the music library but is highly annoyed by the frequency and repetition of ads.
+14173400826,negative,Other,"Bugs, Premium",Not specified,Bug fixes,User regrets buying premium because the app experiences more bugs now than on the free tier.
+14173222446,negative,Other,"Chromecast, Audio Bug",TV Casting,Bug fixes,User is experiencing a technical issue where audio no longer plays when casting to a TV via Chromecast.
+14170712290,negative,Other,Ads,Not specified,Fewer ads,"User is frustrated by the increased frequency of ads, now playing every 2 songs."
+14168709578,negative,Other,"Performance, Bugs, Overheating",Not specified,App stability / Bug fixes,User complains about the app being extremely slow to load and causing their phone to overheat.
+14168563323,negative,UI_UX_Friction,"UI changes, Missing features, Navigation",Listening to music,Ability to go back to previous song,User is frustrated that they can no longer go back to the previous song or see playing videos and text.
+14167264191,negative,PricingIncrease,Expensive,Not specified,Lower price,User feels the subscription price is too high.
+14165388931,negative,Other,"Performance, Search",Not specified,Faster loading,User is frustrated because the app has become unbearably slow and the search function is unusable.
+14162759168,negative,UI_UX_Friction,"App Icon, Stability, Bugs, Tablet Layout",Not specified,Better UI / Bug fixes,User strongly dislikes the new app icon and experiences frequent stability issues and layout bugs on tablet.
+14162152313,neutral,Other,"Downloads, Auto-playlist",Offline listening,Automatic playlist of downloaded songs,User likes the app but wants an automatic playlist that compiles all their downloaded tracks.
+14190577774,negative,Other,"Playback issues, Bugs",Not specified,Smooth playback,User is experiencing playback issues where songs stutter or skip like a scratched CD.
+14189597728,negative,Other,Ads,Not specified,Fewer ads,User feels the excessive amount of ads is disrespectful to the music listening experience.
+14189020813,negative,Other,Ads on Premium,Premium listening,Truly ad-free premium,User is angry about hearing ads despite paying for a premium subscription.
+14185804828,negative,Other,"Playback issues, Bugs",Not specified,Uninterrupted playback,User complains that the music frequently stops playing on its own.
+14185248677,negative,UI_UX_Friction,"Bugs, Visual spam, Interface",Not specified,Cleaner interface / Bug fixes,"User is frustrated by scrolling bugs, increasing visual spam, and a lack of investment in the user interface."
+14184791434,negative,Other,Ads on Premium,Premium listening,Truly ad-free premium,User is upset because they are receiving ads despite paying for a premium subscription.
+14181920229,negative,PricingIncrease,"Expensive, Artist payouts",Not specified,Fair artist compensation / Lower price,User feels the app is too expensive and criticizes the low payouts to artists.
+14181702485,negative,PricingIncrease,"Expensive, Competition",Not specified,Competitive pricing,User feels the monthly subscription cost is too high compared to competitor apps.
+14181291818,negative,Other,"Ads on Premium, Podcasts",Podcast listening,Ad-free podcasts,User is confused and frustrated about getting ads during podcasts despite having a premium plan.
+14180929351,negative,Other,"Performance, AI, Price Hike",Not specified,Faster loading,User complains that the app UI is loading much slower than before and notes that the price has gone up while quality has dropped.
+14180144665,negative,UI_UX_Friction,"Song selection, Free tier limits",Not specified,Ability to choose specific songs,User is frustrated that they cannot freely choose which songs to play.
+14177826500,negative,Other,"Ads on Premium, Podcasts",Podcast listening,Ad-free podcasts,User is angry about greedy behavior as Spotify started inserting ads into podcasts despite their premium subscription.
+14177136677,neutral,Other,"Audio settings, Bass boost",Not specified,Audio equalizer / Bass boost,User politely requests an option to increase the bass within the app's audio settings.
+14174944692,negative,Other,"Bugs, Performance, Premium",Not specified,App stability,User is frustrated that they are paying for an app that frequently freezes.
+14172561684,negative,Other,"Payment issues, Premium",Not specified,Reliable payment processing,User is having issues with their premium subscription despite updating to a valid payment method.
+14171770159,neutral,PricingIncrease,Price,Not specified,Lower price,User thinks the app's price is okay but wishes it could be a bit cheaper.
+14168869020,negative,Other,"Ethics, Corporate behavior",Not specified,Ethical business practices,"User strongly dislikes the platform, calling it the most unethical music service available."
+14167903930,negative,UI_UX_Friction,App Icon,Not specified,Old icon back,User strongly dislikes the new app icon and wants the old one back.
+14165507446,negative,Other,Politics,Not specified,Not specified,User left a political review demanding an end to the Palestinian genocide.
+14162197888,negative,UI_UX_Friction,"Premium lock, Bugs, Playback issues",Listening to songs,Basic playback without premium,User is upset that the app stopped working and blocks them from playing music by prompting a premium feature message.
+14161336345,negative,Other,Ads,Not specified,Fewer ads,User complains about an excessive amount of unnecessary advertisements.
+14161208324,negative,Other,Ads,Not specified,Fewer ads,User states there is too much advertising on the app.
+14190808102,negative,Other,"Playback issues, Bugs",Not specified,Stable playback,User experiences a bug where the music stops playing automatically after just a few seconds.
+14190522117,negative,Other,"Ads, Audio volume",Not specified,Normalized ad volume / fewer ads,User complains that the app feels like an ad app and that ad volume is obnoxiously louder than the music.
+14190519567,negative,Other,Ads,Not specified,Fewer ads,"User is annoyed by the high ad frequency, getting 4 ads after listening to only 2 songs."
+14189678864,negative,Other,"Offline listening, Premium, Bugs",Offline listening,Reliable offline playback,User feels scammed because some songs cannot be played offline despite paying for a premium subscription.
+14189301239,negative,Other,Ads on Premium,Premium listening,Truly ad-free premium,User is confused and frustrated about receiving a lot of ads despite subscribing to premium.
+14188963537,negative,Other,Ads,Not specified,Fewer ads,User likes the sound quality but finds the 1-minute ads every 1-2 songs to be excessive.
+14188811231,negative,Other,"Premium, Payment issues, Scam",Not specified,Reliable subscription management,User feels scammed because their 3-month premium subscription expired after less than two weeks.
+14188418144,negative,Other,Ads on Premium,Premium listening,Truly ad-free premium,User is highly disappointed and considers the app terrible because they still see ads after buying premium.
+14188159840,negative,SmartShuffleIssues,"Forced Shuffle, Search",Playing specific songs,Play specific songs on demand,User is extremely frustrated by the forced shuffle feature that plays a different song instead of the one they specifically searched for.
+14186848284,negative,Other,"Ads, Playback controls",Not specified,Fewer ads / Ability to rewind,User is annoyed by the frequent ads every 3 songs and the inability to rewind tracks.
+14186352473,negative,UI_UX_Friction,"Ads, Podcast popups, Tracking, Subscription trap",Not specified,Better UI / Transparent subscriptions,"User dislikes the app due to excessive ads, constant podcast popups, tracking requests, and deceptive subscription auto-renewal."
+14185973476,negative,Other,Useless app,Not specified,Not specified,User expresses extreme frustration with the app using profanity.
+14185559802,negative,Other,Ads,Not specified,Fewer ads,User sarcastically complains about the excessive amount of ads interrupting their listening experience.
+14185523248,negative,Other,Bad app,Not specified,Not specified,User states the app is extremely bad without providing specific details.
+14185318502,negative,Other,Ads,Not specified,Fewer ads,User likes the app but is highly frustrated by the excessive number of ads.
+14185021794,negative,UI_UX_Friction,"Bugs, Skip limit",Not specified,Ability to skip songs,User is frustrated by constant errors and the inability to skip songs.
+14184280314,negative,UI_UX_Friction,"Cross-device sync, Playlist folders, Sorting",Playlist curation,Better cross-device synchronization,"User is frustrated that the mobile and computer apps do not sync properly, specifically regarding playlist folders and sorting."
+14184003346,negative,Other,"Playback issues, Bugs",Not specified,Stable playback,User experiences a severe bug where every song stops and skips after just 5 seconds.
+14183851229,negative,Other,Ads,Not specified,Fewer ads,User complains about having too many advertisements.
+14182765020,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,"User is extremely annoyed by the high frequency and length of ads, playing after every single song."
+14182139416,negative,UI_UX_Friction,"Premium lock, Song selection",Playing specific songs,Ability to choose songs without premium,User is frustrated that basic features like selecting a specific song are locked behind a premium subscription.
+14181232203,negative,UI_UX_Friction,"Updates, Profile avatar",Not specified,Old avatar/UI back,User regrets updating the app because the new version removed their preferred profile avatar.
+14176632158,negative,Other,"Playback issues, Bugs",Not specified,Stable playback,User complains about a playback bug where the app automatically stops after 8 seconds.
+14176600395,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,User is frustrated by the 1:1 ratio of songs to advertisements.
+14175727850,negative,UI_UX_Friction,"Free tier limits, Premium lock, Library access",Listening to saved library,Basic playback features on free tier,"User is upset that the free tier has become practically unusable, blocking access to search and their saved library."
+14174572778,negative,Other,Ad length,Not specified,Shorter ads,"User is annoyed that the advertisements are excessively long, sometimes lasting as long as a full song."
+1896a502-6d2a-4f38-9f6e-c935a9302bd7,negative,Other,"App loading, Bugs, Reinstallation",Not specified,App stability,User is forced to reinstall the app daily because it fails to load.
+a7b9d26f-a90e-4490-bec5-728903fd6ea5,negative,Other,Ads,Not specified,Fewer ads,User complains about having too many ads.
+db8d90c2-e3c1-4c61-aeb1-6e29140dcb1a,negative,Other,"Predatory practices, Ethics",Not specified,Ethical business practices,User dislikes the app due to its perceived predatory practices within the music industry.
+621122e2-6410-4d6e-8916-7064514ae050,negative,Other,"Payment issues, Refund, Subscription",Not specified,Reliable subscription management / Refund,User is angry about being charged after canceling their subscription and not receiving a refund.
+b63c430d-43bc-4edf-8328-55d6e3763ea1,negative,Other,"Installation error, Updates",Not specified,Bug fixes,User is experiencing a technical issue where they cannot install or update the app.
+658bd80f-c136-4d5e-bc0f-be3e5271c343,negative,UI_UX_Friction,"Ads, Skip limit, Song selection",Playing specific songs,Ability to skip and choose songs,User is frustrated by the increasing number of ads and the removal of basic features like skipping and playing searched songs.
+9cdc376b-4c82-4d32-a228-a2b3f2d2149b,negative,UI_UX_Friction,"Premium popups, YouTube Premium comparison",Not specified,Fewer premium prompts,User is annoyed by constant prompts to buy premium and compares the value poorly against YouTube Premium.
+98c73a0b-0b14-4b75-9d36-b6acfc0b2160,negative,Other,"Ads, Ad length",Not specified,Fewer/Shorter ads,User complains that the ads are too frequent and too long.
+d85a4ca8-5717-4353-a485-9a3f85e36f4b,negative,UI_UX_Friction,"Ads, Forced shuffle, Lyrics",Album listening,Play albums in order / Accurate lyrics,"User is frustrated by long premium ads, the inability to play albums in order, and inaccurate song lyrics."
+04a885e5-6967-4d27-8b0f-55db6b4cda75,negative,Other,Ads,Not specified,Fewer ads,User complains about having too many ads.
+393e598f-d200-490b-abb5-bc9a14a0e5d9,negative,Other,Audio bug,Not specified,Bug fixes,User is experiencing a technical issue where the app produces no sound.
+84b7444a-0145-4205-9db9-790a0520568a,negative,UI_UX_Friction,"Premium lock, Search",Playing specific songs,Basic playback on free tier,User is extremely frustrated that searching and playing specific songs is now completely locked behind a premium paywall.
+ced5f396-f477-4a00-a648-52cdac04c8a7,positive,None,"AI DJ, Music library",Not specified,Not specified,User loves the large music library and the AI DJ feature.
+394179ae-d1c6-400b-9e41-4c871a791100,positive,None,General praise,Not specified,Not specified,"User leaves a short, positive review."
+02e737d1-6c6b-4b14-804a-8484bfcf7848,negative,Other,"Glitches, Black screen, Reinstallation",Not specified,App stability,User likes the app but is highly annoyed by a recurring black screen glitch that forces them to reinstall.
+8f0284e1-c3e2-489d-a1f9-9ba646ec45d6,positive,None,Playlists,Playlist listening,Not specified,User has a great experience and enjoys the app's playlists.
+6dc3b46f-d0cc-4dd0-8c66-2d10c0d2b869,negative,UI_UX_Friction,Premium lock,Not specified,Usable free tier,User is frustrated that the app is practically unusable without a premium subscription.
+5b080918-a701-42db-9155-e51358b94d89,negative,Other,"Payment issues, Subscription bug",Not specified,Reliable subscription activation,"User is upset because they were charged for a premium subscription, but the features were not activated on their account."
+c20d8926-254d-4607-889b-86f6e0265d6b,neutral,Other,"Reshuffle button, Slow search",Not specified,Faster search performance,User is happy about the new reshuffle button but frustrated by the slow performance of the search bar.
+545dcaf4-b207-4c3e-b254-e1f8b2d62119,neutral,None,Short,Not specified,Not specified,Review is too short to provide meaningful insight.
+b91705d1-d77b-4a5a-93f7-1ac00f6929f6,negative,Other,Ads,Not specified,Fewer ads,User complains about the excessive number of advertisements.
+8d824a6a-bccc-4fdb-a99e-171a405c9196,positive,None,"Discover Weekly, Spotify Connect, Algorithm",Daily routine listening,Not specified,"User praises the smart algorithm, Discover Weekly, and seamless device switching via Spotify Connect."
+ceaf1114-d688-4cfa-bf83-07e12d6a87a5,negative,UI_UX_Friction,"Queue bug, Customer support",Playlist curation,Working queue system / Better support,"User is frustrated by a bug preventing them from queuing or reorganizing songs, compounded by poor customer support."
+5a0ea393-7c0f-445f-80c8-83c0e73a9101,negative,Other,Ads,Not specified,Fewer ads,User is annoyed by the constant presence of ads throughout the day.
+fd8db51d-c25d-488d-a7c7-9b35ce356fe5,neutral,UI_UX_Friction,"UI changes, Spotify Wrapped, Shuffle","Sleep listening, Playlist curation",Exclude songs from Wrapped / Better UI for adding songs,User dislikes the new UI for adding songs to playlists and wants the ability to exclude sleep tracks from their Spotify Wrapped.
+f26f86e4-f4bd-4616-8773-9d886919433d,negative,Other,"App crash, Premium",Not specified,Stable app,App crashes abruptly even after purchasing a subscription.
+af507edc-a25c-41db-b625-eade5b90c9cd,negative,Other,"Offline downloads, Data waste, Playback issues",Offline listening,Reliable offline downloads,"User is extremely frustrated that downloaded offline songs are deleted without permission and won't play, wasting data."
+e67821aa-6948-4df1-a258-70d153d0d6bf,negative,Other,"Ads, Free tier limits",Not specified,Fewer ads,User complains about excessive back-to-back ads on the free tier.
+5a70f7f7-0d01-405a-8549-9e5a3eac1495,positive,None,General praise,Not specified,Not specified,"User left a short, positive review."
+60875c21-0e45-465f-b1f5-40fd7ffa3615,negative,UI_UX_Friction,"Widget, Updates",Not specified,Working widget,User is frustrated that the updated home screen widget is broken and useless.
+732a2d8e-c636-4185-b6f9-88c832d3571d,positive,None,"Ease of use, Recommendation",Not specified,Not specified,User finds the app easy to use and highly recommends it.
+24178cb6-1915-4d3f-ba62-d54f785210f4,negative,Other,General complaint,Not specified,Not specified,User states the app is poor/trash without providing details.
+31672d2b-7e21-4cd2-a0be-2d881ead2c41,positive,None,Mix function,Playlist curation,Not specified,User loves the app's mix function.
+b84fdf12-d87d-415d-ade2-c28cd3f51d51,negative,UI_UX_Friction,"App performance, AI features, Sluggishness",Streaming music quickly,"Faster app, less AI bloat",Long-time user is frustrated by the app becoming slow and bloated with unwanted AI features.
+37eae084-6cc7-4094-8ea8-f584ee0d8e0f,negative,Other,"Ads, Corporate greed",Not specified,Fewer ads,User feels the free version has been ruined by an excessive and greedy amount of ads.
+a42f65d7-37b2-4190-b048-c15a158c74d9,neutral,None,"Audio quality, Multi-device",Multi-device listening,Not specified,User praises the audio quality and the ability to use multi-point Bluetooth across devices.
+661e9b5b-db45-4cdb-8962-87eb68f1d5f9,negative,UI_UX_Friction,"Widget, Updates",Not specified,Working widget without constant prompts,User is annoyed by constant prompts to update the Spotify widget.
+cb92bad1-dfe3-4c31-8e19-1e87967e200f,negative,UI_UX_Friction,"App performance, AI, Bugs, Playlist management, Queue",Playlist curation,"Stable app, working core features","User experiences severe performance issues and bugs with queuing and playlist management, blaming it on AI replacing human staff."
+21feb09e-15dc-4faa-96b9-caeaa668019d,neutral,None,Gibberish,Not specified,Not specified,Review contains unintelligible gibberish.
+2ebf49d9-00e8-4a21-91ba-54e336a0dfd3,negative,Other,"Playback issues, Tablet",Tablet listening,Stable playback,User experiences intermittent playback stopping on their tablet.
+b713d434-215d-472d-a61e-8b6d8c56a98c,negative,Other,"Payment issues, Premium, Scam",Not specified,Reliable payment processing,User calls the app fake because they paid twice but didn't receive their premium subscription.
+bcf52fbb-6808-458a-86fb-948e9f4d506a,negative,Other,General complaint,Not specified,Not specified,User states the app is terrible without providing details.
+e8490e87-2769-42be-8dcb-db7d341ed4c2,negative,UI_UX_Friction,"Premium bug, Black screen, Cross-device issues",Daily listening,"Recognized premium status, bug fixes",User is locked out of their premium account on their phone with a black screen and constant upgrade prompts despite already paying.
+9f73883e-bf63-4d09-8a83-3b61a9d82abd,negative,UI_UX_Friction,"Premium popups, Expensive",Not specified,"Fewer premium prompts, lower price","User likes the app but is annoyed by the constant, unbearable harassment to buy an expensive premium subscription."
+551d0a0d-e75d-4c76-90b8-aceb41d0b203,negative,Other,"Refund, Cancellation",Not specified,Refund,User is upset because they didn't receive a refund after canceling their subscription.
+2a0346ef-05e2-40d6-80e3-f5f744607443,neutral,UI_UX_Friction,"Offline listening, Free tier limits",Offline listening,Free offline listening,User likes the app but wishes offline listening was still available on the free tier.
+005e1fc8-c6a9-4bc8-8794-401d3466f9c3,negative,UI_UX_Friction,"Free tier limits, Premium lock",Not specified,Usable free tier,User finds the mobile app terrible because almost all basic features are locked behind a paywall.
+7ad011a9-a7dd-4f35-ae46-f1b3fc19400d,negative,Other,"Subscription bug, Payment issues",Not specified,Reliable subscription management,"User is angry because their premium access was revoked immediately after canceling auto-renew, despite having already paid for the current month."
+fb242e65-c717-4f25-9a40-afec8c16f6c7,negative,UI_UX_Friction,"Performance, Cross-device sync, Audiobooks",Multi-device listening,"Cross-device progress sync, faster app",User loves the content but is frustrated by the laggy app and its inability to sync listening progress across devices.
+5f0577e0-f8c2-4156-9505-4c85945ecfe3,negative,Other,"Performance, Playback issues",Not specified,"App stability, reliable playback",User complains that the app is too slow and randomly stops playing music.
+af125669-9a5c-49fb-8392-1e30eb91691d,negative,Other,"Artist payouts, Audiobook limits, Black screen, AI features",Audiobook listening,"Ethical pay, app stability, unlimited audiobooks","User is leaving due to unethical artist pay, premium audiobook limits, frequent black screen bugs, and unwanted AI features."
+54a172b7-60b7-42e6-9600-32b9572f6cc8,negative,UI_UX_Friction,Premium lock,Listening to music,Usable free tier,User is frustrated that listening to music practically requires a premium subscription.
+851a943e-ac2e-41b0-be9c-4d22eac3ecec,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,User finds the app unusable because ads play every two songs.
+1c3e1858-87dc-41c6-b0bd-fec0467182ae,negative,Other,General complaint,Not specified,Not specified,User uses profanity to describe the app as extremely bad.
+1cb762eb-9e1a-4e32-a769-15be4ad39c6e,neutral,Other,"Ads, Recommendations",Relaxing after a busy day,Fewer ads,User loves the playlist recommendations but finds the ads annoying since they can't afford premium right now.
+c955e052-19f7-4396-ad69-c0e4f4dc8e35,negative,SmartShuffleIssues,"Forced shuffle, Song selection",Playing specific songs,Play specific songs on demand,User is extremely frustrated by forced shuffle preventing them from playing the specific song they clicked on.
+b632681e-1bfc-4490-a77f-34de73386521,positive,None,"Music library, Recommendation",Not specified,Not specified,User highly recommends the app for its great music library.
+97d578bc-2176-4529-acc1-8202d92811c8,positive,None,General praise,Not specified,Not specified,"User leaves a short, positive review."
+5f28d123-56da-4b0e-a1d6-e846e61a7149,positive,None,"Free tier, Recommendation",Not specified,Not specified,"Long-time user highly recommends the app, noting it's still very good even on the free tier."
+3f528cad-036c-4237-97f7-4f0c8679f546,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,User complains about getting double ads and asks for leniency for broke college students.
+1c418971-e819-436d-b96a-f28d64c0cd92,negative,UI_UX_Friction,"Premium expiration, Playlist access, Bugs",Playlist listening,Access to saved playlists after premium ends,User is frustrated that their playlists disappeared and became unplayable after their premium subscription expired.
+bf27f539-5dda-4b63-9b50-78f2addf3431,negative,Other,Ads,Not specified,Fewer ads,"User complains about having too many ads (typo ""Ed's"")."
+776fead0-8b15-4a64-81ba-fc9c3e2dd412,negative,Other,"Payment issues, Student premium, Customer service",Not specified,"Accurate billing, Better customer service","User is angry about being overcharged and downgraded from a student to an individual plan, compounded by poor customer service."
+359c90dc-5539-4fd3-8cfb-ef9742eaca43,negative,UI_UX_Friction,"Free tier limits, Premium lock, Performance",Mobile listening,"Usable free tier, App stability",User finds the mobile app unusable without premium and complains about performance issues even when paying.
+de77ed02-89d1-4349-8dca-ae11f69f484e,positive,None,"Music library, Recommendations, Offline listening","Discovering new music, Offline listening",Not specified,"User praises the app's huge library, great music recommendations, and offline listening capabilities."
+f26f86e4-f4bd-4616-8773-9d886919433d,negative,Other,"App crash, Premium",Not specified,Stable app,App crashes abruptly even after purchasing a subscription.
+af507edc-a25c-41db-b625-eade5b90c9cd,negative,Other,"Offline downloads, Data waste, Playback issues",Offline listening,Reliable offline downloads,"User is extremely frustrated that downloaded offline songs are deleted without permission and won't play, wasting data."
+e67821aa-6948-4df1-a258-70d153d0d6bf,negative,Other,"Ads, Free tier limits",Not specified,Fewer ads,User complains about excessive back-to-back ads on the free tier.
+5a70f7f7-0d01-405a-8549-9e5a3eac1495,positive,None,General praise,Not specified,Not specified,"User left a short, positive review."
+60875c21-0e45-465f-b1f5-40fd7ffa3615,negative,UI_UX_Friction,"Widget, Updates",Not specified,Working widget,User is frustrated that the updated home screen widget is broken and useless.
+732a2d8e-c636-4185-b6f9-88c832d3571d,positive,None,"Ease of use, Recommendation",Not specified,Not specified,User finds the app easy to use and highly recommends it.
+24178cb6-1915-4d3f-ba62-d54f785210f4,negative,Other,General complaint,Not specified,Not specified,User states the app is poor/trash without providing details.
+31672d2b-7e21-4cd2-a0be-2d881ead2c41,positive,None,Mix function,Playlist curation,Not specified,User loves the app's mix function.
+b84fdf12-d87d-415d-ade2-c28cd3f51d51,negative,UI_UX_Friction,"App performance, AI features, Sluggishness",Streaming music quickly,"Faster app, less AI bloat",Long-time user is frustrated by the app becoming slow and bloated with unwanted AI features.
+37eae084-6cc7-4094-8ea8-f584ee0d8e0f,negative,Other,"Ads, Corporate greed",Not specified,Fewer ads,User feels the free version has been ruined by an excessive and greedy amount of ads.
+a42f65d7-37b2-4190-b048-c15a158c74d9,neutral,None,"Audio quality, Multi-device",Multi-device listening,Not specified,User praises the audio quality and the ability to use multi-point Bluetooth across devices.
+661e9b5b-db45-4cdb-8962-87eb68f1d5f9,negative,UI_UX_Friction,"Widget, Updates",Not specified,Working widget without constant prompts,User is annoyed by constant prompts to update the Spotify widget.
+cb92bad1-dfe3-4c31-8e19-1e87967e200f,negative,UI_UX_Friction,"App performance, AI, Bugs, Playlist management, Queue",Playlist curation,"Stable app, working core features","User experiences severe performance issues and bugs with queuing and playlist management, blaming it on AI replacing human staff."
+21feb09e-15dc-4faa-96b9-caeaa668019d,neutral,None,Gibberish,Not specified,Not specified,Review contains unintelligible gibberish.
+2ebf49d9-00e8-4a21-91ba-54e336a0dfd3,negative,Other,"Playback issues, Tablet",Tablet listening,Stable playback,User experiences intermittent playback stopping on their tablet.
+b713d434-215d-472d-a61e-8b6d8c56a98c,negative,Other,"Payment issues, Premium, Scam",Not specified,Reliable payment processing,User calls the app fake because they paid twice but didn't receive their premium subscription.
+bcf52fbb-6808-458a-86fb-948e9f4d506a,negative,Other,General complaint,Not specified,Not specified,User states the app is terrible without providing details.
+e8490e87-2769-42be-8dcb-db7d341ed4c2,negative,UI_UX_Friction,"Premium bug, Black screen, Cross-device issues",Daily listening,"Recognized premium status, bug fixes",User is locked out of their premium account on their phone with a black screen and constant upgrade prompts despite already paying.
+9f73883e-bf63-4d09-8a83-3b61a9d82abd,negative,UI_UX_Friction,"Premium popups, Expensive",Not specified,"Fewer premium prompts, lower price","User likes the app but is annoyed by the constant, unbearable harassment to buy an expensive premium subscription."
+551d0a0d-e75d-4c76-90b8-aceb41d0b203,negative,Other,"Refund, Cancellation",Not specified,Refund,User is upset because they didn't receive a refund after canceling their subscription.
+2a0346ef-05e2-40d6-80e3-f5f744607443,neutral,UI_UX_Friction,"Offline listening, Free tier limits",Offline listening,Free offline listening,User likes the app but wishes offline listening was still available on the free tier.
+005e1fc8-c6a9-4bc8-8794-401d3466f9c3,negative,UI_UX_Friction,"Free tier limits, Premium lock",Not specified,Usable free tier,User finds the mobile app terrible because almost all basic features are locked behind a paywall.
+7ad011a9-a7dd-4f35-ae46-f1b3fc19400d,negative,Other,"Subscription bug, Payment issues",Not specified,Reliable subscription management,"User is angry because their premium access was revoked immediately after canceling auto-renew, despite having already paid for the current month."
+fb242e65-c717-4f25-9a40-afec8c16f6c7,negative,UI_UX_Friction,"Performance, Cross-device sync, Audiobooks",Multi-device listening,"Cross-device progress sync, faster app",User loves the content but is frustrated by the laggy app and its inability to sync listening progress across devices.
+5f0577e0-f8c2-4156-9505-4c85945ecfe3,negative,Other,"Performance, Playback issues",Not specified,"App stability, reliable playback",User complains that the app is too slow and randomly stops playing music.
+af125669-9a5c-49fb-8392-1e30eb91691d,negative,Other,"Artist payouts, Audiobook limits, Black screen, AI features",Audiobook listening,"Ethical pay, app stability, unlimited audiobooks","User is leaving due to unethical artist pay, premium audiobook limits, frequent black screen bugs, and unwanted AI features."
+54a172b7-60b7-42e6-9600-32b9572f6cc8,negative,UI_UX_Friction,Premium lock,Listening to music,Usable free tier,User is frustrated that listening to music practically requires a premium subscription.
+851a943e-ac2e-41b0-be9c-4d22eac3ecec,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,User finds the app unusable because ads play every two songs.
+1c3e1858-87dc-41c6-b0bd-fec0467182ae,negative,Other,General complaint,Not specified,Not specified,User uses profanity to describe the app as extremely bad.
+1cb762eb-9e1a-4e32-a769-15be4ad39c6e,neutral,Other,"Ads, Recommendations",Relaxing after a busy day,Fewer ads,User loves the playlist recommendations but finds the ads annoying since they can't afford premium right now.
+c955e052-19f7-4396-ad69-c0e4f4dc8e35,negative,SmartShuffleIssues,"Forced shuffle, Song selection",Playing specific songs,Play specific songs on demand,User is extremely frustrated by forced shuffle preventing them from playing the specific song they clicked on.
+b632681e-1bfc-4490-a77f-34de73386521,positive,None,"Music library, Recommendation",Not specified,Not specified,User highly recommends the app for its great music library.
+97d578bc-2176-4529-acc1-8202d92811c8,positive,None,General praise,Not specified,Not specified,"User leaves a short, positive review."
+5f28d123-56da-4b0e-a1d6-e846e61a7149,positive,None,"Free tier, Recommendation",Not specified,Not specified,"Long-time user highly recommends the app, noting it's still very good even on the free tier."
+3f528cad-036c-4237-97f7-4f0c8679f546,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,User complains about getting double ads and asks for leniency for broke college students.
+1c418971-e819-436d-b96a-f28d64c0cd92,negative,UI_UX_Friction,"Premium expiration, Playlist access, Bugs",Playlist listening,Access to saved playlists after premium ends,User is frustrated that their playlists disappeared and became unplayable after their premium subscription expired.
+bf27f539-5dda-4b63-9b50-78f2addf3431,negative,Other,Ads,Not specified,Fewer ads,"User complains about having too many ads (typo ""Ed's"")."
+776fead0-8b15-4a64-81ba-fc9c3e2dd412,negative,Other,"Payment issues, Student premium, Customer service",Not specified,"Accurate billing, Better customer service","User is angry about being overcharged and downgraded from a student to an individual plan, compounded by poor customer service."
+359c90dc-5539-4fd3-8cfb-ef9742eaca43,negative,UI_UX_Friction,"Free tier limits, Premium lock, Performance",Mobile listening,"Usable free tier, App stability",User finds the mobile app unusable without premium and complains about performance issues even when paying.
+de77ed02-89d1-4349-8dca-ae11f69f484e,positive,None,"Music library, Recommendations, Offline listening","Discovering new music, Offline listening",Not specified,"User praises the app's huge library, great music recommendations, and offline listening capabilities."
+0b87dd25-ff61-4b05-8409-e21fbc0566dd,negative,Other,"Lost Playlists, Bugs",Not specified,Reliable playlist saving,User lost 700 songs from their playlist and is quitting the app.
+66bbdb78-e8a0-4f6d-85d0-73a56e921e6a,negative,UI_UX_Friction,"Widget, App Performance",Not specified,Working widget / App stability,User finds the new widget atrocious and the app increasingly slow and buggy.
+69d734df-4898-4428-a46e-719d99607bdb,negative,Other,"Xbox connection, Bugs",Console listening,Stable connection,App breaks when trying to connect to Xbox.
+e02ca466-0003-41e8-8fbd-002c9179e98c,negative,Other,"Offline listening, Bugs",Offline listening,Reliable offline playback,User gets a grey screen and cannot access downloaded music without an internet connection.
+e35306fe-7480-4bf5-9a9f-4d50ef11852e,negative,Other,App crashes,Not specified,App stability,App stops working completely about once a month.
+c7c5d510-b4ea-4090-bb7e-b07ed8d36f18,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,User loves the app but is highly annoyed by getting 2-5 ads every two songs.
+3bb14214-b079-46e6-9f28-ca5612e1763b,negative,UI_UX_Friction,"Ads, Skip limit, Premium push",Not specified,More skips / Fewer ads,User uninstalled the app due to constant begging for money and the 6-skip limit.
+f1475cd7-9e09-42d4-8955-53046c7ffecc,negative,Other,"Billing, Refund, Customer service",Not specified,Refund / Better customer service,User is angry about an overdraft charge and the refusal of a refund after canceling.
+83ca2798-3284-460b-b63c-ce90fcb975d6,negative,UI_UX_Friction,"Premium lock, Playback bug",Playing specific songs,Basic playback without premium,User is frustrated that clicking a song immediately triggers a premium feature block.
+e354430c-efc1-43f3-8d0d-a4787e72e9f2,negative,UI_UX_Friction,"Free tier limits, Ads, Skip limit",Not specified,Usable free tier,User feels the free version is frustrating due to constant ads and limited skips pushing users to premium.
+26d100a3-587f-4253-b6b7-2f45d4b9db86,negative,Other,"App crash, Updates",Not specified,App stability,App keeps crashing after the latest update.
+cb0d4118-93da-421b-b5b2-b4b070e85211,negative,Other,"Audiobooks, Listening limit, Price",Audiobook listening at work,More audiobook hours,User finds the 15-hour monthly audiobook limit ridiculous and too expensive to extend.
+2ac673a1-0f3f-419a-9c39-f7070878e9a5,positive,None,"Playlists, Podcasts",Podcast listening,Not specified,User enjoys the fun playlists and easy podcast discovery.
+efe455ac-ca11-476a-816d-e525fc031fa0,negative,Other,"Offline bug, Connectivity",Not specified,Bug fixes,User has to constantly restart the app because it falsely claims to be offline.
+ea08b13f-5bdb-4a0d-a3cf-78bf6c487bce,negative,Other,"AI features, Battery drain, App performance",Not specified,App stability / Less battery drain,"User complains that AI features make the app slow, drain battery, and open without permission."
+353d3065-681d-4816-900d-c47308373665,negative,Other,General complaint,Not specified,Not specified,User simply states the app is absolute garbage.
+b9dde72a-6ee9-4845-93ae-a4c7680c291e,negative,Other,"Ads, Free trial issue",Not specified,Fewer ads / Working free trial,User hates the ads and is frustrated they cannot activate a free trial.
+5f92d51c-6f89-4aab-a2a7-d22422ae9afe,negative,Other,Playback bug,Not specified,Bug fixes,App started playing music on its own and the user doesn't know how to stop it.
+92390a3d-d8b1-4183-b56b-ac0f05e6abe3,negative,Other,"Podcasts, Playback issues",Podcast listening,Reliable podcast playback,User is canceling their subscription because podcasts won't play despite troubleshooting.
+caff8eb7-4c93-4cc3-bf8e-23a06d4e552f,negative,Other,"Playback issues, Android",Not specified,Stable playback,User is frustrated that the app fails to play music on Android devices.
+11391fed-273e-4624-baaa-bb60a4a577a7,negative,UI_UX_Friction,"Widget, UI changes",Not specified,Working widget,"User is upset that the new widget is broken, gets stuck loading, and doesn't open the app."
+b555161f-084b-4aaa-a4b8-5bebd176911b,negative,Other,"Network monitoring, Background processes",Multi-device listening,Privacy / Background process control,User feels the app acts like malware by constantly monitoring network devices and running in the background.
+9e42788b-29c5-4121-8517-ad16de095178,negative,UI_UX_Friction,Widget,Not specified,Working widget,User finds the new widget to be a major downgrade and borderline useless.
+a7c2dcc5-ab65-4303-9100-676be1aabf58,neutral,None,"Free tier, Premium",Not specified,Not specified,User thinks the free plan is bad but praises the premium version.
+72b8a018-0e7d-4144-904a-5ea9a3a5aba2,negative,Other,General complaint,Not specified,Not specified,User thinks the app is horrible and sucks.
+9d6b79b3-ed18-46a6-8cc8-a4d1cb47a92e,negative,Other,General complaint,Not specified,Not specified,User calls it the worst music app on the market.
+d2e86669-eb5a-4339-8114-97854202d599,positive,None,"Premium, Recommendation",Not specified,Not specified,User highly recommends the app and suggests purchasing premium.
+9209794f-332f-4c98-8e57-e754529fbd7f,negative,Other,"Lost playlists, Ads, Free tier limits",Not specified,Accurate ad-free time / Saved playlists,User lost their playlists after an update and complains about the excessive ads on the free tier.
+616d081c-89bf-4b60-8ebd-884ddee219e3,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,User complains about getting pairs of ads every 3-4 songs.
+5c81377c-7f78-44a0-8cca-8d639defbab3,negative,UI_UX_Friction,"Notifications, Widget, Fold phone",Not specified,Old widget back / Clear notifications,"User is annoyed by persistent connection notifications and the new, oversized widget."
+84666cf5-626d-4d99-8aea-e31b3a766b69,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,User is frustrated by getting 4 ads every 2 songs.
+8887b317-b01f-493b-aa8f-9c7bb598a459,positive,None,General praise,Not specified,Not specified,User states it is their favorite app.
+58002e27-2966-47ed-bcd8-90dabc61256b,negative,UI_UX_Friction,"Song selection, Free tier limits",Playing specific songs,Ability to choose songs,User is angry that they cannot choose specific songs to listen to.
+d339ca20-fa7a-4239-aa4f-166ca04a40c7,negative,UI_UX_Friction,"Free tier limits, Ads, Forced shuffle",Not specified,Ability to choose songs / Fewer ads,"User is extremely frustrated by the free tier restrictions, including excessive ads, skip limits, and forced shuffle."
+ef8c53aa-5e09-4f53-b91f-ed35018c50e6,neutral,Other,"Ads, Hacked songs",Emotional listening,Bug fixes (hacked songs),User loves the app but finds ads ruin their mood and notes that some trendy songs appear to be hacked.
+d60f43ff-7d83-405f-aea4-dfacfe2beb43,negative,Other,Internet connection,Not specified,Stable connection,User complains about poor internet connection handling (in Tagalog).
+64adc422-c905-4ab3-8970-e5cdb2b101f7,negative,UI_UX_Friction,Premium lock,Not specified,Usable free tier,User complains that the app requires payment to listen.
+e3e30f10-bdc7-432e-a058-36e4e899b60c,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,User finds it disgusting that 3 ads play every alternate song.
+bd198c24-fd2f-4821-90d6-77f9fce148c4,positive,None,"Playlists, Recommendations",Not specified,Not specified,Long-time user praises the app's playlists and music suggestions.
+15f2fd46-5f23-4e22-9c13-dd917030b026,negative,UI_UX_Friction,"Widget, Updates",Not specified,Working widget,User likes the app but gives 1 star because the new widget is broken.
+ffb7d4a2-7297-45a0-ac13-f9dc1fe47267,neutral,UI_UX_Friction,Free tier limits,Not specified,More song plays,User likes the app but is restricted to playing only a few songs.
+7b47cc82-25ac-4d7c-8427-baee1c60882c,negative,Other,Updates,Not specified,Better updates,User stopped using the app because of a bad update.
+0a38f083-53a7-4f1f-ae83-46fadf5cbe71,negative,Other,"Premium, Bugs, App loading",Not specified,App stability,User paid for premium but the app fails to load and shows an error message.
+3fc28a27-db8f-431f-981b-406e887673a9,negative,UI_UX_Friction,"Video quality, Ads on Premium, Pinned playlists",Podcast/Video viewing,"High resolution, Ad-free premium, More pinned playlists","User complains about low video quality, ads during podcasts despite having premium, and a limit on pinned playlists."
+faae2975-a769-4d10-b4b5-89117e17cc39,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,User is frustrated by excessive ads and plans to acquire music elsewhere to avoid them.
+46a0c48d-a619-4004-b000-6619185cb88c,negative,UI_UX_Friction,"Widget, Price Hike, App performance",Not specified,"Old widget, App stability, Fair pricing","User dislikes the forced new widget, price increases, and freezing issues."
+6c776de6-2f28-43b4-a433-e8b5edcb8df0,negative,UI_UX_Friction,"Ads on Premium, Popups",Premium listening,Truly ad-free experience,User is angry about receiving pop-ups despite paying for an ad-free premium experience.
+f58a3676-24ab-43b9-9212-2f164b98c726,negative,UI_UX_Friction,"Queue bug, Car connectivity, AI integration, Price Hike",Car listening,Reliable queue system,"User's queue keeps clearing when connecting to their car, and they criticize the focus on AI over fixing bugs."
+f83f2ada-3f4f-4588-8308-534f76e7b13e,negative,UI_UX_Friction,"UI, Interface",Not specified,Better interface,User simply states they dislike the app's interface.
+93de7956-8316-486b-a848-ad86ea74362f,negative,Other,"Login issues, Bugs",Not specified,Easy login,User complains that the app is broken and they are unable to log in easily.
+c8fce183-fe10-4957-b752-80685ea5efe9,negative,AlgorithmMismatch,"Ads, Recommendations",Not specified,"Fewer ads, Better recommendations",User complains about excessive advertising and too many pushed song recommendations.
+7993fc41-fe84-4e82-9c34-b7be8a73d56d,negative,UI_UX_Friction,"Widget, Performance",Not specified,Working widget,"User states the new widget is completely ruined, constantly loads, and buttons don't work."
+afa8f859-7c94-4750-b022-e8d62003f746,negative,Other,"App loading, Performance, Family Plan",Not specified,Faster app,User downgraded to the free version because the app became incredibly slow to load anything.
+74a4fde4-ec1f-49f1-9b36-4f2b28c48220,negative,Repetition,"Ads, Lack of new recommendations",Free tier listening,"New song discovery, Fewer ads",User sarcastically complains about excessive ads and the lack of new song recommendations.
+cf03a181-991c-49b0-ba10-545a9220ef8e,positive,None,Playlists,Not specified,Not specified,User leaves a short positive review praising the playlists.
+b76457aa-f0f6-41e1-b05e-a5af331b4805,negative,Other,Ads,Not specified,Fewer ads,User sarcastically suggests adding more advertisements to the already high amount.
+259186d5-6351-4fcf-b0fb-2a7a9501dcf4,negative,SmartShuffleIssues,"Shuffle, Blend playlists, Expensive, AI integration, Artist payouts",Not specified,"Working shuffle, refreshed playlists","User provides a detailed list of pros and cons, highlighting broken shuffle, expensive premium, and overuse of AI."
+478503e6-0cf5-47ec-9d9f-ad55736f0f50,negative,Other,"Offline mode, Connectivity",Not specified,Reliable connectivity,User complains the app constantly says it's offline even when there's no general outage.
+b6a811f9-6e0a-4e73-83be-4efd36165dd7,negative,Other,General complaint,Not specified,Not specified,User simply states the app is not good.
+3d538f67-b375-4d56-af4f-72dbe0e1ccca,negative,SmartShuffleIssues,"Replay restrictions, Unrelated playlists, Premium lock",Playing specific songs,Ability to replay and choose songs,User is angry they can't replay songs and that the app forces unrelated songs into playlists on the free tier.
+33244aa7-9996-42a4-be9a-cc040b1310db,negative,Other,"Playback issues, App loading",Not specified,App stability,"User is frustrated that the app fails to load or play any songs, constantly showing an error message."
+c4734215-b0fd-4ff5-b564-015964d68f36,negative,UI_UX_Friction,"Ads, Glitches, Skip limits, Premium push",Not specified,Usable free tier,"User complains about ads, glitches, and skip limits designed to force users into buying premium."
+ac7ba475-5550-4235-a0cb-a8899e37fff9,negative,UI_UX_Friction,"Ads, Skip limit, YouTube comparison",Not specified,"Fewer ads, more skips","User calls premium a scam, prefers YouTube, and complains about long ads and skip limits on the free tier."
+e8b5cc4a-52ee-4097-b701-5e968d5d0c4c,neutral,UI_UX_Friction,"Forced shuffle, Premium lock",Album/Playlist listening,Play in order without premium,User likes the app but dislikes the forced shuffle feature for non-premium users.
+04ffdec1-46ba-4a7f-85fe-c291f7006ce7,negative,Other,"Performance, Connectivity",Rural listening,Better low-bandwidth performance,User experiences slow and lagging performance in rural areas.
+bbc52aad-9f36-457a-91fb-db5798a60c83,negative,UI_UX_Friction,Queue management,Not specified,Clear queue option,User complains about the lack of an option to clear the queue and issues with playlists interrupting the queue.
+eb88cb4d-138c-4c6d-97e4-45b769432320,neutral,None,Social features,Not specified,Not specified,"User leaves a brief, unclear comment about their sister following them."
+fb842241-1f0a-4005-bf72-d9e393283e90,negative,Other,Ads,Not specified,Fewer ads,User complains about having many ads.
+410d7fee-0ea7-45a3-b6f8-f7b3c50be159,negative,Other,"Ads on Premium, Podcasts",Podcast listening,Ad-free podcasts,User is frustrated by receiving long ads during podcasts despite paying for premium.
+7f732152-a75a-4f39-8c3b-e016366911f7,positive,None,"Updates, DJ X, Bug fixes",Not specified,Not specified,User is thankful for a recent mini-fix that resolved issues and improved DJ X transitions.
+52181d0d-3844-4add-ac6c-9eab0a601ef7,negative,Other,"Ads, Premium push",Not specified,Fewer ads,User complains about horrible ads and feels the app is just trying to extract money from them.
+3d5434ae-a750-4934-9782-6321d45d79f2,negative,UI_UX_Friction,"Connectivity bug, Widget",Not specified,"Working widget, reliable connection",User experiences false offline errors and complains that the forced new widget does not work.
+a70acaaf-0efb-432c-b1bf-b06ffc4d4073,negative,Other,Ads on Premium,Premium listening,Truly ad-free premium,User is confused and upset that they still see ads after paying for a subscription.
+b8dfeb82-269c-4aac-a966-adf0d5b28007,negative,UI_UX_Friction,"Ads, Forced shuffle",Not specified,"Ad-free listening, ability to choose songs",User requests the removal of ads and forced shuffle from the free version.
+3c6ff848-07f0-4002-8c38-ecff6440c26c,positive,None,Free tier,Not specified,Not specified,User feels the app is usable even without a premium subscription.
+66b751bc-ba7e-456d-844f-bea31a0db830,negative,Other,"Updates, Lost downloads",Offline listening,Reliable offline downloads,User is angry because all their downloaded albums disappeared after an app update.
+f492fa73-523a-4b26-8807-030606726339,negative,Other,Ads,Not specified,Fewer ads,User expresses frustration with ads using a skull emoji.
+4cfa42ce-6b5c-4d3f-85dd-4f2f96385c9a,negative,Other,"Playback issues, Bluetooth, Updates",Bluetooth listening,Stable playback,User complains that the app randomly stops playing music when connected to Bluetooth devices.
+5f966739-1c2b-45f4-a10f-b267736c38c1,negative,UI_UX_Friction,"Premium lock, Song selection, Skipping",Not specified,Usable free tier,User complains that basic features like selecting and skipping songs are locked behind a paywall.
+17a8ae57-bb41-4557-96a8-45d4adfa796b,neutral,None,Free tier,Not specified,Not specified,User suggests offering a limited free experience to hook users.
+a4f1683e-9b82-4310-9138-a9d5652c9c6e,neutral,UI_UX_Friction,"Sound quality, Song selection",Not specified,Ability to choose songs,User likes the sound quality but dislikes the app controlling which songs play.
+7d94f0e4-34d4-4e72-973c-5034d9916d65,negative,Other,Ads,Not specified,Fewer ads,User uses profanity to complain about ads.
+92ebb678-6e2f-40ea-8d42-c1c71e211789,negative,UI_UX_Friction,"Auto play, Bluetooth, Customer service",Bluetooth listening,Disable auto play,User is frustrated by a bug preventing them from disabling auto play on Bluetooth and by dismissive customer service.
+7f90ed81-9a05-4eef-800e-b1137427ab1c,negative,Other,Ads,Not specified,Fewer ads,User complains about having too many ads.
+cffe20c8-e426-43ff-8b5a-4ac390b53fd1,negative,PricingIncrease,"Ads on Premium, Podcasts, Price Hike",Podcast listening,Ad-free premium podcasts,User is upset about paying higher prices for premium while still receiving ads during podcasts.
+2b521c9d-18eb-4298-8027-292919994af4,negative,UI_UX_Friction,"Skip limit, Ads, Free tier limits",Not specified,"More skips, fewer ads",User is extremely frustrated by the strict six-skip limit and non-stop ads on the free tier.
+3e1edbe1-657b-4b01-93ab-128144bde55e,neutral,PricingIncrease,"Price, Student plan",Not specified,Cheaper student plans,User likes the app but feels the subscription is too expensive and lacks a plan for teen students.
+f8662044-8109-498f-91ea-2804dd06d3ad,negative,Other,Free tier,Not specified,Usable free tier,User states the free version is bogus.
+a34de0b1-df39-4c16-b329-3d6b9b171cf8,negative,UI_UX_Friction,Free tier limits,Not specified,Unlimited free listening,User complains that the free version does not allow unlimited song listening.
+faa22d03-1aca-49c9-86af-905876527580,neutral,Other,"Ads, Music library",Not specified,Fewer ads,User likes the music library but dislikes the high number of ads.
+f6d1a67f-4cf7-4cfd-88d8-e99ae6a03c61,negative,UI_UX_Friction,"Updates, Skip limit, Song selection",Not specified,Ability to skip and choose songs,User considers it the worst app since a recent update removed the ability to skip and choose songs.
+1acf7bac-42cc-443a-b3d5-3d01e5bd4095,negative,Other,Premium push,Not specified,Not specified,User uses profanity in Malayalam to express frustration about the premium subscription.
+9a4a4408-e46c-4fd7-9c87-c08f0ee2a66d,negative,UI_UX_Friction,"Widget, Updates",Not specified,Working widget,"User is frustrated by being forced to use a new, larger widget that doesn't work."
+b704302e-4364-4285-8bae-d8db555ee130,neutral,None,General comment,Not specified,Not specified,"User leaves a neutral, non-specific comment."
+faea8c51-499d-4181-b9f6-32bbf4d9bcb1,negative,Other,AI integration,Not specified,Remove AI features,User simply demands that the app stop using AI.
+29f90260-b297-46b6-9dff-edac191f4aaf,negative,SmartShuffleIssues,"Ads, Skip limit, Suggested songs",Playlist listening,Play specific playlists without suggestions,"User is quitting the app due to excessive ads, limited skips, and unwanted suggested songs interrupting their playlists."
+0c0f7089-f887-439e-b54b-32a07e30e6f0,negative,Other,"Downloads, Bugs",Offline listening,Reliable offline downloads,User complains that downloading songs is not working.
+e4fbdc2e-1bfe-452b-9fc7-c9f7e257fbac,negative,UI_UX_Friction,"Widget, Harassment",Not specified,Working widget without forced updates,User complains the new widget is broken and they are constantly harassed to stop using the old one.
+5051e0a1-2057-4a3c-aa22-677291ab024f,negative,UI_UX_Friction,"Widget removal, Cancellation",Not specified,Old 4x1 widget back,Long-time subscriber is canceling their subscription because the new widget sizes look bad and the 4x1 was removed.
+695bf053-80ab-4ac8-8c40-14726a05bdd7,positive,None,General praise,Not specified,Not specified,"User leaves a short, positive review."
+caa24fcc-70ef-4177-a1e4-731e01ca1c54,negative,Other,"Performance, Data usage",Not specified,Faster performance,User complains the app is slow and wastes data.
+77043713-1144-487f-95a2-c9e890584d9e,positive,None,"Ease of use, Recommendation",Not specified,Not specified,User highly recommends the app and finds it easy to use.
+12953a7a-603a-4c06-9904-488f862d6b69,negative,PricingIncrease,Premium,Not specified,Free access,User demands the removal of the premium subscription requirement.
+bf256586-aef6-48b2-95e2-070852a1ed3b,negative,UI_UX_Friction,"Premium lock, Song selection, Forced recommendations",Playing specific songs,Ability to choose songs without premium,User hates that they are forced to listen to recommended songs instead of their own choices unless they pay for premium.
+64911fd6-3d4a-426f-ad29-a7e60c012fd7,negative,UI_UX_Friction,Premium push,Not specified,Fewer premium prompts,User is annoyed by constant prompts to buy premium when they have no money.
+927f68bd-5d29-40ab-8af2-853691ad5746,negative,UI_UX_Friction,"Subscription expiration, Ads, Premium popups, Song selection",Playing specific songs,"Accurate subscription end date, ability to choose songs",User uninstalled the app after receiving ads and restrictions a day before their premium subscription officially ended.
+8089f1cb-f59a-42dc-8415-01365ea7f9cd,negative,UI_UX_Friction,"Widget, Artist payouts, Price",Not specified,"Better widget, Fair artist compensation",User is considering switching to a cheaper competitor due to the bad new widget and poor artist support.
+68028d29-242e-4ec6-8b40-4b422eed4c2e,negative,UI_UX_Friction,"Widget, Forced updates",Not specified,Old widget back,"User is outraged that they are being forced to use a huge, poorly functioning new widget instead of the old one."
+97b3d948-1412-455d-b548-998093d09104,negative,Repetition,"Shuffle, Smart Shuffle, Repetition",Playlist listening,True random shuffle,"User complains that the shuffle feature, including smart shuffle, repeats the same songs frequently in large playlists."
+bf771100-811d-40ea-bfff-31f1a7f6e009,negative,UI_UX_Friction,"Widget, Freezing, Missing controls",Not specified,Widget with play controls,"User is forced to use a new widget that freezes and lacks basic play controls, acting only as a shortcut to the app."
+c416a747-37da-4735-8696-d56069a6837c,negative,Other,"Broken app, Customer support",Not specified,"App stability, helpful support","User is frustrated by a completely broken app and unhelpful, repetitive customer support."
+a382a39e-ce65-45af-9fec-face90585777,negative,Other,"Glitches, Black screen, App crash",Not specified,App stability,User warns others not to download the app because it is super glitchy and stuck on a black screen.
+562a0720-de97-44ca-977f-bb6055c2720d,negative,PricingIncrease,"Ads on Premium, Audiobooks, Predatory billing",Audiobook listening at work,"Ad-free premium, affordable audiobooks","User heavily criticizes the predatory billing system, specifically the high cost of audiobooks and ads on premium."
+74d21efe-dc95-4fc9-a864-82f562754dbc,positive,Other,Discover Weekly,Discovering new music,Better Discover Weekly recommendations,User likes the app but wishes the Discover Weekly playlist was more proactive.
+3ba93a7f-fdca-49ff-8856-0c5a3e837916,negative,UI_UX_Friction,Premium lock,Not specified,Usable free tier,User complains that everything in the app requires payment.
+1688fca6-621a-4ad2-802d-0c337d0e97ca,negative,Other,"Ads on podcasts, AI integration, App performance",Podcast listening,"Faster app, less AI",User complains that AI integration has made the app extremely slow and dislikes ads on podcasts.
+a6afc8b3-fc1c-42d5-89b4-c97f2f7548a2,negative,Other,"App crash, Connection error, Communication",Not specified,"App stability, better communication",User is frustrated by an unannounced app crash that falsely prompts users to check their internet connection.
+2d8e82e9-8a5a-483b-996d-a22e0b96f7db,negative,Other,"Error message, Bugs",Not specified,App stability,User gets a persistent error message even after reinstalling the app.
+ab22df34-431b-4703-a1cf-4e3f1d985f23,negative,Other,"Login issues, Bugs",Not specified,Ability to sign in,User cannot sign in to the app despite trying all troubleshooting steps.
+cdeea1a9-bc06-4b90-ba8a-2ca04851bd50,negative,Other,"App loading, Bugs",Not specified,App stability,User cannot even open the app.
+c9cdb51a-65ed-4ad3-ad3e-9a3238065b6e,negative,Other,Network issues,Not specified,Stable connection,User experiences constant network issues.
+8bf40c14-d09e-4453-b64c-69daaf45394f,negative,Other,Connection error,Not specified,App stability,User gets a false connection error despite being on WiFi.
+22a30f68-8092-4913-814d-296f6f9f424a,negative,Other,Connection error,Not specified,App stability,"User is frustrated by persistent false ""something went wrong"" and connection error messages."
+2e18bec7-4f71-4c9a-acb4-8c9e37a227d2,negative,Other,Cross-device issues,Laptop listening,Cross-device playback,User cannot play music on their laptop.
+8d254966-681e-4855-9536-db7f57ded021,negative,Other,App crash,Not specified,App stability,App fails to open.
+406b9959-3d25-48f1-b019-6237f653fd29,negative,Other,"App crash, Updates",Not specified,App stability,App stopped working after a UI update.
+04201004-ebf3-428b-9e9b-3dac5cf1d9d0,negative,Other,App crash,Not specified,App stability,App is not working.
+7a778eeb-4ba9-4449-9550-b79d19630066,negative,Other,"App freezing, Bugs",Not specified,App stability,App frequently freezes and bugs out on a new device.
+6facb4df-8a40-4885-b3e0-edb53f602481,negative,Other,Error message,Not specified,App stability,User constantly gets errors.
+7b3a9562-ed66-4ee3-a233-ac79c216b830,negative,Other,"Connection error, App loading",Not specified,App stability,App won't load and falsely claims there is no connection.
+2b9835bd-ff83-4a7a-a8bf-83ac8b30444e,negative,Other,Connection error,Not specified,App stability,App falsely prompts to check connection despite active WiFi and data.
+dd6292b6-1a03-460d-8319-eff1348bc773,negative,Other,"Connection error, Login issues",Not specified,App stability,User cannot log in due to a persistent false internet connection error.
+eada70d6-b1a6-4953-a83f-f5ab87e862b3,negative,Other,Connection error,Not specified,App stability,User is irritated by a persistent false internet connection error that reinstalling doesn't fix.
+1b647301-e8fa-4868-8c06-8287d2ee86fd,negative,Other,App crash,Not specified,App stability,App sometimes does not work.
+887caa96-0e66-4c62-9849-06e7d4fe2bbc,negative,Other,"App crash, Error message",Not specified,App stability,"User cannot open the app due to a ""something went wrong"" error."
+a5133f0b-4324-4820-a3bb-cf2a686e9d3e,negative,Other,"App crash, Error message",Mobile listening,App stability,Mobile app completely stopped working and displays a constant error message despite troubleshooting.
+a02f11e4-e003-457c-9ca3-72ac1b591b89,negative,Other,"App crash, Error message",Not specified,App stability,App is completely broken and shows an error message even after reinstalling.
+dee9fc30-3f7a-4a1f-98a1-86804d1346ba,negative,Other,Connection error,Not specified,App stability,App falsely claims there is no internet connection.
+1f7b017b-0c2a-4863-869e-16c71d96dc2a,negative,Other,App loading,Not specified,App stability,App fails to load or work.
+56623e36-e058-4d04-b542-b41a5c2b41da,negative,Other,Visual bug,Not specified,Bug fixes,User experiences a bug where their profile picture is blurry.
+a5758474-967d-400c-a352-03bf85f62905,negative,Other,"Login issues, Connection error",Not specified,Ability to sign in,Premium user cannot log in due to a false internet connection error.
+9209e6ce-11c0-4e18-98b7-85e7e7a73557,negative,Other,Connection error,Not specified,App stability,Premium user faces false connection issues despite having stable internet.
+d07594d2-b10b-48f9-b3d9-a739cc3dc732,negative,UI_UX_Friction,"Premium lock, Song selection, Forced shuffle",Playing specific songs,Ability to choose and shuffle songs,User is extremely angry that basic features like choosing and shuffling songs are locked behind a paywall.
+4a1ebd22-9275-4c27-b347-3871312692d7,negative,Other,"App crash, Connection error",Not specified,App stability,User is frustrated that the app won't open despite a fine WiFi connection.
+f563b645-d41b-46d8-b483-abdf8d70b841,negative,Other,"Account suspension, Premium",Not specified,Reliable subscription management,User is frustrated because their premium account keeps getting suspended for no clear reason.
+624f5ad0-97dd-4d02-8399-1364fdf7114e,negative,Other,App crash,Not specified,App stability,App crashes frequently.
+ea1fdb5b-1f1d-4263-9dfd-9a97d216c633,negative,Other,General complaint,Not specified,Not specified,User simply states the app is horrible.
+7874363b-b448-4b5f-a8d2-16c12eb7af0d,negative,Other,"App crash, Error message",Not specified,App stability,App is unusable due to a persistent error message.
+f253e946-b1fe-401f-9b05-c1f7f4c6125c,negative,Other,App crash,Not specified,App stability,App fails to open.
+0357667d-4ec3-46d4-a89c-10d37c2323d4,negative,Other,"App crash, Customer service, Premium",Not specified,"App stability, Reachable support",User is disputing their premium charge because the app won't open across multiple devices and support is unreachable.
+23271818-de25-4c2a-adb3-4ce53a0234ec,negative,Other,"Playback issues, Connection error",Not specified,Stable playback,App stops playing music after 14 seconds due to a false connection error.
+da5af893-ab2d-4791-a6a6-43ac869f0b3e,negative,Other,"App crash, Playback issues",Not specified,App stability,User is frustrated because their favorite app has completely stopped working and won't even open.
+6dddc580-1b62-4fda-a3a7-33b085e526e8,negative,Other,"App freezing, App loading",Not specified,App stability,App freezes frequently and often fails to load with an error message.
+e03a5b3b-80b6-4a1e-b1a9-caaf307ac924,negative,Other,"Updates, Error message, Offline mode",Not specified,App stability,"App broke after an update, showing an error and forcing offline mode despite having internet."
+f1a4654e-8a6c-432c-baa8-def140491c52,negative,PricingIncrease,"Price Hike, App bloat",Not specified,"Lower price, cleaner app",User feels the app has become bloated and the subscription price is too high.
+0658aec5-03d6-4b13-9674-e8d61a56a51e,negative,Other,App freezing,Not specified,App stability,User complains the app gets stuck.
+2a99dd1c-49d8-404b-be6c-a66e65527d75,negative,Other,Premium push,Not specified,Free alternatives,User states they will find a new player because the app focuses too much on making money.
+f8c2845b-08d7-436e-b15d-c8589757429a,negative,Other,"App crash, Premium",Not specified,App stability,App is not working despite the user having premium.
+78c8c2ff-db00-4464-a29e-38bbd191b6af,negative,Other,Connection error,Not specified,App stability,App falsely shows a network error despite full internet access.
+50351f02-8d94-48cc-b849-4f26b5245d7a,positive,None,"Music library, Ads",Not specified,Not specified,User praises the music selection and finds the ads tolerable.
+6e5e3fb4-0835-43b5-90c2-5a2665907c29,negative,Other,"Updates, App crash",Not specified,App stability,App stopped working after an update.
+1d2304f0-2898-4331-bbb3-e759ddafffae,negative,Other,"Updates, App crash, Error message",Not specified,App stability,App completely stopped working and gives an error message after an update.
+d883aa86-ee47-4419-9999-f851e6471740,negative,Other,Connection error,Not specified,App stability,App is unusable due to a persistent false connection error.
+046a9a50-2c70-400b-bed4-21c7ba4f6f51,negative,Other,"App stability, Premium",On the go listening,App stability,User is considering canceling their subscription because the app is highly unreliable.
+a3d85a6c-3ff5-475d-b119-cc2ed2c76323,negative,Other,Error message,Not specified,App stability,"User receives a ""something went wrong"" error message."
+24b9b40f-b9d5-4fcb-b0be-77017f3a18b2,negative,Other,"Updates, App crash",Not specified,App stability,App completely stopped working after a recent update.
+5d52cef5-2b4f-4c14-bc11-b9d47a91f112,negative,Other,"Connection error, App crash",Not specified,App stability,User has been unable to open the app for weeks due to a false connection error.
+7c1d3e96-c1b3-4806-b98b-593887745243,negative,PricingIncrease,Corporate greed,Not specified,Not specified,User feels the company is too greedy for money.
+784e384f-5169-4da5-a188-93cca5d835ca,negative,Other,App crash,Not specified,App stability,App fails to open properly.
+542298d9-ad1f-42ae-b846-69de6cd3d714,negative,Other,"Error message, Account switching",Not specified,App stability,Premium user experiences frequent errors and gets randomly switched to another account.
+649352d7-2ae6-4bc7-af5d-37b9f87f83c3,negative,PricingIncrease,"Price Hike, App stability",Not specified,App stability,"User is frustrated by rising costs and declining app quality, threatening to cancel premium."
+30a3940c-dd4b-43e4-998f-1ab4046d8d8d,negative,Other,"Search bug, Connection error",Not specified,Working search,User cannot use the search function due to a false connection error after an update.
+338843b0-87a3-453e-885e-afcf4604164b,negative,Other,Bugs,Not specified,Bug fixes,User states the app is buggy.
+f3e35220-3938-416e-b10b-fad03b0f40df,negative,PricingIncrease,"Price Hike, Bugs, Shuffle",Not specified,"App stability, Better shuffle","User complains about price increases, daily visual glitches, connection issues, and a terrible shuffle system."
+782c525c-04ab-48cd-896f-3a063289e583,negative,Other,Connection error,Not specified,App stability,App falsely claims there is no connection despite a strong 5G signal.
+b88fa871-eef9-4e94-8988-90fde53bb9b9,negative,Other,"AI bloat, Connection error, Offline mode",Not specified,"App stability, Less AI",User is frustrated by AI bloat causing loading errors and forcing the app into offline mode.
+c37f4aa7-65a9-44c7-9cac-41c5d991f7f6,negative,Other,App crash,Not specified,App stability,App completely refuses to function.
+f81506fb-abf8-4fdd-9c89-8395235f39c4,negative,Other,Performance,Not specified,Faster performance,App is laggy and slow.
+1994cba5-b55a-4969-8221-033eaf55b07d,negative,Other,App crash,Not specified,App stability,App is not working.
+0492eddc-4d1a-4762-b551-bceda00bb2d2,negative,Other,"Offline mode, AI developers, Broken app",Not specified,App stability,"App is completely broken, forcing offline mode and blocking access to login and settings."
+435042ba-4489-45c0-ab05-3125c6c5d381,negative,PricingIncrease,"Expensive, Unusable app",Not specified,"App stability, Value for money",Long-time premium user is frustrated paying high fees for an app that has become mostly unusable.
+8f9bda34-04f6-4376-8d4a-ec56e6dda524,negative,Other,"Search bug, Connection error",Not specified,Working search,User cannot search for songs due to a persistent false connection error.
+606c0320-af81-419f-8039-4d986885b82a,negative,Other,"Search bug, Premium",Not specified,Working search,Premium user complains that the search box is not working.
+6d49c646-0f01-429d-8ac7-9cd6b8c6bb80,negative,UI_UX_Friction,"Bugs, Feature bloat, Content push",Not specified,Focus on core music functionality,User is frustrated by increasing bugs and the app pushing non-music content like podcasts and videos.
+4a1915a9-d0e9-4834-aa3b-210738594c77,negative,Other,Connection error,Not specified,App stability,Long-time user is experiencing a persistent false connection error.
+8bbf5732-efb8-45b2-97f6-53ee15172c57,negative,Other,"Playback issues, Search bug, Updates",Not specified,"Stable playback, Working search",User cannot play sounds or use the search box after a recent update.
+5f31e2e9-ed4b-442f-ae83-fb9b7ff0bcc3,negative,Other,Connection error,Not specified,App stability,App has been unusable for days due to a false connection error.
+9c56ce90-34ac-4d46-aeea-c52d56e1d736,negative,Repetition,"Shuffle repetition, Glitches, Price",Playlist listening,"True random shuffle, App stability",Premium user complains about the shuffle feature repeating the same songs and frequent app glitches.
+a96b4c25-4b6c-4be0-8c57-18909ee27db8,negative,UI_UX_Friction,"Missing feature, Tesla integration, Updates",Car listening,Access to DJ feature,User is frustrated that a recent update removed access to the DJ feature from their Tesla app.
+b87377cb-029d-4016-a9e9-124810d3f276,negative,Other,Connection error,Not specified,App stability,User cannot open the app at all due to a persistent false connection error.
+bfef2c34-8c01-4365-bbe5-42a5131ca0d8,negative,Other,"Login issues, App crash",Not specified,App stability,User cannot access the app.
+b66f06fb-4456-4cbd-aee4-5c57c78eedbe,negative,Other,"App crash, Updates, Premium",Not specified,App stability,Premium user cannot open the app on their new Samsung device after a recent update.
+51e690c4-7ede-4131-bc64-1f6b828414f6,negative,Other,"Connection error, Offline mode",Offline listening,Reliable offline playback,User is frustrated by constant false offline errors and the inability to access downloaded music without starting it online first.
+d2130190-5b8f-4513-bd79-0e02bd6d9b5d,negative,Other,App stability,Not specified,App stability,App is not working properly.
+f69fcdb7-6d23-4ed8-863c-6b402cd6ca15,negative,Other,"App crash, Offline listening, Price",Offline listening,"App stability, Reliable offline playback","Premium user complains about constant crashes, difficulty playing downloaded music offline, and high prices."
+ac851a7c-c34a-412e-9228-3e0901e0d40c,negative,Other,Content safety,Not specified,Better content filtering for kids,User states the app is bad for kids.
+88b1ddb1-4932-472b-8eb3-9eb48fbc948e,negative,Other,Bugs,Not specified,Bug fixes,App is bugging.
+ff5feb49-c405-4e27-8863-9561e324c6db,negative,Other,"Performance, Connection error, Login issues",Not specified,App stability,"User experiences extreme slowness, false offline errors, and cannot log in even after a fresh reinstall."
+6abd42de-fcf9-4ca5-9741-d69b4be2fa1e,negative,Other,"Updates, Connection error, App crash",Not specified,App stability,"App is completely broken after an update, showing a false connection error even after reinstalling."
+09e5a2a6-3dd7-465e-890b-0081751e6610,negative,Other,App crash,Not specified,App stability,App is not opening.
+6604c7d9-4bf4-4d05-8a16-c1f2dcc5c02a,negative,Other,"Connection error, Bugs",Not specified,App stability,App fails to open due to a false no internet connection error.
+777d5d14-f017-4898-a055-e9b47d59afcf,negative,Other,"App crash, Reinstallation",Not specified,App stability,App stopped working and required a reinstallation.
+61843d16-c749-4902-b6f3-0af538cd6f18,negative,Other,General complaint,Not specified,Not specified,User simply states the app is the worst.
+3be99b77-6257-4464-9cfa-b7a26cd93166,negative,UI_UX_Friction,"AI integration, Widget size, UI changes",Not specified,"Old widget back, Less AI",User is annoyed by the forced use of a larger widget and feels AI integration lowered service quality.
+39a6741b-1abc-489d-8f63-a4bd1dbabec8,negative,Other,Search bug,Playing specific songs,Working search,User is frustrated because they cannot search for songs.
+aed1561b-b4c5-4e14-9b9d-c8ae70ae2da8,negative,UI_UX_Friction,"Updates, Free tier limits, Premium lock, App crash",Album listening,"Usable free tier, App stability",User is angry about free features being paywalled and the app completely breaking after an update.
+26e0d649-09ac-42a6-9dfa-6dcc376ee961,negative,Other,"Glitches, App stability",Not specified,App stability,User experiences a glitch preventing the app from working properly.
+72ea5d7d-95f8-406a-963f-6f57b0a0b1da,negative,Other,"Connection error, Login issues",Not specified,"Ability to sign in, App stability",User is infuriated by a persistent false connection error that prevents them from logging in.
+1d655e28-be66-42ed-bd81-2639273cba3f,negative,Other,"Connection error, Updates",Not specified,App stability,App became inaccessible due to a false connection error even after updating.
+38014119-5f2a-4a2c-99b9-dd6468ec086e,negative,AlgorithmMismatch,"Auto-play, Irrelevant recommendations, Language mismatch",Album listening,"Better targeted recommendations, Language filtering",Premium user is annoyed that the algorithm mixes incomprehensible foreign language songs into their auto-play queue.
+69909dc3-e378-4f4e-9b62-147b97500a80,negative,Other,"Error message, App crash",Not specified,App stability,App is not working and displays a generic error message.
+98b37d7a-fe29-4605-bb54-109c32dc12f4,negative,Other,"Connection error, UI Glitches",Not specified,App stability,User experiences false network errors and UI glitches when minimizing.
+c4b5d778-0883-4b81-93ba-102ce8ff9e60,negative,Other,"App freezing, Search bug, Profile access",Not specified,"App stability, Working core features","User is angry because the app is completely unresponsive to searches, profile access, and logging out."
+8705ee03-b92a-46f9-902a-ca935863172f,negative,Other,"Login issues, Account access",Not specified,"Account recovery, App stability",User cannot open the app and their account appears to be lost.
+93fb2b54-06b6-4bd9-862e-7801f816ffad,negative,UI_UX_Friction,"Premium lock, Song selection, Skip limit",Playing specific songs,Ability to choose and skip songs,User is frustrated that basic features like selecting and skipping songs now require payment.
+9475a50a-3c4e-4919-a7cd-f5aa96d958ad,negative,Other,App stability,Not specified,App stability,User complains the app intermittently fails to work.
+173a31da-295d-485c-a96c-8436b00fefe5,negative,Other,"Device compatibility, App crash",Not specified,App stability,App does not work on the user's device.
+35b23f03-7194-40fe-8d31-194801dfdf64,negative,Other,App crash,Not specified,App stability,User is unable to open the app.
+f9a92cff-05ce-449e-bbee-a215c4e617e2,negative,Other,"Connection error, Error message",Not specified,App stability,App displays network and general error messages.
+acc3cc06-e6be-4f04-b180-4933d7b63a57,negative,Other,"Updates, Login issues, Error message, Premium",Not specified,"Ability to sign in, App stability",Premium user is locked out after an update due to a persistent login error.
+d447c643-88d6-49ac-a9fc-67b0aa9d706d,negative,UI_UX_Friction,"Gesture controls, Playback issues, Offline listening, Podcasts",Podcast listening,"Disable swipe gestures, Reliable offline playback",User is frustrated by overly sensitive swipe gestures losing their podcast place and downloaded podcasts failing to play.
+6788f9cb-d88e-4bec-bf9a-e63cd1a14559,negative,Other,"Ads, Ad frequency, Student",Not specified,Fewer ads,Student user is considering leaving because ads play after every two songs on the free tier.
+4f806d7e-7b94-4854-b32f-97177b36c414,negative,Other,Connection error,Not specified,App stability,App falsely claims to be offline despite an active internet connection.
+3c035c46-6a1f-4f1b-a9df-e16c5bb968a2,negative,Other,General complaint,Not specified,Not specified,User aggressively insults the app developers.
+c5cd7819-2ef3-48a1-a8e6-15b35599c280,negative,Other,"Updates, Playback issues, Downloads",Offline listening,"App stability, Working downloads",App stopped playing music and downloading content after a recent update.
+dbd02549-433d-4606-b136-327c8712f004,negative,Other,App crash,Not specified,App stability,User warns others not to download the app because it doesn't work.
+6edd37f9-be28-410f-b40e-be9479c16b49,negative,UI_UX_Friction,"Ads, Free tier limits",Not specified,Usable free tier,User complains about the heavy restrictions and excessive ads on the free tier.
+eb0dfaf6-7280-44f4-bf7b-593020da4e8f,negative,PricingIncrease,"Expensive, Premium",Not specified,Better value for money,User feels the premium subscription is not worth the cost.
+3ef0814d-5ea7-4c32-94a2-bee10660d77a,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,User is angry that there seem to be more ads than songs on the free version.
+612f6c9f-4efd-457d-a718-f5981aa4e1cd,negative,Other,"App crash, Premium",Not specified,App stability,User is frustrated that the app stopped working immediately after paying for a subscription.
+d7854767-5a56-4cf3-8a7e-c24a39e9e178,negative,Other,"Black screen, App crash",Not specified,App stability,App displays a black screen upon opening.
+07657f21-dba0-4b04-88d6-b9c196b33344,negative,Other,"Ads, Playback issues, Offline listening",Offline listening,"Fewer ads, Reliable offline playback",User complains about excessive ads and downloaded music disconnecting.
+724337bc-f655-4888-a71c-1f10870dcbaf,neutral,UI_UX_Friction,"Premium, Free tier limits, TV Casting",TV Casting,"Usable free tier, TV playlist support",User praises premium but criticizes the free tier and the inability to play mixed playlists on TV.
+74dbea56-0ade-4be9-a43b-745c29942617,negative,Other,"App crash, Premium",Not specified,App stability,Premium user sarcastically complains that the app will not open.
+d00a3e44-bcac-4cc3-bcbc-65ce94e8b177,negative,UI_UX_Friction,Free tier limits,Not specified,Usable free tier,User feels free tier users are treated unfairly.
+8371751f-9570-4946-a4ee-95265d7a2ad0,negative,SmartShuffleIssues,"Forced shuffle, Song selection",Playing specific songs,Play specific songs on demand,User is annoyed that the app plays a different song than the one they selected.
+cf23ff50-d9b4-4f8c-b1c0-5ef2607c9add,negative,Other,Ads,Not specified,Fewer ads,User simply states that ads are bad.
+35e754ac-57f1-47d1-ad6e-d28f6f19eb42,negative,UI_UX_Friction,"Ads, Premium lock, Playback controls, Widget",Not specified,"Basic playback controls, Old widget","User hates the new weird widget, annoying ads, and the inability to play songs from the start without premium."
+e36e661b-3a5b-4b87-a9d7-2dee3a970d50,negative,Other,"Search bug, Missing music, Premium",Playing specific songs,"Working search, Access to previous songs",Premium user is frustrated because they can no longer find songs they used to listen to.
+d9a3418b-8bcc-4b46-9b69-f4883e31b6a3,neutral,None,General comment,Not specified,Not specified,"User leaves a vague, neutral comment."
+b0f19313-32b7-4dca-82b3-5b39bda6532a,negative,UI_UX_Friction,"Premium lock, Playback controls",Playing specific songs,Basic playback on free tier,User complains that playing songs in order requires a premium subscription.
+0e5e510b-351c-4e77-a788-9d57665cd686,negative,AlgorithmMismatch,"Promotions, Home page, Unwanted recommendations",Not specified,Ability to dismiss/hide promotions,User is frustrated by unremovable promotions for artists they don't listen to on their home page.
+c9bd0f52-7444-43ff-ba52-4e8a2ac555e4,negative,Other,"Playlists, Podcasts/News, Bugs",Commute listening,Reliable playlist saving,User is frustrated that their curated daily news playlist gets deleted and replaced with music during their commute.
+563ec69a-e576-410d-b16a-803f9b7f3b0a,negative,Other,"Bugs, App performance",Not specified,App stability,User complains that recent updates have made the app increasingly buggy.
+7b06c429-c6e0-4ac1-a0e4-536446f1aa07,negative,Other,"App performance, Podcasts, Premium",Podcast listening,"App stability, Faster loading",Long-time premium user canceled their subscription because the app became painfully slow and unusable for podcasts.
+9d808110-2144-4451-89e1-4d6763015856,negative,UI_UX_Friction,"Feature bloat, App performance",Not specified,"Faster app, Lite version",User canceled their subscription due to severe feature bloat and extremely slow page loading times.
+8efac0e1-3beb-46b8-abfb-761ccb3770d0,negative,Other,"App stability, Offline listening, Audiobooks, Missing downloads","Audiobook listening, Offline listening","App stability, Reliable offline mode","Premium user is experiencing severe bugs including offline errors, deleted downloads, and wiped audiobook hours."
+980a0140-93b1-47f0-b5cc-957c1b623f03,positive,None,"General praise, UI/UX, Performance",Not specified,Not specified,"User praises the app for being fast, reliable, and user-friendly."
+915e2b67-f8c8-4c74-bcef-4f764b85c469,negative,UI_UX_Friction,"UI/UX, Ads, Payment issues",Not specified,"Better UI, Reliable payment processing","User finds the interface poorly designed, complains about ads, and is unable to update their payment method due to country restrictions."
+4890844b-faf3-47af-a2eb-33bedea1d74a,neutral,Other,"Audio quality, Feature request",Not specified,Dolby Atmos support,User requests Dolby Atmos support for Spotify Premium.
+5f326f20-1ca0-4f1e-b8d8-f689828a200a,positive,None,General praise,Not specified,Not specified,User leaves a positive emoji review.
+aa1d6df4-99be-4de3-86f8-4e42eb11ff14,positive,None,General praise,Not specified,Not specified,"User leaves a short, positive review."
+30502705-ac02-4590-b689-08088c4e451f,negative,SmartShuffleIssues,"Shuffle, Repetition",Playlist listening,True random shuffle,User is annoyed that the shuffle feature seems to put songs in a predetermined order rather than truly randomizing them.
+faa1f598-988d-46a8-b9f1-3fb1630860cb,negative,Other,"App performance, Premium",Not specified,Faster app,"User complains that the app is extremely slow, taking over 10 seconds to load any action."
+d707d196-ed52-40cf-9142-384d79b3be8c,negative,Other,"App crash, Loading issues",Not specified,App stability,User states that the app frequently fails to start or load.
+e9186f9e-c317-4d56-9fe1-62cf5eb868c6,negative,Other,"Audiobooks, Playback issues",Audiobook listening,Reliable audiobook playback,User is frustrated that audiobooks frequently fail to play or cut off the last few minutes of chapters.
+47a179e0-291e-4b8c-ab9a-48830d3ae4a3,negative,UI_UX_Friction,"Widget, Bugs",Not specified,Working widget,User reports that the home screen widget has stopped working.
+1252c201-e2dc-41d0-9dd8-1c5469dec2c9,negative,Other,"Subscription, Trial, Cancellation",Not specified,Keep trial active after cancellation,"User is disappointed that their 3-month premium trial ended immediately upon canceling auto-renew, wasting their Adidas points."
+aec7054c-3a86-4e7e-9f6d-69104aaab4f7,positive,None,"Discover Weekly, Algorithm, Offline listening, Audio quality",Discovering new music,Not specified,"Long-time user praises the app's algorithm, Discover Weekly, sound quality, and offline capabilities."
+e088b628-7605-4905-8f3d-e74d803c7c3f,neutral,Other,"Free tier, Ads",Not specified,Fewer ads,User recommends the free tier but notes that recent updates have made the ads somewhat overwhelming.
+4d7e733d-a2a7-4360-b8b1-0f10d98c71e5,negative,Other,"App performance, Feature bloat",Not specified,"App stability, Faster app",Day-one subscriber is considering switching because recent feature additions have severely tanked app performance.
+1edb63a8-3996-41da-a5e9-52a69d234a0e,negative,UI_UX_Friction,"Premium lock, Free tier limits",Not specified,Usable free tier,User feels the app is completely unusable without a premium subscription.
+4661890d-c1ea-47d5-9bc9-e9ce109e2daa,negative,UI_UX_Friction,"Widget, Bugs, Popups, Price Hike",Not specified,"Working widget, Ad-free premium, Lower price","User complains about a buggy new widget, pop-ups despite paying for premium, and increasing prices."
+791ee59e-a39d-423d-9266-c004133b1f86,negative,UI_UX_Friction,"Widget, UI changes",Not specified,"Old widget back, More controls",User is unhappy that the widget has been changed to a grey color and lost playback controls.
+421ac06c-3495-4542-9885-deb5a25ee9a3,negative,Other,General complaint,Not specified,Not specified,User simply states it is the worst app they have ever downloaded.
+b499822c-e3e9-47e1-bc8e-8b58b1c42f8f,negative,Other,Ad length,Not specified,Shorter ads,User finds the minute-long advertisements to be disrespectful.
+0f5998f4-17d8-47ee-92b1-cdee27cd2f9c,negative,Other,"AI integration, App performance, Playlist bugs, Offline playback","Offline listening, Playlist curation","App stability, Reliable playlist adding","User is frustrated by slow loading times, broken offline playback, and buggy playlist management, blaming the focus on AI features."
+d8930efe-7867-4379-8878-de01fd02e911,positive,None,"Personalized playlists, UI/UX, Lyrics",Daily listening,Not specified,"User praises the accurate personalized playlists, smooth layout, and lyrics feature."
+f7b7b674-0e56-4bfd-b57f-912d2e32c480,negative,UI_UX_Friction,"Free tier limits, Premium lock, Expensive",Playing specific songs,Basic playback controls on free tier,"User is extremely frustrated by the free tier's lack of basic playback controls like repeating, choosing songs, and scrubbing."
+4fb11640-7b0a-4e94-8861-1321ff8a32de,negative,Other,General complaint,Not specified,App stability,User simply states the app is unusable.
+823afdd2-e72a-429d-906f-7ba855da8853,negative,Other,"Storage space, Cache",Not specified,Better storage management,User is confused and annoyed by the app taking up a large amount of storage space despite having no downloaded music.
+b40a37a7-9d3b-4f79-abfd-4cd1e722d15c,negative,Other,"Updates, Playback issues",Not specified,Stable playback,User reports that a recent update broke the app's ability to play music.
+383f45a8-4a8b-4f3a-8d93-2b146171c090,negative,Other,"App performance, Loading speed",Not specified,Faster app,"User complains that the app is painfully slow to load across multiple devices, even after reinstalling."
+8886abef-6a3d-4821-9cbb-b2a26701282f,positive,None,"Playlist management, Music library, Podcasts, Audiobooks",Playlist curation,Not specified,User loves the app's library and how easy it is to manage playlists.
+b72214d8-49a0-4baa-8f2a-c7142ced446b,negative,Other,Ad length,Not specified,Shorter ads,User complains about full 30-second advertisements.
+827cbe2f-1bb1-46d4-a369-c5b36a159eb5,negative,Other,Ads,Not specified,Fewer ads,User feels that the ads ruin the app experience.
+80879b7e-d931-4b1b-b1ba-015d3cb71951,negative,UI_UX_Friction,"Premium bug, App performance, Jam feature",Social listening (Jam),"App stability, Recognized premium status",Premium user is frustrated by constant lag and being falsely blocked from premium features like Jam.
+61e5a9d1-a4a8-44e7-bc14-232809c32980,negative,UI_UX_Friction,"Free tier limits, Song selection, Ads",Playing specific songs,Ability to choose songs on free tier,User finds the free version useless because they cannot select specific songs to play.
+0002d45e-5eea-4875-848d-1de2b333432b,negative,UI_UX_Friction,"Widget, Bugs",Not specified,Working widget with feedback,User complains that the new widget is unresponsive and fails to open the app reliably.
+495d9f6b-2c76-4c53-a496-8f291697a357,neutral,Other,"App Icon, Updates",Not specified,Updated app icon,User notes that the new disco ball logo is not appearing on their phone despite updating the app.
+c6c137c4-94c3-48cc-8547-c4769d8a6b63,negative,UI_UX_Friction,"Premium lock, Downloading",Offline listening,Free downloading,User is frustrated that downloading music requires a premium subscription.
+5cb05a3e-74f5-46d8-badc-62fcbf5d9346,negative,UI_UX_Friction,"Premium lock, Ads, Replay song, Scrubbing",Playing specific songs,Ability to replay and scrub songs without premium,User is upset about long ads and basic features like replaying or scrubbing songs being locked behind a premium paywall.
+c1e31a81-f2cf-4973-86c0-7aeb98e57ca0,negative,UI_UX_Friction,"Widget, Bugs",Not specified,Working 4x1 widget,"User is frustrated that the 4x1 widget keeps breaking and prompting for a 4x2 widget, which also fails to resolve the issue."
+38a85bdf-fe61-4d81-9ab4-ba469544adfb,negative,Other,"Ads, Playback issues, Missing music, Bugs",Playlist listening,"Stable playback, Access to saved songs","User is upset about excessive ads, inability to play songs from playlists, and all their saved songs disappearing."
+58a94bb4-07d3-471d-bc78-718ec79c39e9,positive,None,"Recommendation, Tracking listening",Tracking listening habits,Not specified,User highly recommends the app for keeping track of listening habits.
+a772bc6d-63f8-4380-86d0-be077c974fc2,negative,AlgorithmMismatch,"AI DJ, Irrelevant recommendations, Customer support",Playing specific artists,Accurate AI DJ requests,User finds the AI DJ inaccurate for playing requested artists and mocks the support suggestion to reinstall the app to fix it.
+db782a7e-5a47-4ca0-bb07-1bec933fe4e5,negative,UI_UX_Friction,"Widget, Updates",Not specified,Old widget back,User is annoyed that a recent update ruined a perfectly fine widget.
+508cb2ba-b523-4ddb-9121-44b9d23c02b1,neutral,Other,"Ads, Music library",Not specified,Fewer ads,User likes the music selection but hates the ads.
+4bdee0e6-95de-4c72-8299-b970f5a1967e,negative,Other,General complaint,Not specified,Not specified,User simply states the app is useless.
+072f7a2c-bdc8-4ebb-99c0-0057e7ea9d56,negative,Other,Ads,Not specified,Fewer ads,User complains about having too many ads.
+3234faf4-057d-4bd4-87c7-5b20f6cd3e36,negative,UI_UX_Friction,"Premium lock, Free tier limits",Not specified,Usable free tier,User feels that free listening options are constantly being reduced to push the premium subscription.
+2da40a29-99cb-4c91-8470-a806010a9b8a,negative,UI_UX_Friction,"Playback controls, Premium lock",Replaying songs,Ability to repeat songs,User complains that they cannot put a song on repeat.
+d85bd9fd-9b69-4830-8834-4a3c0535d4ce,negative,PricingIncrease,"Ads on Premium, Podcasts",Podcast listening,Ad-free premium experience,User is unhappy about hearing ads during podcasts despite paying for a premium subscription.
+9340854a-949f-4f5a-82ba-9e0260ee2568,negative,UI_UX_Friction,"Bugs, Playlist errors, Loop music, YouTube Music comparison, UI design",Replaying songs,"Bug fixes, better UI, loop functionality","User regrets their premium subscription due to bugs, playlist errors, inability to loop music reliably, and outdated UI compared to YouTube Music."
+98d30c4c-a718-4e29-99c5-4907860d9eec,positive,None,"Background play, Music library",Background music,Not specified,User loves the app for its extensive library and the ability to play music with the screen off.
+203abc44-9ccf-46bd-aee5-aadbde4892cb,negative,Other,"Ads, Ad length",Not specified,"Fewer/shorter ads, ability to skip","User complains about long, unskippable, and excessive ads."
+0b48f7b1-703f-4bc8-8491-3435d927704f,positive,Other,"Missing music, Search issues",Playing specific songs,"Better search accuracy, specific song availability","User thinks the app is great and worth premium, but struggles to find specific OST tracks that seem to be missing or hidden in playlists."
+f7ad796c-3b63-4de1-b33a-c2c80615745e,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,"User sarcastically complains that they are listening to songs between ads, rather than ads between songs."
+671680ff-1dac-449b-b8d0-5d16fdf37f80,negative,Other,"Performance, Playback issues",Not specified,Smooth playback,User complains that the app has been stuttering and pausing a lot recently.
+49ff70a0-502d-4be7-b114-8936d37059d2,negative,UI_UX_Friction,"Premium lock, Loop music",Replaying songs,Ability to loop songs on free tier,User is frustrated that looping songs is locked behind a premium subscription they cannot afford.
+c965e626-5e95-42e5-acc1-cc3828356c64,negative,UI_UX_Friction,"Ads, Forced shuffle, Premium push, Price",Playing specific songs,"Fewer ads, ability to choose songs, lower price","User likes the app but finds the excessive ads and forced shuffle unbearable, suggesting a price reduction for premium."
+cca033ab-7779-4215-b375-cfadf9c47749,negative,SmartShuffleIssues,"Ads, Forced shuffle",Playlist listening,"Play playlists in order, fewer ads",User complains about too many ads and their playlists not playing in the correct order.
+2a09c1dc-e372-4306-9517-4b9e5148d64a,negative,UI_UX_Friction,"Widget, UI design",Not specified,Better widget design,User simply states the widget is ugly.
+fa993414-d8fd-469e-af7c-40d60379a297,negative,Other,"Ads, Premium push",Not specified,Usable free tier,"User calls it the worst app, describing it as just an ad box designed to force premium subscriptions."
+ac8068e3-bf90-42d2-9d72-9215a6fa0a46,negative,Other,"Performance, App loading, Premium",Not specified,Faster performance,Premium user is frustrated by the app's constant lagging and slow loading times compared to other apps.
+e972208b-adf6-40a3-8f6f-03d8eead0126,negative,UI_UX_Friction,Widget,Not specified,Better widget,User dislikes the new widget.
+5d54f3d7-07dd-4639-a7e7-683b55b0c250,negative,Other,Ads,Not specified,Fewer ads,User complains about having too many ads.
+30692de6-92df-4673-bd2e-0515f9c81329,positive,None,"Podcasts, Sleep timer, Collaborative playlists, Premium","Night listening, Social listening",Not specified,"User highly praises the app's features like podcasts, sleep timer, and collaborative playlists, finding premium worth the cost."
+4ae7708e-a57f-43ab-80b1-94122a3d5dc0,negative,UI_UX_Friction,"Free tier limits, Premium lock, Loop music",Replaying songs,Ability to replay songs on free tier,User finds the free version disgusting because it prevents them from repeatedly playing a single song.
+188c2afa-32bf-4af0-9db6-8649afc134a6,negative,UI_UX_Friction,"Widget, Bugs, App crash, Forced updates",Not specified,"Old widget back, Working widget","User is angry about being forced to use a new, buggy widget that crashes, preferring the old one."
+8d61e7a3-c91a-4583-abc4-b7e29e96c829,negative,Other,"Battery drain, Background processes",Multi-device listening,Better battery optimization,User complains that the app severely drains their phone battery in the background while music is playing on another device.
+f3a39325-7387-44bb-a5bc-b28e226680a9,negative,UI_UX_Friction,"Premium lock, Song selection",Playing specific songs,Ability to choose songs on free tier,"User is frustrated that after canceling premium, they lost the basic ability to choose which song to play."
+9fe23333-92b3-47cf-90a1-b2e55694e550,neutral,AlgorithmMismatch,"Fake music, Remakes, Metadata accuracy",Not specified,"Accurate song metadata, filtering out fake originals",User likes the music but demands better regulation of fake remakes and inaccurate metadata claiming to be original tracks.
+4933a367-245d-463f-951f-425c2c695a85,negative,Other,"Playback issues, Bugs",Not specified,Uninterrupted playback,User complains that the music player constantly pauses for no reason.
+de1d9085-1fc3-4ca6-ad27-6cf85c1372b3,negative,UI_UX_Friction,"Free tier limits, Premium",Not specified,Usable free tier,User feels the app is only enjoyable with a subscription because the free plan is terrible.
+d59d0d78-c487-4a1b-8f9f-fe549bda7941,positive,None,"Recommendations, Premium",Not specified,Not specified,"User highly praises the app's recommendations and overall experience, especially with a premium subscription."
+eade628f-3992-416f-8417-f765dc2b251e,negative,UI_UX_Friction,"Free tier limits, Premium lock",Playing specific songs,Usable free tier,"Former premium subscriber is leaving because the free version has become overly restrictive, limiting song choices."
+b501b459-18ec-479f-a771-84d3b8a76406,negative,Other,"Performance, App loading, Offline mode",Offline listening,"Faster performance, App stability","Long-time user is frustrated by the app becoming increasingly slow, unresponsive, and having an unusable offline mode."
+9e836329-5c44-49be-8fcd-2050d6bca78a,negative,UI_UX_Friction,"Widget, Updates, App stability",Not specified,"Working widget, App stability",User notes that a recent update broke the widget and points out widespread issues with app stability.
+2ee0a38c-d8dc-4c8f-93ff-dae679b7a174,negative,Other,"Ads, Premium push",Not specified,Fewer ads,"User uninstalled the app because they found the frequent, interruptive ads to be like aggressive begging for money."
+af5a84e1-ccac-4d0f-b734-dfa7ed0b4eeb,negative,Other,Ads,Not specified,Fewer ads,User finds ads very annoying.
+88838db9-607c-4574-bdc2-88847f726bae,negative,SmartShuffleIssues,"Ads, Ad length, Unrelated recommendations, Premium push",Not specified,"Fewer ads, play selected playlist","User is extremely frustrated by long ads, the app playing music outside their playlist, and constant prompts to buy premium."
+38dad350-dbbe-4439-b6c9-1c10752cae6b,negative,Other,"Customer service, Subscription error, Payment issues",Not specified,Reliable subscription activation,User had a terrible customer service experience after their subscription failed to activate despite funds being held by their bank.
+638031f3-eb46-4666-a6bb-7fee2cc1157a,negative,UI_UX_Friction,"Premium lock, Song selection",Playing specific songs,Ability to choose songs without premium,User is annoyed that they cannot play their chosen songs and that everything requires premium.
+e6ac431e-ff15-463d-a12a-4d9bbcc0ffe6,negative,Other,"App crash, Regional issues",Not specified,App stability,User from Iran is sad because the app is now broken for them.
+cb4518c9-f09c-4afb-88b0-d44f3d0096eb,positive,None,"General praise, Recommendation",Not specified,Not specified,"User highly recommends the app, calling it the best music app ever."
+61e70ce4-5746-4bc9-84ce-67e35318b4a1,negative,Other,"App crash, Background play",Background music,Stable background playback,User complains that Spotify crashes and stops playing music whenever they open another app.
+1670dead-85d4-46e9-aa39-889d34dc01dd,negative,UI_UX_Friction,"Ads, Free tier limits, Skip limit, Replay limit",Not specified,Usable free tier,User complains about the high number of ads and strict limits on skipping and repeating songs on the free tier.
+62f99a8a-b92f-479b-8213-7d36445080ad,positive,None,"Liked songs, Music library",Playlist curation,Not specified,User is happy with the app and has saved 1300 songs to their liked playlist.
+7c11d4f2-991b-4bb1-804e-8b616e9e09f6,negative,UI_UX_Friction,"Ads, UI/UX",Not specified,"Fewer ads, Better UI",User finds the app not user-friendly and complains about constant ads.
+b374472c-6e6e-47ab-a872-af72a29af1f1,negative,Other,"Subscription error, Payment issues, Scam",Not specified,Reliable subscription activation,User feels scammed because they purchased a subscription twice but it never activated.
+bee079ca-6e5c-4ebf-b64e-ef24a7c2282e,negative,Other,"General complaint, Competitor comparison",Not specified,Not specified,User calls the app garbage and recommends using competitors like Apple Music or Tidal instead.
+414d0d9a-d82b-41c4-99f6-7829080d0edc,negative,SmartShuffleIssues,"Forced shuffle, Unrelated recommendations",Album listening,Play albums in order,User is frustrated that the app shuffled songs and started playing tracks from other albums while they were trying to listen to one.
+2712dae1-74e7-4b68-9f8e-4bc861745d7f,negative,AlgorithmMismatch,"Updates, Content filtering, Audiobooks, Podcasts, Premium",Not specified,Ability to hide podcasts/audiobooks,Premium user is annoyed by the latest update pushing unwanted audiobooks and podcasts onto their screen.
+e6d5d114-f46a-4fb9-b490-f56fa186127b,neutral,None,Gibberish,Not specified,Not specified,Review contains unintelligible text.
+bc95f774-ec1c-4660-b00c-ab7d10624bed,positive,Other,Downloads,Offline listening,Better download system,User thinks the app is the best but requests improvements to the song download system.
+b6f53dad-2347-4c91-8046-ec9b65e7d777,negative,UI_UX_Friction,Premium lock,Not specified,Usable free tier,User questions why they have to pay for premium.
+ffe7808f-4bdf-4cf4-9091-942f66c48e6c,negative,Other,"Ads, Playback issues",Not specified,"Fewer ads, Stable playback",User complains about too many ads and the music stopping while listening.
+c6c311a5-3d18-471c-8dba-16fca7f24b23,negative,Repetition,"Shuffle, Repetition",Playlist listening,True random shuffle,User hates that the app cycles through the same few songs despite having over 500 songs in their playlist.
+a498dd95-c1b6-4a8b-b7d7-0aa5e90e1db2,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,User complains that they get 2 ads for every 1 song played.
+221255e0-ce73-49e5-a8c2-95e544e3f492,negative,UI_UX_Friction,"Widget, Updates",Not specified,Old widget back,"User hates the terrible, huge new widget and wants the smaller, simpler one back."
+cd4b23e9-3238-46cc-88ae-603ff2130ca8,negative,Other,"App performance, Offline mode, UI/UX",Offline listening,"Faster app, Reliable offline mode","User heavily criticizes the app's slow performance, noting that even downloaded playlists and basic menus take too long to load."
+0a07f14f-df38-43a0-9c84-89801fdd320e,negative,Other,"App stability, Android Auto",Car listening,App stability,App is not working properly on mobile or Android Auto.
+cead8d6f-3fc6-4eb6-8d33-e3a64c291049,negative,UI_UX_Friction,"Premium lock, Song availability, YouTube Music comparison",Not specified,"Usable free tier, Song availability","User is uninstalling the app because almost every song requires premium to play, unlike YouTube Music."
+beffef6e-6a5a-4739-8700-85925572f4fc,negative,SmartShuffleIssues,"Forced shuffle, Unrelated recommendations, Premium push",Album listening,Play albums in order,"User is frustrated that the app shuffles to completely different albums and artists, feeling it's a desperate push for premium."
+14576aca-ffd9-4d34-8743-6620939b6b85,negative,UI_UX_Friction,"Song selection, Premium lock",Playing specific songs,Ability to choose songs,User calls it the worst app because they cannot select what they want to hear.
+3d830f4b-03bd-4241-b832-f66de58ec0ad,negative,Other,"Ads, Xbox integration, Playback delay",Console listening,"Fewer ads, Faster playback on Xbox",User deducts stars due to too many ads and a 5-second delay when changing music on Xbox via their phone.
+aab73420-80f4-4a21-90ac-5d32ee39e56d,negative,UI_UX_Friction,UI/UX complexity,Not specified,Simpler UI,"User feels the app has become too complicated compared to its earlier, simpler version."
+c529baa0-39b4-4e8e-af99-d5316261960e,neutral,None,General comment,Not specified,Not specified,"User leaves a neutral ""OK OK"" comment."
+ca237aab-77b6-4125-b5cf-066c9bc62d65,negative,Other,"Audio quality, Ads",Not specified,"True Hi-Fi audio, Fewer ads","User calls the app garbage, complaining about fake Hi-Fi audio and full ads."
+67c96cf8-9c11-457f-8ccc-2a266b2839a1,negative,UI_UX_Friction,"Auto-play, Bluetooth, Settings",Bluetooth listening,Disable auto-play on Bluetooth,Premium user is furious that the app automatically blasts music when connecting to Bluetooth and there is no setting to disable it.
+880ec16e-a9e0-4d74-a6e9-74ad1264e14f,negative,UI_UX_Friction,"Widget, Updates, Removed features, Customer support",Not specified,"Working widget, Listen to user feedback","User is angry about a forced, lagging new widget and the removal of features like auto-rotation, criticizing the poor support."
+4210d793-31f9-4dab-a7af-64483817cb4c,negative,UI_UX_Friction,Widget,Not specified,Working widget,User dislikes the new widget and states it doesn't work.
+8d0dcef8-54f0-4793-bb66-4b15f69a5a89,negative,Other,Bugs,Not specified,Bug fixes,User reports a bug on their device.
+66cf229d-b06c-4a7e-8eca-7896cb08a445,neutral,UI_UX_Friction,"Feature request, Voice search, Accessibility",Not specified,Voice search feature,User suggests adding a voice search option to make the app more accessible for elderly users and children.
+8685da74-e0e9-418f-befa-155697f7c89a,positive,None,"Free tier, Playlist creation, Shuffle",Not specified,Not specified,"User praises the app for being fast, free, and having perfect shuffling and easy playlist creation."
+a345d4a1-d7e4-4662-9c77-f45da48f6218,negative,Other,"App crash, Sarcasm",Not specified,App stability,User sarcastically complains about the app crashing frequently.
+043b9da5-d31d-4d10-9b40-20056c72a0a6,negative,UI_UX_Friction,"Widget, Offline mode, Search bug, App freezing",Offline listening,"Old widget back, Reliable offline mode","User demands the 1x4 widget back and complains that offline mode is completely broken, freezing the app and preventing searches."
+5fd14b62-7a43-4401-b8a3-a2186b776d2e,negative,PricingIncrease,"Premium, Service quality",Not specified,Better service for premium,User complains that the service has worsened despite adding premium.
+cc999a24-b353-4d7e-9a3c-f99bfb06f7af,positive,None,"Ease of use, Music library, Discovery, Playlists",Discovering new music,Not specified,"User praises the app for its ease of use, huge library, and help in discovering new artists."
+03e52813-e5d6-4c35-8c89-1608195ff78f,negative,UI_UX_Friction,"Widget, Update",Not specified,Old widget back,User is frustrated by being forced to use a new widget instead of the functional old one.
+946a2490-0b24-4c49-8166-cb61dc97f2d3,negative,UI_UX_Friction,"Free tier limits, Song selection, Price",Playing specific songs,Usable free tier,Student user is frustrated by free tier limits that prevent them from choosing specific songs.
+56556846-5efa-4306-9f77-39904c36772c,negative,UI_UX_Friction,Premium lock,Not specified,Usable free tier,User is angry that the app requires a premium subscription.
+3b631e5c-384f-4d84-b8a7-b9c052e7f799,negative,UI_UX_Friction,"Free tier limits, Song selection, Trial issue",Playing specific songs,Ability to choose songs,User is switching to SoundCloud because they cannot choose songs on the free tier and the trial won't start.
+7193962e-30c1-493e-89ad-4b6467ae66a2,negative,Repetition,"Shuffle, Repetition, Widget",Playlist listening,"True random shuffle, Old widget back",User complains that shuffle only replays a small recent selection and dislikes the forced new widget.
+cb7b2ccc-d37d-43c0-a862-5f5cb699af98,neutral,UI_UX_Friction,"Echo speakers, Widget, Album art",Speaker listening,Album art on widget,User likes listening on Echo speakers but is disappointed the new widget lacks album art.
+50ce7bb8-9c01-438d-b247-5cf457647685,negative,Repetition,"Playlist playback, Repetition",Playlist listening,Continue from unplayed songs,User is frustrated that their playlist repeats already listened to songs when resumed.
+5d53f832-fa53-4161-ae17-e28214d49ed7,negative,UI_UX_Friction,"App performance, Sluggishness, Playback controls",Not specified,"Faster app, Bug fixes","User finds the app incredibly slow and sluggish, with delayed UI responses and broken pause controls."
+176ae73c-5b99-4505-a69a-fe67718c2fa7,neutral,Other,Ads,Not specified,Fewer ads,User likes the app but hates the ads between music.
+9febec4f-ffa7-4235-bfd0-ea4d34b4dc73,negative,UI_UX_Friction,"Free tier limits, Skip limit, Song selection",Playing specific songs,Usable free tier,User finds the app unusable due to strict free tier limits on skips and song selection.
+4f6d8d73-2296-4f4f-ab02-a68d7402ad6e,negative,UI_UX_Friction,"Playlist management, Bugs",Playlist curation,Better playlist editing,User is highly frustrated by buggy and restricted playlist editing features.
+395e8d59-967e-4ae8-aa90-1926a3f85afe,negative,UI_UX_Friction,"Jams, Social features, Advertising",Not specified,Less feature pushing,User is annoyed by the app constantly pushing the Jams social networking feature.
+1fc2f415-6556-47e2-b92a-2617caef46b9,negative,Other,"Updates, Connection error, Premium",Not specified,App stability,"Premium user is frustrated because a broken update causes a false connection error, preventing app access."
+5200dc71-90ba-4348-813e-658e04cbefd3,negative,Other,Bugs,Not specified,App stability,User simply complains about broken features.
+7b6a72d8-33e9-415b-91aa-9e3d39636b09,negative,UI_UX_Friction,"Interface, Auto-play, Bluetooth, Screen rotation",Bluetooth listening,"Disable auto-play, screen rotation support",User wants screen rotation support and the ability to disable annoying Bluetooth auto-play.
+e47a5091-5c29-4b65-95e3-d6eb549644d7,negative,UI_UX_Friction,"Song selection, Competitor comparison",Playing specific songs,Ability to choose songs,User implies Spotify restricts song choice by comparing it favorably to Pandora.
+08e886e1-41c7-42c3-b598-00771e42c027,negative,UI_UX_Friction,"Free tier limits, Forced shuffle, Skip limit, Expensive",Album/Playlist listening,"Play in order, more skips, lower price","User hates the free version's forced shuffle and skip limits, and finds premium too expensive compared to Apple Music."
+44c765f0-098e-40a3-92c1-c705df9c50de,negative,Other,App crash,Not specified,App stability,User states Spotify will not open.
+fa121d22-ac26-4569-b56d-6f527b7faa66,positive,None,"Lyrics, Music videos, Video playlists","Language learning, Video viewing",Subtitles on music videos,"User praises the video quality and daily playlists, but requests subtitles on music videos for language learning."
+ecbdb83d-bcf9-4c5d-8a07-f04faef15dd3,neutral,UI_UX_Friction,"Premium lock, Replay limit, Audiobooks","Replaying songs, Audiobook listening",Free replays and audiobooks,User likes the app but questions why replaying songs and accessing audiobooks requires payment.
+bd86921e-65c6-4b78-a757-e64e4bf861ac,negative,Other,"Bugs, Missing music, Playback issues",Playlist listening,Bug fixes,User experiences a bug where liked songs and playlists won't appear or play.
+f29154fc-5e6d-40ca-bd9f-6fecfb2a239d,negative,UI_UX_Friction,"Widget, Offline mode, Auto-play","Car listening, Offline listening",Working offline widget,User is frustrated that the updated widget requires internet and fails to autoplay downloaded music when driving.
+3aceb503-a0d7-475f-b864-4454d07af589,negative,UI_UX_Friction,"Widget, Bugs",Not specified,Working widget,Paying user finds the new widget infuriating because it incorrectly switches music when changing screens.
+29793274-8805-4a1d-ac58-a64d394cddfb,negative,UI_UX_Friction,"Widget, App performance, Loading speed",Not specified,Faster app and widget,User complains that the new widget and the app itself have become incredibly slow to load.
+e8fdc77a-deed-4731-bd54-1b6763a72e7d,negative,Other,General complaint,Not specified,Not specified,User calls the app absolute trash.
+b9a4e8b9-e33c-4b82-a81b-b5fc60cdbfa2,neutral,UI_UX_Friction,Premium vs Free,Not specified,Usable free tier,User loves the paid version but says everything else sucks.
+2272dfce-03c4-4ad7-a3a6-2d1d9f82d9a9,negative,UI_UX_Friction,"Widget, Missing features, Performance",Not specified,Old widget back,User is forced to use a slow new widget that lacks the quick add button and playback memory.
+9b21af36-354a-472e-b6a8-8004bbe6c8e6,negative,Repetition,"Shuffle, Repetition",Playlist listening,True random shuffle,Long-time user is frustrated that shuffle repeatedly plays the same small subset of songs from a large playlist.
+5f68f239-0eea-47a8-adba-b379d2ed60cf,negative,Other,"Updates, Lost downloads, App loading, AI integration",Offline listening,"Reliable downloads, Faster loading","User complains that updates delete downloads and the homepage fails to load, urging a focus on fixes over AI."
+abf1ac40-b575-46eb-be5e-2efa2810bb41,negative,SmartShuffleIssues,Suggested songs,Not specified,Stop unwanted recommendations,User doesn't mind ads but is highly annoyed by forced recommended songs.
+8b405d6e-4d27-46ca-a27a-0cf1362c00d6,negative,PricingIncrease,"Ads, Expensive",Not specified,"Fewer ads, Lower price",User finds the app has too many ads and is too expensive.
+9ac87dd0-1499-40ed-a2c3-1c5f5ac86883,negative,UI_UX_Friction,"Ads, Forced shuffle, Play limit, Premium push",Playlist listening,Usable free tier,"User sarcastically complains about ads, forced shuffle, and play limits designed to push premium."
+38c8809b-3846-4c65-89d5-261b5c8ee15b,negative,UI_UX_Friction,"Widget, Notifications",Not specified,Stop annoying notifications,"User is annoyed by a persistent, repetitive notification to update their widget even after doing so."
+17302b1a-09b9-4432-b9c0-1fc7a8e4b8cb,negative,PricingIncrease,"Expensive, Ads, Widget",Not specified,"Better value, Old widget",User feels the app is extremely overpriced and complains about foreign ads and the forced oversized widget.
+0b55f5d9-a933-4d79-a21f-86547c221df7,negative,SmartShuffleIssues,Playlist playback,Playlist listening,Play playlists in order,User complains about the app jumping around their playlists.
+4199f16b-f815-4c26-a344-42b21ee7cd85,negative,UI_UX_Friction,Updates,Not specified,Revert update,User demands a recent update be reverted.
+7215278f-ce53-401a-9f55-abff02d99ea5,neutral,UI_UX_Friction,"Premium lock, Downloads",Offline listening,Free downloads,"Minor user likes the app but is sad they cannot download songs without premium, which they cannot buy."
+8a6b7487-26b2-468e-a748-0c90c1b80c51,negative,Other,"Ads, Humor/Sarcasm",Religious listening,Fewer ads,User jokingly complains in Hindi that a scary ad interrupted their religious music (Hanuman Chalisa).
+35436f1b-86d5-4c88-b6d1-0678050e4d17,negative,Other,"Ads on Premium, Podcasts",Podcast listening,Ad-free premium podcasts,Premium user is confused and frustrated about receiving Spotify ads before and during podcasts.
+df3da95a-69f5-4b39-8cda-852c48a2fab0,negative,UI_UX_Friction,"Widget, Forced updates",Not specified,Working widget,User is infuriated by a forced update to a new widget that doesn't work on Android.
+3efb58b0-e1be-4484-b40e-8f6985d51f2e,negative,Repetition,"Updates, Premium, Queue bug, Algorithm repetition",Playlist listening,"Working queue, true song variety, functional hide button",Premium user is frustrated by a broken queue system and an algorithm that constantly repeats the same 12 songs.
+0d855c39-be33-4d55-a11e-dba1f8b42a25,negative,UI_UX_Friction,"App updates, UI changes",Not specified,Revert updates,User dislikes all the recent changes made to the app.
+b15c2dbd-16f5-40ba-a11a-152166af7465,negative,UI_UX_Friction,"Widget, Pop-ups, Sponsored music, Premium",Not specified,"Working widget, truly ad-free premium","Premium user is annoyed by a broken widget, pop-ups, and sponsored music recommendations."
+a4d73eef-ffc3-4d39-a980-e79b8f011deb,negative,UI_UX_Friction,"Free tier limits, Skip limit, Forced shuffle",Playing specific songs,"Ability to play in order, unlimited skips",User likes the app but hates the free tier restrictions on skips and playing songs in a specific order.
+927c7727-e469-4b9f-8823-2108045ee196,negative,UI_UX_Friction,Widget,Not specified,Better widget,User strongly dislikes the new widget.
+c1bce716-5e52-42ad-aa1b-96e7732b76e2,negative,AlgorithmMismatch,"Widget, Premium, Sponsored recommendations",Not specified,"Old widget back, ad-free premium",User hates the new widget and is frustrated by receiving sponsored recommendations despite paying for premium.
+a500f367-ae7b-47d6-be3c-17176e1fa344,negative,UI_UX_Friction,"Background play, Emotional manipulation",Background music,Option to turn off background play,User feels emotionally exploited and is frustrated by the inability to disable background auto-play.
+4ffad75e-2902-4183-bc67-6f3adf3fc62d,negative,UI_UX_Friction,"Widget, Forced updates, Unwanted podcast icons",Not specified,"Old 4x1 widget back, functional widget","User is angry about being forced to use a buggy, oversized 4x2 widget that clutters their screen with unwanted podcast icons."
+1f83ef62-f568-4d3d-be70-247866b4bb45,negative,Other,"App loading, Price Hike, App stability",Not specified,App stability,User is frustrated that the app frequently fails to load despite price increases and successful billing.
+55d357b9-c53e-4f24-bb46-3ca1479c5a39,positive,None,Playlist creation,Playlist curation,Not specified,User enjoys creating playlists on the app.
+c98e14da-c016-4f76-9edd-02822eedeeda,negative,Other,"Edited music, Censorship",Not specified,Unedited original tracks,User complains that Spotify is severely editing certain artists' music to fit an agenda.
+4a493311-1edd-4820-baa2-8d9234645718,negative,Other,"App crash, Error message",Not specified,App stability,"App completely fails to open, displaying a persistent error message even after clean reinstalls."
+3db1eee2-9be7-4bcb-94d4-be6ccb2d6925,neutral,Other,"AI DJ, Playback issues, Bugs",Not specified,Stable AI DJ playback,User reports playback bugs with the AI DJ stopping tracks prematurely or in the middle.
+6d5ed890-1b84-4d29-830b-a8f9b51c4a55,negative,UI_UX_Friction,"Widget, Performance",Not specified,Responsive widget,User finds the new widget laggy and unresponsive.
+ed203000-242b-404b-84da-aba11a55943e,negative,UI_UX_Friction,"Ads, Skip limits, Competitor comparison, Premium lock",Not specified,"Usable free tier, fewer ads","User considers the app useless due to excessive ads and strict skip limits, preferring competitors like JioSaavn."
+5f85931a-2915-4d6d-aac8-be25a6460895,negative,Other,General complaint,Not specified,Not specified,User simply states the app is the worst.
+2cdb5f01-7242-4ac2-95b6-8f9a65db86cd,negative,UI_UX_Friction,"Share menu, Social features",Not specified,Telegram share option,User mocks the app for adding LinkedIn to the share menu while ignoring platforms like Telegram.
+e3ac6f3b-3f77-43ba-8f36-ed7980b69e31,negative,UI_UX_Friction,"Skip limit, Song selection, Free tier limits",Playing specific songs,Ability to skip and choose songs,User is frustrated by the 6-skip limit and the inability to choose specific songs on the free tier.
+b7cd7f55-7946-4682-94e6-5f1e68f33792,neutral,Other,"Lossless audio, Regional availability",High-fidelity listening,Lossless audio in Egypt,User asks when lossless audio quality will be available in their region.
+96c13ca0-3a8f-47c9-9afc-eb8fff49b9c5,negative,PricingIncrease,Price,Not specified,Lower price,User states the app is expensive.
+e7e0fb32-3f7f-44a2-83d6-414d1704bf4a,negative,UI_UX_Friction,"UI/UX changes, Removed features, Price Hike, App performance",Not specified,"App stability, consistent UI, useful features","Long-time premium user complains about feature removal, constant UI changes, price hikes, and worsening performance."
+d9aad297-f684-43f3-870a-f1df3f72787a,positive,None,"Free tier, Premium, Music library, Countdown feature",Not specified,Not specified,"User loves the app, finds the free version ads tolerable, and enjoys the album countdown feature."
+bcf31f57-a7d5-419e-8172-8feae5084230,negative,AlgorithmMismatch,"AI integration, Music feed, Unwanted recommendations",Not specified,"Human curation, less AI recommendations","User is annoyed by the music feed constantly pushing unwanted AI-generated or AI-recommended ""slop."""
+a684226d-e677-414d-a876-71b08cae45e8,positive,None,Playlist listening,Playlist listening,Not specified,User loves listening to their playlists on the app.
+54ebf8b9-50da-4881-a649-87a3ea73b3c7,negative,UI_UX_Friction,"Widget, Offline bug",Not specified,Working widget,"User finds the widget useless because it constantly gets stuck showing ""Spotify offline"" until the main app is opened."
+8f8810d5-ea5c-4a1b-9804-db2c2c784004,negative,UI_UX_Friction,"Widget, UI changes, Missing controls",Not specified,Functional 4x1 widget with controls,User is angry that the forced new widget ruins their screen layout and loses playback controls when resized.
+69d77a2b-3b87-42e3-8bb4-8a7e0aa85c9a,negative,Other,General complaint,Not specified,Not specified,User simply states the app is very bad.
+95c3244d-1f88-4e3e-a205-faa87e530152,negative,Other,Competitor comparison,Not specified,Not specified,User states YouTube Music is better.
+e770132a-fda6-49c5-95f0-1b866065380e,negative,Other,"Playback issues, Background play, Gaming",Background music while gaming,Stable background playback,User complains that music stops and restarts from the beginning multiple times a day while playing games.
+616660df-4048-4955-88cb-575776869e88,negative,UI_UX_Friction,"Local files, Widget",Listening to own songs,"Easier local file integration, working widget",User finds adding local tracks difficult and calls the new widget useless.
+003ff34b-a5f3-4a44-bf10-4c15a1ff2a61,positive,None,"General praise, Ease of use",Not specified,Not specified,User praises the app for its music and ease of use.
+47804dc4-3c5f-49f8-9fc0-50a2db68f001,negative,Other,"Family plan, Payment issues",Not specified,Grace period for payment updates,User is upset that their Family plan was canceled due to a card change within just two days.
+82040652-c009-4826-ac20-d2844b3aaa7c,negative,UI_UX_Friction,"Free tier limits, Skip limit, Premium push",Not specified,"More skips, usable free tier",User likes the service but hates the severe feature restrictions and 6-skip limit on the free tier.
+7c3feaf3-678f-412c-878a-febf2e85f57b,negative,AlgorithmMismatch,"Widget, Unwanted recommendations",Not specified,"Static widget, hide recommendations",User hates the new widget because it constantly changes to show unwanted recommendations instead of their last played item.
+1e69e7a5-058d-4e4f-b8c7-02508d8f9403,negative,Other,"Playback issues, Premium push",Walking/Exercising,Uninterrupted playback,"User complains that the app constantly stops playing music during their walks, suspecting it's a tactic to force premium."
+da132ced-11cc-4fb3-8b34-199b5626d9dd,negative,Other,Ads,Not specified,Fewer ads,User complains about having too many ads.
+ecd29c17-fa1d-4477-933f-659e0ace3a84,negative,Other,Ad length,Not specified,Shorter ads,User is extremely frustrated by 3-minute long advertisement breaks.
+1f1074c2-8941-4282-bf9c-c209c426d762,negative,UI_UX_Friction,"Free tier limits, Ads, Playback controls, Forced shuffle",Playing specific songs,Basic playback controls on free tier,"User lists numerous frustrations with the free tier, including excessive ads, forced shuffle, and inability to fast-forward or repeat songs."
+0d61f67d-b1e2-4c95-9f58-354bdb86f84b,neutral,UI_UX_Friction,"Lossless audio, UI design, Android",Not specified,Edge-to-edge UI on Android,User likes the lossless audio but complains about the Android UI not utilizing edge-to-edge screen space.
+5f1a6b14-a6ab-495a-b745-cb9286b386e4,negative,UI_UX_Friction,"Free tier limits, Ads, Premium popups, Search limits",Playing specific songs,Usable free tier without strict limits,"User uninstalled the app because the free version has become overly restrictive with long ads, daily search limits, and constant premium pop-ups."
+edd665e4-81ed-4ae7-904d-c89c3991b77f,negative,Other,Ads,Not specified,Fewer ads,User dislikes the ads.
+8c6b295d-f101-49f9-a6ba-4e682b76f7f1,negative,UI_UX_Friction,"App performance, Lag",Not specified,"Faster app, Smooth interface",User complains that the home screen is very laggy.
+e4114ff3-2127-4c3c-aa79-50a8a5e05848,negative,Other,"Playback issues, Background play",Background music,Stable background playback,User experiences a bug where the song stops playing when they close their phone.
+73a9885c-dab2-4c64-a133-8c2a23d2c441,negative,Other,General complaint,Not specified,Not specified,User simply states they do not like Spotify.
+d025a18a-1cd8-405f-9427-ee85bbd7f8b7,negative,UI_UX_Friction,"Widget, Forced updates",Not specified,Old widget back,User is annoyed by being forced to use a bigger widget.
+7596053c-6415-4e70-9066-df4df6984031,negative,PricingIncrease,"Price, Lossless audio",High-fidelity listening,Cheaper lossless audio,User is outraged by the high price required to access lossless audio.
+078849f1-505b-43ac-aebb-c4fd7a420de0,negative,Other,"Ads, Premium push",Not specified,Fewer ads,User calls it the worst app because of excessive ads and constant pushing of premium.
+509c2be0-bb0d-4a52-9e0d-6e53623dc167,negative,UI_UX_Friction,"Ads, Ad length, Skip limit, Play limit",Not specified,"Fewer ads, More skips","User is frustrated by long, frequent ads (3-4 ads every 3 songs) and strict daily play/skip limits on the free tier."
+3ba11b8c-416c-450a-a4bd-db653eb155d3,negative,Other,"Audio quality, Volume",Not specified,"Better audio quality, Louder volume",User complains about low audio quality and insufficient loudness.
+44ba1b50-560d-4bdd-a7bd-7eb376a2976b,neutral,UI_UX_Friction,"Premium, Price Hike, Missing music, Widget",Playlist curation,"Functional widget, Stable pricing","Premium user likes the app but warns against price hikes, complains about missing music, and dislikes the limited new widget."
+495efb4a-206c-4821-a540-39e5a992c3d4,negative,Other,General complaint,Not specified,Not specified,User simply states it is the worst app they have ever seen.
+847a5c06-476c-44c9-a9bb-ff96427cf568,negative,UI_UX_Friction,"Widget, Developers",Not specified,Better widget,User angrily criticizes the developers for the pathetic new widget.
+55c7a016-7f3d-44ca-b69b-307c8532e4fe,negative,UI_UX_Friction,"Premium lock, Song selection",Playing specific songs,Ability to choose songs without premium,User is upset that they can no longer choose specific songs to listen to without paying for premium.
+6fdbc6b4-bd17-4822-b55c-e0162baa4f5b,negative,Other,"Playback bug, App glitch",Playlist listening,"Stable playback, Bug fixes",Paying user is highly frustrated by a severe bug that causes the app to get stuck playing only one song on repeat.
+be1470aa-e35a-429b-b322-a4c9fa1f55f3,negative,AlgorithmMismatch,"AI integration, Algorithm changes, Indie artists",Discovering new music,"Better organic discovery, Less AI promotion","User is disappointed that the discovery algorithm now pushes cheap ""AI slop"" instead of helping them find new indie artists."
+9d9764c3-3536-4b47-866c-4a2ebbf54941,negative,PricingIncrease,"Expensive, Price Hike, Free tier limits",Not specified,"Affordable premium plans, Usable free tier","User complains about outrageous price increases, unaffordable shared plans, and an unusable free version."
+86fd4a13-4df1-4a92-8769-2c6d2b6f25ca,negative,SmartShuffleIssues,"Smart Shuffle, Auto-enable",Playlist listening,Keep Smart Shuffle disabled,User is disgusted that the app randomly turns Smart Shuffle back on without their permission.
+a1e268f6-0e58-453e-87c9-52b5916577f2,negative,Other,"App loading, Performance",Not specified,Faster app loading,User experiences extreme delays of up to 17 minutes just to start the app.
+fb3697d0-cf01-493f-b932-297784dbd291,negative,SmartShuffleIssues,"Suggested songs, Free tier limits, Premium lock",Playlist listening,Play playlists without added random songs,User is switching apps because the free version forces unwanted random songs into their curated playlists.
+59ba04ab-83ee-4631-82f8-6baa53f769f4,negative,UI_UX_Friction,"Premium lock, Song selection",Playing specific songs,Ability to choose songs without premium,User is frustrated that they cannot pick a specific song to play without being asked to buy premium.
+4c393251-71dc-41ac-9d03-f83b585cd8e2,negative,UI_UX_Friction,"Premium push, Ads",Not specified,Fewer premium prompts,User can't stand the constant interruptions telling them to buy a premium membership.
+8b15fa25-c141-4622-9f4a-06f8e91b9652,negative,UI_UX_Friction,"Premium popups, Free tier limits",Not specified,"Fewer popups, More control",User calls it the worst app because of constant premium popups and lack of control over listening.
+acd955e4-8bd5-419a-ab2f-3ab67b0dce17,negative,Other,"Jam sessions, Updates, Bugs",Social listening (Jam),Working Jam feature,User complains that updates have completely broken the Jam session feature.
+946f50e2-323a-4946-b786-df7d3ca0de95,negative,UI_UX_Friction,"Widget, Forced updates, Playback memory, Offline listening","Offline listening, Resuming playback","Working widget, Reliable offline playback",User hates the forced new Android widget that forgets playback progress and complains about downloaded songs failing to play offline.
+54364946-6a69-44a6-af1d-cfe170d677e1,negative,AlgorithmMismatch,"Queue bug, Recommendations, Premium",Not specified,"Better recommendations, Working queue",Premium user is unable to queue songs and complains that the recommendation algorithm doesn't match their preferences.
+1f1d5950-9a6a-4fdb-92f5-1ef7079558e9,positive,None,General praise,Not specified,Not specified,"User leaves a short, positive review recommending the app."
+bc79fd21-bc74-4cc9-8978-694692d93823,positive,None,"Competitor comparison, Economy",Not specified,Not specified,"User prefers Spotify over Pandora, mentioning inflation."
+b4d1943d-63f0-4cfc-aa2a-5f001f3dd8b3,negative,UI_UX_Friction,"Ads, Skip limits, Free tier limits",Not specified,"Usable free tier, Fewer ads",User complains in Hindi about the app becoming garbage due to excessive ads and blocked features (like skipping) for free users.
+8e622550-7590-4c64-ae6d-93fcf6e00242,negative,Other,"Ads, Ad length",Not specified,Shorter ads,User misses when the app had no ads and complains that current ads are 2 minutes long.
+6239b8e0-a721-4147-9da0-796eb0848abd,negative,UI_UX_Friction,"Playlist control, Premium push",Playlist curation,Control over own playlists,User is uninstalling because the app takes control away from their curated playlists to force premium upgrades.
+858a03b8-31c6-4db7-8224-53580ab2442c,negative,PricingIncrease,Expensive,Not specified,Lower price,User states the app is extremely expensive.
+2c70a1d9-7885-4dc6-bc24-9dc70b641bd8,neutral,None,General comment,Not specified,Not specified,User states they do not use the app.
+d84645fd-bc72-4c16-9e91-f6f456f0607f,negative,AlgorithmMismatch,"UI changes, AI music, Recommendations",Not specified,"Real music recommendations, Better UI",User hates the UI changes and is angry that Spotify is pushing cheap AI-generated music into their suggestions and playlists.
+39ca1ea9-4fde-4d39-9efc-c210bfcdf5c4,negative,Other,General complaint,Not specified,Not specified,User simply states the app is very bad.
+96a74c41-2202-4f72-86dc-55eb877915cf,negative,Other,"Login issues, Empty playlists, Playback bug, Updates",Not specified,"App stability, Account recovery","User experiences severe bugs after a fresh install, including login issues, empty playlists, and a glitch that rapidly cycles through songs."
+e7b6f5f8-a195-43b3-8ef0-ecf1319f74c2,negative,Other,"App freezing, Login issues",Not specified,App stability,App constantly freezes and repeatedly logs the user out even after reinstalling.
+3c2db6f0-548b-45d4-851b-13a742e6c655,negative,UI_UX_Friction,"Premium lock, Corporate greed",Not specified,Usable free tier,User is disappointed and calls the company greedy because they can no longer listen to music without a subscription.
+7f823679-32fe-498b-a06b-1829b7b3ddbd,negative,UI_UX_Friction,"Widget, Offline bug, UI changes",Not specified,"Working widget, Revert Mix feature UI","User thinks the new widget is rubbish, complains about false offline errors, and dislikes UI changes to the Mix feature."
+467b505e-5171-4cdf-94fb-40a61e2c80eb,negative,Other,"Lost downloads, Bugs",Offline listening,Reliable downloads,User is frustrated because their downloaded songs keep getting removed repeatedly over the past two weeks.
+60667e23-a541-42bc-a689-a7b00f5c23cd,negative,UI_UX_Friction,"Song selection, Play limits",Playing specific songs,Ability to choose songs,User calls the app stingy because there are limits on choosing songs.
+dd353d3d-b67f-4d31-9059-add2db142e54,negative,Other,Ads,Not specified,Fewer ads,User sarcastically complains about getting an ad after every song.
+35cc6872-9865-45a8-a9ab-e92e80225906,negative,UI_UX_Friction,Widget,Not specified,Old widget back,User is frustrated by the new widget taking up more space with less functionality.
+20829405-b8ee-4c61-afd9-fd24e2cdd2fb,negative,Repetition,Shuffle,Playlist listening,True random shuffle,User complains that shuffle repeats the same few songs and ignores the rest of the playlist.
+b6d3f1d0-582f-426d-9164-e9e83a915cb2,negative,Other,Xbox integration,Console listening,App stability,App is not working on the user's Xbox.
+e6776b0a-a9d6-4166-bc38-af71018716ac,negative,UI_UX_Friction,Premium push,Not specified,Fewer notifications,User is annoyed by constant notifications pushing a subscription.
+72cb420d-b8a6-4850-bdc9-6ed62c87f011,negative,UI_UX_Friction,Offline listening,Offline listening,Free offline playback,User complains about the inability to play music offline.
+646cf4b2-627d-4d01-a9ee-0e0b0ae8682c,negative,UI_UX_Friction,Premium lock,Playing specific songs,Free song selection,User hates that the app charges money just to change songs.
+d969226a-6cb8-47f3-a6e4-107f6a063dc5,negative,Other,Ads,Not specified,Fewer ads,User likes the app but is annoyed by getting up to 4 ads between songs.
+001a51c5-9cfe-4541-9501-3449321eb491,neutral,Other,Ads,Not specified,Fewer ads,User loves the app but dislikes the ads.
+73687757-c8f1-453f-866d-17af1f99b610,negative,Other,Ads,Not specified,Fewer ads,User complains in Hindi that they hear more ads than music.
+f7768e9a-ed72-4c91-9c7a-75ba3d267baf,neutral,Other,Ads,Not specified,Fewer ads,User genuinely loves the app but finds the amount of ads excessive.
+1cb4b89d-4b61-4210-8424-2957f2f5276d,negative,Other,Offline mode,Offline listening,App stability,Premium user is furious that a terrible update broke the app's offline mode.
+b0d725c3-c10a-4e0e-a77d-3d218ec60efa,negative,Other,Login issues,Not specified,App stability,User is frustrated by the app constantly logging them out and rejecting their password.
+cc200604-85d7-4bb4-942e-230770059013,negative,UI_UX_Friction,Premium lock,Playing specific songs,Play in order without premium,User is angry that basic features like playing songs in order require premium and complains about ads.
+3319cb3d-ad83-4e0e-9e20-42a2f1dd84e8,negative,Other,General complaint,Not specified,Not specified,User simply states the app is bad.
+bbae5568-b91f-4649-80a6-ac1520512e52,positive,None,Ads,Playlist curation,Not specified,"User loves the app and making playlists, finding it worthy of five stars despite occasional ads."
+b4e65426-5cdf-4015-a935-a38887fc004a,negative,Other,AI integration,Audiobook listening,App stability,"User feels the app has gone downhill due to AI, limited audiobooks on premium, and constant bugs."
+9e326a03-c098-4e31-bf0f-1eff25955a62,neutral,Other,Ads,Not specified,Better ad variety,User is highly irritated by a specific recurring Hindi ad featuring a voice named Vijay.
+74d9d176-2693-427a-a8ed-89dca3b2c301,negative,Other,General complaint,Not specified,Not specified,User calls the app ugly/bad (in Tagalog).
+f1886407-d79b-4c0a-b66e-5d1222351afa,negative,UI_UX_Friction,Free tier limits,Not specified,Usable free tier,User bluntly states the free version is trash.
+66b07afb-a830-44bb-8662-10940d0d435e,negative,UI_UX_Friction,Widget,Not specified,Working widget,"User is frustrated that the new widget requires tapping to refresh and gets stuck cycling, rendering it useless."
+e726549a-bfaf-4522-b888-6d2a4079905b,negative,Other,Playback issues,Offline listening,App stability,"Premium user is furious about random pausing, deleted liked songs, and false offline errors preventing playback of downloaded music."
+fe943db0-8618-4d08-870f-7937f270a86e,neutral,PricingIncrease,Artist payouts,Not specified,Fair artist compensation,User thinks the app is fine but criticizes the low pay for artists.
+0ebdba23-9f57-449b-8b39-396a5960bfcd,negative,Other,Bugs,Not specified,App stability,User notes that the app misbehaves sometimes.
+9a45cc56-76a1-4c2e-94e6-a00532cc9d15,negative,UI_UX_Friction,Premium lock,Playing specific songs,Free song selection,User is sad that choosing specific songs requires payment.
+2d35394e-6f32-4582-a522-82a0d50acf78,negative,SmartShuffleIssues,Smart Shuffle,Not specified,True random shuffle,"User begs for a fix to smart shuffle, complaining it repeats the same songs and artists."
+5c734ea4-e77e-4340-a5fd-a96ca3152444,negative,UI_UX_Friction,Free tier limits,Playlist listening,Usable free tier,User finds the free tier terrible due to forced random songs in playlists and annoying ads designed to push premium.
+414d8f3f-2b00-48c4-b9c6-5c791d6f6979,neutral,Other,Audio quality,High-fidelity listening,Lossless audio,User finds the app practical but notes it lacks lossless audio quality.
+23ee2f68-d53a-4b4f-9840-cf14d159ba56,positive,None,UI design,Not specified,Transparent top bar,User likes the recommendations and design but requests a transparent top bar for a better full-screen experience.
+952bc4f6-f845-4e33-b452-f4684c690c02,negative,Other,Payment issues,Not specified,Reliable subscription activation,"User is upset because they were charged twice for premium but it hasn't activated, and support is unresponsive."
+651ffcd2-42dc-431e-a920-17e69e870742,neutral,Other,General comment,Not specified,Not specified,User feels the app is improving but still lacks many things.
+01e158b8-3ef8-4637-8813-dd3fc30e209f,neutral,Other,Bugs,Playlist curation,App stability,User loves the premium service but recently experienced bugs with adding songs to playlists and inaccurate top song tracking.
+e707cad5-7e3c-4d20-9f87-a3b155120c62,negative,Other,General complaint,Not specified,Not specified,User simply states the app is very bad.
+d265935d-8aa4-483c-9e4e-f3b74756d91b,negative,SmartShuffleIssues,Forced shuffle,Playing specific songs,Play specific songs on demand,User is angry that the app plays a different song than the one they selected.
+771bf3c3-62a3-4ff3-9eed-4df23c8c5d1b,negative,UI_UX_Friction,Premium lock,Playing specific songs,Ability to skip and choose songs,User complains that skipping and choosing songs requires premium.
+f624366b-51f8-422e-b80c-3917560a6361,neutral,None,Rating,Not specified,Not specified,User gives a numerical rating.
+c2c2303e-121e-4476-a67c-d6688ed2a1f6,negative,UI_UX_Friction,Premium push,Not specified,Usable free tier,User thinks the app is good but dislikes the aggressive push to buy a membership after listening to many songs.
+b620ab9a-3f35-4054-83da-9a5537b9a0cf,negative,Other,Payment issues,Not specified,Reliable subscription activation,User is upset because they were charged for a trial but didn't receive premium access.
+62f6120d-048e-42c7-bbc3-639b85bdc171,negative,UI_UX_Friction,Widget,Not specified,Old widget back,User hates the new widget because it constantly tries to load recent songs and wants the basic version back.
+9a688be8-914e-47eb-9c3f-23e039becb0f,negative,UI_UX_Friction,Premium lock,Not specified,Usable free tier,User complains in Tagalog that everything requires payment.
+ccc83935-1284-45be-b948-95715b600f10,negative,UI_UX_Friction,"Widget, App stability",Not specified,Working widget,User is forced to use a new 4x2 widget that is blank and unresponsive.
+8141e4fe-2283-4dd9-bc2d-220101c1a502,negative,Other,Ads,Not specified,Fewer ads,User finds the ads annoying.
+3db11975-0f64-4341-aefc-217e022bb859,negative,Other,"PC volume control, Spotify Connect",PC listening,Volume control,App hijacks PC volume controls and prevents normal phone usage.
+50c26fdf-25b2-45b8-a1af-1f7bca1ff1bc,negative,UI_UX_Friction,"Skips, Repeats, Premium",Not specified,Unlimited skips and repeats,User believes unlimited skips and repeats should be a basic free feature.
+e1cfb16f-7370-49f3-928d-f26aea1b342a,negative,Other,Ads,Not specified,Fewer ads,"User is annoyed by excessive ads, including an ad right on app launch."
+6a4d38bb-4184-48a4-9001-19e07a4c74e4,neutral,Other,Ads,Not specified,Fewer ads,User likes the app but feels the amount of ads is unnecessary.
+8bfece84-829f-4af3-b8a7-3784277126b1,negative,UI_UX_Friction,Widget,Not specified,4x1 widget,User is upset about the removal of the 4x1 widget and finds the new one crash-prone.
+c456c0ca-6303-41c0-a80e-b7b7b8e0da80,negative,UI_UX_Friction,"Forced listening, Skip limits",Not specified,Ability to skip songs,User uninstalled the app because they were forced to listen to disliked music without skips.
+153a95bd-7b35-4fc9-a9dd-3f64640d60d2,negative,UI_UX_Friction,"Liked songs, Premium lock",Playlist listening,Play liked songs,User cannot play their liked songs without a premium subscription.
+f3b8fe6b-39b1-4cf5-8923-f071ed332b75,negative,UI_UX_Friction,"Similar music, Missing feature",Finding new artists,Similar music recommendation feature,User is missing the option to listen to similar music after a recent update.
+44d42b83-8760-4415-a0cd-33368677af0e,negative,Other,"Volume glitches, App performance",Not specified,App stability,User experiences volume glitches and finds the app incredibly poorly made.
+2071c6df-2144-42f8-bf31-d61e7e4baaa6,negative,UI_UX_Friction,"Premium lock, Song selection",Playing specific songs,Free song selection,User complains that even choosing a song now requires premium.
+24b5dff0-04c9-4634-a5a8-af74e426bac6,negative,PricingIncrease,"Ads, Price hike",Not specified,"Lower price, Fewer ads",User complains about lots of ads and increased fees.
+4d09ab45-8b01-438c-9be2-2dba3480adad,negative,Other,Ads,Not specified,Fewer ads,User complains about too many ads.
+dc91ce7a-9bcd-4a10-aca7-f6c43d1c55e2,neutral,None,Premium,Not specified,Not specified,User notes the app is better when paid for.
+600eef68-9758-46f8-ba88-ffb53398798f,neutral,Other,Ads,Not specified,Fewer ads,User likes the app but complains about the number of ads.
+fd1c6ed9-87ef-42f6-b4f1-06faaa716022,negative,AlgorithmMismatch,"Search, Shuffle, Battery drain, Ads",Not specified,Better search and shuffle,"User dislikes the search and shuffle algorithms, battery drain, and intrusive ads."
+6fe87015-d851-4a83-b281-2dc098ee26e6,negative,UI_UX_Friction,Widget,Not specified,4x1 widget,User hates the hideous new 4x2 widget and wants the 4x1 tile back.
+be23861d-77ce-4f0a-88c7-2124fe8fa33f,negative,Other,Ads,Not specified,Fewer ads,User complains about getting 3 ads for every 2 songs played.
+f161ec7d-3fb1-4a9d-8cf2-498f7ef7aec2,negative,UI_UX_Friction,"Premium lock, Downloads",Offline listening,Free downloads,User is frustrated that downloading songs requires premium.
+93cbdfa8-36a3-4c74-b71f-988f7ce917f5,negative,AlgorithmMismatch,"Auto-play, Unwanted music",Not specified,Disable auto-play,User is frustrated that the app forcefully auto-plays music they dislike despite turning the feature off.
+ed80a317-a25a-4041-b882-ae332381dea2,negative,UI_UX_Friction,"Premium push, Playback controls, Ads",Not specified,Basic playback controls,User hates the free version's lack of basic controls and constant premium prompts.
+d5dcb72b-27f1-4d4b-a69a-16bf0213c116,negative,PricingIncrease,Corporate greed,Not specified,Not specified,User is disgusted by the company's perceived greed.
+7ff0924c-b8fd-4241-9ebc-d490f17fb0ae,negative,UI_UX_Friction,"AI features, Alternatives",Not specified,Remove AI features,User hates the forced AI features and is switching to alternative platforms.
+3b25eb8f-7281-4627-82a1-aa0b035facc1,negative,UI_UX_Friction,"Premium lock, Ads",Not specified,"Fewer ads, Free access",User is frustrated by constant ads and premium restrictions for basic features.
+43a3c111-4833-4cde-90ec-9ba6618c140d,negative,Other,Ads,Not specified,Fewer ads,User complains about too many ads.
+82074466-0105-4b1f-9ba0-2a2716ff6673,negative,Other,App performance,Not specified,Faster app,User complains the app is lagging and freezing even after a reinstall.
+e1a162bf-83d9-4f5b-a7ad-044c178ea767,negative,UI_UX_Friction,"Premium push, Playback controls",Playing specific songs,Basic playback controls,User is annoyed by premium begging and the lack of playback controls.
+6e6408dc-a158-44dd-9b9d-723d87c06a4a,negative,SmartShuffleIssues,"Forced shuffle, Ads, Skips",Playlist listening,Play playlist in order,User is frustrated by forced random playback in their own playlist and unskippable ads.
+18afc9e6-87e6-4aa2-a5aa-00c2d913513c,positive,None,Recommendations,Not specified,Not specified,User praises the app's recommendations.
+147e6b81-61ba-4977-9b56-f5be26bd0b08,negative,UI_UX_Friction,Free tier limits,Not specified,Usable free tier,User finds the app crazy to use without premium.
+5fbc3aef-3f48-4aa1-8db5-f9db78a55208,positive,None,"Music library, Playlists",Playlist listening,Not specified,User loves listening to their favorite music and playlists.
+75e32dc3-1aa4-44fe-8bd7-ee100c6b9409,negative,Other,Ads,Not specified,Shorter/Fewer ads,User complains about 2-minute ads every second song.
+c332524d-9fb6-4250-8b3d-0f9212e302d0,negative,Other,Billing issue,Not specified,Accurate billing,User complains about being double-charged multiple times for a one-time payment.
+1f07eea8-71db-464d-bec5-ec913082e464,neutral,Other,"Downloads, Playback issue",Offline listening,Reliable offline playback,User likes the app but had an issue with downloaded songs not playing.
+9ab378ff-d640-4666-b559-8bd572178244,negative,UI_UX_Friction,Playlist management,Playlist curation,Free playlist sorting,User is frustrated by a UI change that restricts how they can reorder songs in a playlist.
+4e7cef8b-4efd-4252-b23c-17fc04bd8b24,negative,UI_UX_Friction,"Widget, Popups",Not specified,"Better widget, Fewer popups",User dislikes the new widget update and annoying popups.
+5573f044-3816-4c54-b43e-3c6507919d5b,neutral,Other,Ads,Not specified,Fewer ads,User thinks the app is good but 4 ads at once is too much for free users.
+d2c0e2be-3211-4ecb-844c-471e0f0c26ba,negative,Other,General complaint,Not specified,Not specified,User says it's a bad app.
+34b5d6e4-ec18-4435-8055-c4674277e527,negative,UI_UX_Friction,"Song selection, Forced shuffle",Playing specific songs,Ability to choose songs,User is frustrated they cannot choose specific songs to listen to.
+384f87be-01ae-47be-aa0b-ffdebf2688ac,negative,Other,Payment issues,Not specified,Reliable payment processing,User complains they cannot pay with any debit card.
+dedbedfe-a611-4d66-b1aa-79574f31d725,negative,Other,"Performance, App loading, Playback issues",Not specified,"Faster performance, App stability",User is frustrated because the app has become painfully slow to load and play songs.
+43e7a9b2-419e-4f69-8c66-eacea3cedc90,negative,UI_UX_Friction,"Loop music, Skip limit, Ads",Not specified,"Ability to loop and skip songs, Fewer ads","User likes the app but is pissed off by the inability to loop or skip songs, and the excessive ads."
+053431a6-6a58-48fa-ac39-5ffecf191857,negative,UI_UX_Friction,"Widget, App crash, Forced updates",Not specified,Working widget,"Long-time user is reconsidering using the app after being forced to use a broken, crashing widget."
+f95c7cca-2b43-4415-b823-9e728b393402,neutral,UI_UX_Friction,"Playlists, Free tier limits",Playlist listening,Play playlists in order on free tier,User likes the app but asks for the ability to play playlists in order on the free tier.
+ba1f4039-a963-44f0-9c12-97960021ee32,negative,UI_UX_Friction,"Premium push, Song selection, Skip limit, Scam",Playing specific songs,Usable free tier,User calls the app a scam for constantly pushing premium and severely limiting song selection and skips.
+3727e488-fc3a-45b2-aaa5-361d27bccee7,positive,None,General comment,Not specified,Not specified,User feels interesting when listening.
+dd58d0e4-76fc-4156-a92c-975bb07b1337,negative,AlgorithmMismatch,"AI playlists, AI DJ",Not specified,Less AI integration,User finds the app unbearable since the introduction of AI playlists and DJ.
+ad6ae93e-97f9-44c9-83f9-afe359f7d882,negative,UI_UX_Friction,"Widget, Updates, Popups",Not specified,Working widget,"User is angry that an update broke the old widget, forced a new one via popup, and the new one doesn't render correctly."
+f00417f6-04f0-4a76-a7a0-267b3628949b,negative,Other,General complaint,Not specified,Not specified,User simply states the app has no purpose.
+7afa1d7e-b0e4-4fc5-91b7-881abbf63b28,negative,UI_UX_Friction,"Ads, Free tier limits",Not specified,"Usable free tier, Fewer ads",User complains about too many ads and restraints for free users.
+aaf3407e-577e-4fc1-8420-9a53a6d031af,negative,Other,Ads,Not specified,Fewer ads,User complains about constant ads.
+e577d71e-be7c-4328-9fd7-b51210b3ffd5,negative,PricingIncrease,Corporate greed,Not specified,Not specified,User calls the app greedy.
+2e953bd5-7510-4094-89a0-3419c817101b,negative,UI_UX_Friction,"Premium lock, Replay limit",Replaying songs,Ability to replay songs without premium,User is very unhappy that they cannot restart a song without a premium subscription.
+bf30c93f-658f-4116-9bcd-4bd74ef16e88,negative,UI_UX_Friction,"Skip limit, Song selection, Corporate greed",Playing specific songs,"Unlimited skips, Free song selection",User accuses the company of greed for removing unlimited skips and song selection.
+fb4909b4-e425-4a2a-abd3-9bf208aa3640,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,User is uninstalling because they get ads every 2 songs.
+444a6ffc-a135-42d3-a046-3c1ec39486a1,negative,Other,"Subscription error, Payment issues, Refund",Not specified,"Reliable subscription activation, Refund","User is angry because they paid for premium, didn't get it, and didn't get a refund."
+80b483db-1528-40db-8eef-c80fbd37443d,neutral,UI_UX_Friction,"Updates, Removed features",Not specified,Ability to record music,User likes the app but complains that a new update removed the ability to record music.
+538ca680-4bc8-4817-9355-5baf0b68290c,negative,UI_UX_Friction,"Jam sessions, Popups, Settings",Social listening (Jam),Option to disable Jam notifications,User is highly annoyed by the inability to disable constant popups asking them to join Jam sessions.
+34fb779e-786a-4527-a728-6d8acb31e76a,negative,Repetition,"Shuffle, Repetition, Multiple playlists, Widget",Playlist listening,"True random shuffle, Better widget","User considers the app deeply flawed due to repetitive shuffle patterns, inability to shuffle multiple playlists, and a downgraded widget."
+3e689747-dc8c-46d6-b7c8-40ccc9de60d6,negative,Other,"App crash, Black screen",Not specified,App stability,User is experiencing constant crashes and a black screen upon opening the app.
+3af9276a-e6a9-4486-aef3-512719a6593b,negative,UI_UX_Friction,"Widget, Forced updates, Buffering",Not specified,Working widget,User is frustrated by being forced to replace a working widget with a new one that constantly buffers and never works.
+58d7fece-afdc-4288-9c7b-8460cdae0d12,positive,AlgorithmMismatch,"Discovery, Playlists, Audio quality, Recommendations",Discovering new music,Better recommendation accuracy,Long-time user praises the app for discovery and quality but notes that recommendation accuracy could be improved.
+f048bbc4-227c-4daf-8842-e935941afb9c,negative,Other,"Ads, Corporate greed",Not specified,Fewer ads,User complains in Ukrainian about increasing ads and corporate greed.
+74ce7850-2b63-4eba-926e-cfa59453bcdd,neutral,None,General comment,Not specified,Not specified,"User leaves a neutral ""ok""."
+1786bd9a-7464-454f-8606-1b0bc34a799a,negative,UI_UX_Friction,"Premium push, Song selection",Listening to songs,Usable free tier,"User calls the app terrible because it won't let them listen to their songs, forcing a premium upgrade."
+12619ffa-61fb-42a6-a140-64ffca2e17d7,negative,Other,General complaint,Not specified,Not specified,User simply states the app is poor.
+673a65c3-1ee5-43cd-93ba-dc114200af46,negative,Other,"Ads, Interruptions",Not specified,Fewer interruptions,User sarcastically says the app is good if you love getting interrupted.
+d58c739d-6f80-4d64-a9ee-aaf0a8687ce5,negative,Other,Offline mode,Offline listening,Reliable offline playback,User complains that the app didn't work when offline.
+6143f145-3493-4b42-844c-f5449c19e490,negative,UI_UX_Friction,"Widget, Updates, Bugs",Not specified,Working widget,"User strongly criticizes the latest update for ruining a fully functional widget, making it buggy and unusable."
+da4ada26-d31f-4ac3-a0b8-bc223ea6b472,negative,UI_UX_Friction,"Ads, Premium push, Free tier limits",Not specified,"Usable free tier, Fewer ads","User complains about excessive ads, limits, and constant promotion of the premium subscription."
+4f0db776-32ae-4bc5-889b-572fc3e81587,neutral,UI_UX_Friction,"Replay limit, Premium lock, Playlists",Replaying songs,Ability to replay songs without premium,User highly recommends the app for its playlists but dislikes being prompted to buy premium just to replay a song.
+3a852d43-eabc-4aee-9267-d8726ae3cfe4,negative,UI_UX_Friction,Free tier limits,Not specified,Usable free tier,User states the free version is unusable.
+b2b00b6b-4f7e-40d4-8bfd-21a12d28d731,negative,Other,"Audio quality, Volume, Premium",Not specified,"Better audio quality, Louder volume",User complains that the sound volume became very low after taking a subscription.
+81c00017-8e6d-4f63-8457-24c10c78fa43,positive,None,Playlists,Not specified,Not specified,User thinks Spotify playlists are awesome.
+f9960bbb-fc93-48fe-916b-d4559df7fecf,positive,Other,"Fake accounts, Copied music, Artist verification",Not specified,"Better artist verification, Remove fakes",User loves the app but is highly frustrated by fake accounts copying and uploading music under similar names.
+4388c4fa-2122-40ee-a2cf-b267862076e4,negative,PricingIncrease,"Ads on Premium, Podcasts",Podcast listening,Ad-free premium podcasts,User is furious about getting 4 commercials in a podcast despite paying to avoid ads.
+b3a36650-816e-4650-a7cc-b6495956915a,negative,Other,"Offline downloads, Premium, Playback issues",Offline listening,Reliable offline playback,User upgraded to premium for offline listening but finds it completely useless as downloaded songs won't play without Wi-Fi.
+095856c6-94a3-4a0d-a712-ce9945e125e6,negative,UI_UX_Friction,"Skip limit, Song selection, Ads, Premium",Not specified,"Free skipping and song selection, Fewer ads",User likes the app but thinks charging money to skip or change music and playing ads every 2 songs is too much.
+1c495010-80c1-463d-8436-81980bd586f0,negative,Other,"Subscription error, Payment issues",Not specified,Reliable subscription activation,User complains that their money was deducted but premium was not activated.
+56fb810f-9382-4c5d-820a-6dfa7ba060f2,negative,UI_UX_Friction,"Premium lock, Ads",Not specified,Peaceful free listening,User feels it's impossible to enjoy music peacefully without a premium subscription.
+4fe23721-1ae1-4a56-9ac1-ec3a152e90f9,negative,Other,"Updates, Performance",Not specified,Faster performance,User complains that the latest app versions are horribly slow.
+531bf761-dc94-4ae9-a740-039717d503a3,negative,Other,General complaint,Not specified,Not specified,User simply states the app is fake.
+5599253a-5e7f-4579-9b0e-ec7b77db86d3,negative,UI_UX_Friction,"Bluetooth auto-connect, Widget, Missing features",Not specified,"Option to disable auto-connect, old widget back",User is frustrated by the inability to disable Bluetooth auto-connect and the forced use of a broken new widget instead of the old one.
+4e66bea5-8e20-4b04-b18e-58d6796cb1e6,positive,None,"Playlists, Ads",Playlist curation,Fewer ads,User loves making playlists but requests fewer ads.
+6991993d-37ea-4746-9130-0cdaeb72e195,negative,Other,Ads on Premium,Premium listening,Truly ad-free premium,User complains about hearing ads despite paying for an ad-free subscription.
+ccda2880-b4e6-4100-aa75-eebeeff1447c,negative,Other,"Crossfade bug, Ads",Not specified,Bug fixes,User experiences a bug where the crossfade feature cuts off the end of songs and skips to an ad.
+6c12689e-37c3-48d8-8d7e-c496a26f36a9,positive,None,Recommendation,Not specified,Not specified,User loves the app and definitely recommends it.
+e3149b06-9a83-400c-9149-af886baf3f93,negative,PricingIncrease,"Artist payouts, Ads",Not specified,Fair artist compensation,User feels advertisers make more money than the artists and suggests uninstalling the app.
+ce05894c-7d08-4c2a-9d78-adbf4f2fb4d8,negative,UI_UX_Friction,"Widget, Notifications",Not specified,Stop widget update notifications,"User gives one star out of annoyance with the constant ""Update your Spotify widget"" prompt."
+1e5b6307-ad90-4cc9-b821-7499a88f4105,positive,None,"New music discovery, Concert updates",Not specified,Not specified,Long-time user loves how the app keeps them updated on new music and artist tours.
+1a9425a1-084f-493a-bf66-af5efb2f2d64,positive,None,General praise,Not specified,Not specified,User praises the app as their go-to for music across different countries.
+7c9ddc8b-af6c-4b77-a887-b0505311b018,negative,Other,"Server lag, Error message",Not specified,App stability,User cannot use the app due to server lag and a persistent error message.
+e3a8c690-4fff-44d1-b0be-bfad529d0ee5,negative,UI_UX_Friction,"Ads, Ad length, Premium push, Search limits",Not specified,"Usable free tier, Fewer ads","User is frustrated by long ads and a recent update that blocks them from playing searched songs without premium, recommending alternatives."
+a99e799c-4b11-4f90-a284-8f0b2766fcf1,negative,UI_UX_Friction,"Playlist management, UI changes",Playlist curation,Drag-and-drop playlist sorting,User is frustrated that the ability to drag and drop songs to arrange playlists has been replaced with limited move options.
+dc15c136-b373-40c9-bac2-c1da87ff6173,negative,Other,"Ads, Ad length",Not specified,Shorter/Fewer ads,User thinks the free app sucks because the ads are too long and too frequent.
+639134b2-9d20-4bb1-bf6f-f19a443eb28b,negative,UI_UX_Friction,"Free tier limits, Song selection, Playback controls, Pandora",Not specified,Ability to choose songs and scrub,User complains that Spotify has ruined the free experience by removing the ability to select specific songs or scrub through tracks.
+f7b16d56-c507-45d2-9b3e-88650a23b3e9,negative,Other,"App performance, Loading speed, UI bugs",Not specified,"Faster loading, App stability","User is angry that the app takes forever to load anything, including the side panel and profile, even after reinstalling."
+10e4bcf8-08d8-4452-8fd8-e04ded8e67b9,negative,Other,"Updates, Ads",Not specified,Fewer ads,User feels the app became worse after an update due to too many ads.
+529df268-df01-4238-9257-4d82e61dd3b3,negative,Other,Account issues,Not specified,Account cancellation,User requests to cancel an account they claim they don't have.
+0f728496-9f81-4ec8-b3b8-d8f7b19c112a,neutral,None,Cost,Not specified,Free access,User likes the app but cannot afford to pay.
+a2e48ede-9972-45ff-8fe7-63d710946e33,negative,Other,General complaint,Not specified,Not specified,User simply states the app is of very cheap quality.
+792dba8d-e6ac-420f-8e61-7f6074435dba,negative,AlgorithmMismatch,"Unrelated recommendations, Playlist playback",Playlist listening,Accurate recommendations,User is disappointed that the app plays songs completely unrelated to their interests after a selected playlist finishes.
+b07580f6-8f21-4ddb-b374-b9fef411d6fe,negative,Other,"Ads, Data usage",Not specified,Ad-free listening,User is angry that ads consume their paid mobile data.
+b08e3dd5-9060-46fb-bd70-09be22cbc6e3,negative,UI_UX_Friction,Widget,Not specified,2x4 widget back,User doesn't understand why the 2x4 widget was removed.
+2aa4d7a7-a80a-4f64-ba8b-5e948957164f,negative,UI_UX_Friction,"Widget, Updates",Not specified,Better widget,User is so angry about the widget changes that they deleted the app and returned to pirating music.
+73a00cbb-8d17-4270-aff2-70cd3b6126c2,negative,SmartShuffleIssues,"Skip limit, Ads, Forced shuffle",Playlist listening,"Ability to skip, Play playlists in order","User likes the app but is frustrated by skip limits, ads, and the app playing songs out of order in playlists."
+1f1204cd-dee1-4478-aeee-5c53d54921aa,negative,Other,"App performance, Blank screen, Customer support",Not specified,"App stability, Helpful support","User is highly frustrated by persistent blank screens and freezing that reinstalling doesn't fix, criticizing unhelpful support replies."
+b45ad0aa-c96a-42cb-b730-e519ed3d5b38,negative,UI_UX_Friction,Widget,Not specified,Better widget,User simply states they hate the new widget.
+6582f4af-5bc5-4299-87a2-ac5a8225d7fb,positive,None,"Bug fixes, Ads, Recommendation",Not specified,Not specified,"User updated their rating because the app works now, recommending it despite the ads on the free tier."
+912d9806-a718-41a1-a3aa-81222cdc466e,negative,UI_UX_Friction,"UI changes, Playlist management, Premium",Playlist curation,Return playlist indicator icon,"Premium user is furious that an update removed the icon indicating if a liked song is already in a playlist, making management harder."
+1ba1ab35-d75a-4887-9ad1-e244cf37ee88,negative,UI_UX_Friction,"Widget, UI design, Artist payouts",Not specified,"Better widget, Fair artist compensation",User complains the new widget uses more space to display less information and criticizes the company for not paying artists enough royalties.
+9a97ef4a-1ffc-4de3-807b-da7f77d35154,positive,None,"Collaborative playlists, Ad length",Social listening,Not specified,"User loves the app and collaborative playlists, finding the short ads tolerable."
+593cad5d-b158-4c47-97af-454724b168e1,negative,Other,"App crash, Premium",Not specified,App stability,User complains in Tagalog that the app won't open a few days after purchasing premium.
+b1450eb3-8ac3-4493-afcc-50db768a55e9,negative,Other,Ads,Playlist listening,Fewer ads,User calls it the worst app because constant ads prevent peaceful playlist listening.
+f28f82c6-e061-414f-becc-410ba88f97c7,negative,UI_UX_Friction,"Widget, Updates",Not specified,4x1 widget back,User dislikes the latest update and wants the 4x1 widget back.
+3a01d074-f8e1-471b-8c6f-a3e6d61676e5,negative,Other,"Ads, Content",Not specified,Better ad targeting,"User complains about ""woke"" ads and specifies they speak American English."
+627a895e-ec9b-47b7-ab1c-f3c8a43f7ae7,negative,Other,Login issues,Not specified,Ability to sign in,User is unable to log in without an email as they usually do.
+2c37ad22-c0f5-46d2-bee4-9fc99e17185c,negative,Other,General complaint,Not specified,Not specified,User simply states they are disappointed.
+f16f20a4-cef1-475c-ac25-f6c4860637f7,negative,Other,General complaint,Not specified,Not specified,User simply states the app is very very bad.
+246a6930-8c51-4f57-a65f-e17dd3cede1c,negative,Other,Ads,Not specified,Fewer ads,User finds the app useless because they only hear ads.
+d1adf43f-df3c-4f22-ae99-f0df35a76c97,negative,SmartShuffleIssues,"Shuffle, Unwanted songs, Premium lock, Greed",Playlist listening,"Play in order, True random shuffle, Stop adding songs",User is extremely frustrated by the mobile app's forced shuffle adding unwanted songs and the algorithm repeating the same artists.
+086bc5b5-936b-478a-8f0a-8ab5b82f6dc4,negative,Other,Updates,Not specified,Better updates,User dislikes a recent update.
+e87dfb9c-954e-4311-82e8-c609db8ee696,negative,UI_UX_Friction,"Widget, Forced updates",Not specified,"Working widget, Old widget back",User is frustrated by being forced to switch to a new widget that doesn't work.
+203f23d6-cae0-419a-9f28-388e28f1da45,negative,Other,"App crash, Playback issues, Black screen",Not specified,"App stability, Stable playback",Long-time subscriber is looking for alternatives because the app constantly stops playing and now only shows a black screen.
+64bdfd7c-a26f-49e1-a43c-e68bf230a7fb,negative,UI_UX_Friction,Widget,Not specified,4x1 widget back,User questions why the 4x1 widget was removed.
+e742314b-58e2-4929-a058-dd10b0e8c4b1,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,User is annoyed by the app showing three continuous ads and requests a limit on advertisements.
+566c8d7c-a6b1-4226-aa12-f4d898624987,negative,UI_UX_Friction,"Widget, AI integration, Popups",Playlist curation,"Working widget, Stop AI prompts",User likes the app generally but is sick of a non-functional new widget and constant prompts to use AI for playlists.
+5a557a77-ed1d-492e-b3af-0a687bd3e96f,negative,Other,Ads,Not specified,Fewer ads,User complains about having too many ads.
+d74376e2-8dae-44d1-a4dd-ccdaba5e13bf,negative,UI_UX_Friction,Playlist management,Playlist curation,Free drag-and-drop playlist sorting,User loves the app but is highly frustrated that they can no longer freely drag and drop songs to reorder their playlists.
+90989f1c-3475-4ec1-81ef-a9a41b2cce0f,negative,SmartShuffleIssues,"Premium lock, Free tier limits, Forced shuffle",Album listening,Play albums in order without added songs,User finds the free version unusable because it forces random songs into albums instead of playing them in order.
+7bef606b-78c7-47c8-94b9-85aae64e9c68,negative,Other,"App crash, Black screen",Not specified,App stability,User genuinely enjoys the app but is frustrated by it frequently getting stuck on a black screen upon opening.
+91c3aea4-342a-465a-b817-46863c4e0f42,negative,Other,"Family plan, Subscription error",Not specified,Reliable subscription access,User is extremely angry that they cannot access their Family Premium plan.
+0f44fcc3-1932-4e9b-8903-86d7ac171ea8,negative,Other,"Offline mode, App loading, Performance",Offline listening,Faster offline playback,Premium user is frustrated that their downloaded offline playlists are extremely slow to load and play.
+7c6674cd-e34b-4247-84df-e13f8967abdc,negative,Other,"Playback issues, Background play",Background music,Stable background playback,User complains that the app stops and restarts the current song whenever they switch between apps.
+a594ae33-ea4d-4528-9eee-702258b9bcd5,negative,Other,App crash,Not specified,App stability,User simply states the app won't open.
+4c6ac782-a68a-4de7-b8ec-7725dbd2ed1a,positive,None,"Mixes, Music discovery, Podcasts",Workout/Road trip listening,Not specified,"User loves the app's mixes and uses it constantly for workouts and road trips, praising its music discovery."
+e82d5209-13b6-40a5-b422-4aab4d927acf,negative,Other,Ads,Not specified,Fewer ads,User complains about having too many ads.
+153b2c42-5dd8-4df9-ba96-c3412e2b88ed,negative,UI_UX_Friction,"Premium lock, Free tier limits, Ads",Not specified,"Usable free tier, Fewer ads",User finds the free version completely unusable due to excessive ads and locked features.
+5188957f-b24c-4994-ba05-32ce2d51bfb5,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,User exaggerates that ads play every second and demands improvement.
+551b864a-4d06-4b47-81d1-b0048a60834b,positive,None,General praise,Not specified,Not specified,"User leaves a short, positive review."
+701b7aeb-f068-42b1-a046-8a945278bd2c,negative,UI_UX_Friction,"Widget, Forced updates",Not specified,"Working widget, Old widget back",User is frustrated by being forced to use a broken new widget instead of the old functional one.
+449f4f87-3913-46a9-aaba-6c12b4f9a477,negative,Other,"Ads, Ad frequency, Feature request",Not specified,"Ad control, Uninterrupted listening",User finds the ad frequency greedy and suggests a feature to watch ads in bulk for guaranteed ad-free listening time.
+d444e337-c713-4f37-9301-b1110a2010d7,negative,Other,"Censorship, Artist payouts, Missing music",Not specified,Uncensored music library,User is boycotting the app because they believe Spotify censors artists and took down an album due to complaints.
+3ad60d5f-9cc5-46ad-8cdc-ef1908041eb1,negative,UI_UX_Friction,"Free tier limits, Premium lock, Ads, Song selection",Playing specific songs,"Usable free tier, Free song selection","User laments the deterioration of the free tier, citing the removal of free downloads, song selection, and excessive ads."
+a4e54a0e-250f-4e31-beea-97a531836173,negative,UI_UX_Friction,"Widget, Forced updates",Not specified,"Old widget back, Working widget",User is frustrated that a recent update forced a barely functional new widget with no option to revert to the old one.
+885340f5-e6b3-470a-9964-37587c712573,negative,Other,"Customer service, Refund, Corporate greed",Not specified,"Helpful customer support, Refund",User is uninstalling the app after a terrible customer service experience where they were denied a refund for an unused service.
+73aae027-a64e-4b42-86ca-2a18e38eeb87,negative,UI_UX_Friction,Widget size,Not specified,Smaller widget option,User is unhappy that the new widget takes up half of their phone's homepage.
+b79b73d0-55ab-4ed8-9dea-5d187147dad9,negative,UI_UX_Friction,"Free tier limits, Ads, Queue management, Song selection",Playing specific songs,"Usable free tier, Better queue management","User likes the app but finds the free tier a nightmare due to ads, song selection limits, and the inability to edit the queue on mobile."
+97801852-53d3-4a12-bc19-3a8d68c9dbf5,negative,Other,"Ads, Ad frequency",Not specified,Fewer ads,User is confused and annoyed by receiving three ads after every single song.
+a8332e1c-dd16-442c-abf0-b221aca2009f,negative,Other,"Security, Privacy",Not specified,Better security/privacy,User requests stronger security regarding phone access.
+280c1516-211b-4e04-85e9-ae9dda143354,negative,UI_UX_Friction,"Premium lock, Free tier limits, Hacked songs, Customer service",Replaying songs,"Free loop/repeat buttons, Security against hackers",User is angry about basic loop features being paywalled and complains about hackers hijacking music.
+3ce5c353-5e2a-4c25-9bc4-c3353c3fda26,neutral,Other,"Ads, Premium",Not specified,"Fewer ads, ways to earn premium",User wishes for fewer ads and alternative ways to earn temporary premium access.
+75038c6a-03b7-44c0-bd89-41d59ee69d27,negative,Other,"Scam, General complaint",Not specified,Not specified,User calls the app a garbage scam.
+46f23ebb-2945-4154-b8b3-0c20d8b73186,negative,Repetition,"Algorithm, Repetition, Playlist playback",Playlist listening,True variety in playback,User is frustrated that the algorithm repeatedly plays the same small selection of songs from a massive 44-hour playlist.
+d46b1651-49d9-4512-bb6d-ebf10dfa845c,negative,UI_UX_Friction,"Widget, Forced updates",Not specified,"Old widget back, Working widget",User is angry about being forced to use a totally broken new widget instead of the old one that worked fine.
+16e61b9a-1a91-4fa1-87fc-8afd1758b8a7,negative,Other,App loading,Not specified,App stability,User states the app won't load.
+0ad79ea9-3367-4046-8302-df072b5901aa,neutral,Other,Ads,Not specified,Fewer ads,User suggests the app would be better with fewer ads.
+c47e553a-d728-47a1-9b5f-72429dafaa11,negative,Other,"Ads, Piracy",Not specified,Fewer ads,User complains in Portuguese about the overwhelming number of ads and declares they will download a pirated version.
+7479345b-e4a4-43d9-a141-f7911f695aa3,negative,Other,"Ads, Corporate greed",Not specified,Fewer ads,User sarcastically claims the app is 99% ads and accuses the company of only wanting money.
+8f3b1381-d366-40a4-bd7f-d8e3e57f83c3,negative,UI_UX_Friction,"UI, Features, Corporate greed",Not specified,"Better UI, useful features",User feels the UI and features are poorly thought out and motivated by greed.
+f7ed4ccc-73bf-495b-a89d-bb821fc80d1c,positive,None,General praise,Not specified,Not specified,"User left a short, highly positive review."
+a5f6fa79-5488-4677-86de-6a10d2c9f430,negative,Other,"Ads, Ad frequency, Premium push",Not specified,Fewer ads,"User is frustrated by long, frequent ads every couple of songs."
+55671c88-ccc0-47bd-a80f-f722e3ac009b,negative,Other,Ads,Not specified,Fewer ads,"User strongly dislikes the ad system, calling it a vibe killer."
+573a5a51-89f9-406b-b524-f04e0293496e,negative,PricingIncrease,"Premium push, Corporate greed",Not specified,Fewer premium prompts,User complains in Hindi that the app constantly asks for money.
+74193e15-7e5a-4f33-87a5-16a9887cbb21,negative,UI_UX_Friction,"Updates, Widget",Not specified,"Smaller widget, UI customization",User dislikes the new update because it forces a bulky widget on their home screen.
+0b68adb1-ea38-47e2-ae82-7d315d3964a0,negative,AlgorithmMismatch,Recommendations,Not specified,Better recommendations,User states that recommendations have worsened.
+reddit_001,negative,UI_UX_Friction,"Price Hike, App performance, Feature bloat, Lyrics",Not specified,"App stability, focus on core music features",User is angry about global price increases coupled with worsening app performance and unwanted social features.
+reddit_002,negative,AlgorithmMismatch,"Discover Weekly, Repetition, Hide feature failing",Finding new artists,"Working hide feature, accurate genre matching",User is frustrated that Discover Weekly pushes unrelated genres and repeatedly ignores their attempts to hide specific artists.
+reddit_003,negative,Repetition,"Discover Weekly, Customer support, Echo chamber",Finding new artists,"More variety, cross-genre discovery","User complains that Discover Weekly is stuck in a single genre loop with familiar artists, and support offered no real help."
+reddit_003_c1,neutral,OverPersonalization,"Discover Weekly, Song Radio, AI integration",Finding new artists,"More variety, human curation",User circumvents Discover Weekly's lack of variety and AI bloat by using non-personalized Song Radio tags instead.
+reddit_004,negative,AlgorithmMismatch,"Discover Weekly, Algorithm degradation",Finding new artists,Accurate recommendations,Long-time user is deeply frustrated that Discover Weekly consistently suggests disliked songs and unrelated genres despite active algorithm training.
+reddit_005,negative,OverPersonalization,"Echo chamber, Made for You playlists, Hyper-personalization",Finding new artists,"General/global playlists, less personalization",User is highly annoyed by hyper-personalization turning their music discovery into an inescapable echo chamber.
+reddit_006,neutral,None,"Discover Weekly, Genre pills, Playlist sharing",Finding new artists,Not specified,User shares a technical observation about how Discover Weekly generates hundreds of unique tracks using genre pills and profile sharing.
+reddit_007,negative,BlockedArtistsIgnored,"Blocked artists, Recommendations",Playlist listening,Working block list,User is extremely frustrated that the algorithm continuously recommends artists they explicitly blocked years ago.
+reddit_007_c1,negative,BlockedArtistsIgnored,"Blocked artists, Paid promotions",Not specified,"Ad-free/promotion-free home page, working block list",User theorizes that Spotify ignores block lists for paid promotions and criticizes the feature as highly anti-user.
+reddit_008,negative,Repetition,"Playlist suggestions, Repetition",Playlist curation,Fresh playlist suggestions,"User is sick to death of the playlist suggestion feature offering the exact same songs for over two years, even ones already added."
+reddit_008_c1,negative,SmartShuffleIssues,"Smart Shuffle, Duplicate tracks, Recommendations",Finding new artists,"Better recommendation algorithm, accurate duplicate detection",User blames the Smart Shuffle update for ruining recommendations and causing annoying duplicate track detection errors.
+reddit_009,negative,OverPersonalization,"Curated playlists, Made for You, Echo chamber",Finding new artists,"Human curated playlists, non-personalized discovery","User is frustrated that official curated playlists have been replaced by ""made for you"" lists that only repeat familiar or unwanted tracks."
+reddit_010,negative,Repetition,"Spotify DJ, Repetition, Time-of-day mismatch","Background music, finding new artists","Context-aware recommendations, more variety","User finds the Spotify DJ incredibly repetitive, complaining it pushes old phases and ignores the current time of day."
+reddit_011,negative,AlgorithmMismatch,"Daily Mix, Outdated recommendations",Daily listening,"Algorithm reset, ability to exclude old genres","User is frustrated that Daily Mixes are dominated by genres they stopped listening to years ago, with no way to reset it."
+reddit_012,positive,None,"Music discovery, The Sounds of Spotify, Curated playlists",Finding new artists,Not specified,"User shares a helpful workaround for discovering new music by searching for specific ""The Sound of"" genre playlists."
+reddit_013,negative,Repetition,"Shuffle, Repetition",Playlist listening,True random shuffle,"User is annoyed that the shuffle algorithm keeps playing the exact same song from a 5,000-song library, ruining their enjoyment of it."
+reddit_014,negative,OverPersonalization,"Made for You, Echo chamber, Repetition",Finding new artists,"Less personalization, more variety","Users complain that ""made for me"" features create an infinite loop of the same 50-100 songs."
+reddit_015,negative,Repetition,"Spotify Mixes, Artist Radio, Repetition, Ignored skips",Finding new artists,"Accurate artist radios, true variety, respect for skipped artists",User is sick of the algorithm injecting the same 30 unrelated songs across different mixes and ignoring their frequent skips.
+reddit_016,negative,UI_UX_Friction,"Spotify Blend, Bugs, Workaround",Social listening,Working Blend links,User is furious that Spotify Blend links are broken and require a weird search bar workaround to function properly.

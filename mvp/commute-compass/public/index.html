@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commute Compass — AI-Native Spotify Discovery Agent</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="app-header">
+    <div class="header-logo">
+      <span class="compass-emoji">🧭</span>
+      <h1>Commute Compass</h1>
+    </div>
+    <div class="user-badge" id="userBadge" style="display: none;">
+      <span id="userNameText">Commuter</span>
+      <button class="logout-btn" id="logoutBtn">Disconnect</button>
+    </div>
+  </header>
+
+  <main class="app-container">
+
+    <!-- Screen 1: Connect Spotify Landing -->
+    <section class="screen-card active" id="authScreen">
+      <div class="hero-content">
+        <h2>Your commute isn't generic.<br>Why is your music?</h2>
+        <p class="hero-desc">
+          Spotify's algorithms optimize for similarity, trapping you in repetitive loops. 
+          Commute Compass is an AI-native agent that design sessions based on your **commute duration**, **current mood**, and **desired exploration level**, explaining *why* every song fits.
+        </p>
+        
+        <div class="features-preview">
+          <div class="feat-badge">🎯 Contextual Alignment</div>
+          <div class="feat-badge">🧪 Guided Curation</div>
+          <div class="feat-badge">🧠 Explorable Explanations</div>
+        </div>
+
+        <button class="btn btn-primary" id="connectSpotifyBtn">
+          <svg class="spotify-logo-svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.565.387-.86.207-2.377-1.454-5.37-1.783-8.893-.982-.336.075-.668-.135-.744-.47-.077-.337.136-.669.472-.745 3.848-.876 7.14-.502 9.817 1.135.295.18.386.565.208.855zm1.223-2.722c-.226.367-.707.487-1.074.26-2.72-1.672-6.87-2.157-10.082-1.182-.413.125-.847-.107-.972-.52-.125-.413.107-.847.52-.972 3.676-1.116 8.243-.574 11.348 1.334.368.226.488.707.26 1.08zm.105-2.833C14.73 8.847 9.475 8.672 6.435 9.596c-.463.14-1.02-.12-1.16-.583-.14-.463.12-1.02.583-1.16 3.528-1.07 9.33-.87 13.007 1.312.417.248.552.784.304 1.2-.248.416-.783.552-1.2.304z"/>
+          </svg>
+          Connect Spotify Premium
+        </button>
+      </div>
+    </section>
+
+    <!-- Screen 2: Context Form Screen -->
+    <section class="screen-card" id="formScreen">
+      <div class="card-header">
+        <h2>Define Your Vibe</h2>
+        <p class="subtitle">Tell the AI agent about your commute moment</p>
+      </div>
+
+      <form id="vibeForm" class="vibe-form">
+        <!-- Duration Selector -->
+        <div class="form-group">
+          <label class="form-label">1. How long is your ride?</label>
+          <div class="duration-grid">
+            <label class="btn-radio">
+              <input type="radio" name="duration" value="15" checked>
+              <span>15 Min</span>
+            </label>
+            <label class="btn-radio">
+              <input type="radio" name="duration" value="30">
+              <span>30 Min</span>
+            </label>
+            <label class="btn-radio">
+              <input type="radio" name="duration" value="45">
+              <span>45 Min</span>
+            </label>
+            <label class="btn-radio">
+              <input type="radio" name="duration" value="60">
+              <span>60 Min</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Mood Selector -->
+        <div class="form-group">
+          <label class="form-label">2. What is your active mood?</label>
+          <div class="mood-grid">
+            <label class="btn-radio-mood">
+              <input type="radio" name="mood" value="stressed" checked>
+              <div class="mood-card">
+                <span class="mood-emoji">🤯</span>
+                <span class="mood-name">Stressed</span>
+                <span class="mood-meta">Calming fallback</span>
+              </div>
+            </label>
+            <label class="btn-radio-mood">
+              <input type="radio" name="mood" value="calm">
+              <div class="mood-card">
+                <span class="mood-emoji">🧘</span>
+                <span class="mood-name">Calm</span>
+                <span class="mood-meta">Flow, ambience</span>
+              </div>
+            </label>
+            <label class="btn-radio-mood">
+              <input type="radio" name="mood" value="energized">
+              <div class="mood-card">
+                <span class="mood-emoji">⚡</span>
+                <span class="mood-name">Energized</span>
+                <span class="mood-meta">High tempo, beats</span>
+              </div>
+            </label>
+            <label class="btn-radio-mood">
+              <input type="radio" name="mood" value="tired">
+              <div class="mood-card">
+                <span class="mood-emoji">😴</span>
+                <span class="mood-name">Tired</span>
+                <span class="mood-meta">Gentle motivation</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Adventure Level Slider -->
+        <div class="form-group">
+          <div class="slider-header">
+            <label class="form-label">3. Adventure Level</label>
+            <span class="slider-value" id="adventureValue">3 (Balanced)</span>
+          </div>
+          <input type="range" class="vibe-slider" id="adventureSlider" name="adventure" min="1" max="5" value="3">
+          <div class="slider-labels">
+            <span>Familiar Comfort</span>
+            <span>Balanced Vibe</span>
+            <span>Uncharted Discovery</span>
+          </div>
+        </div>
+
+        <!-- API Key Entry (Collapsible) -->
+        <div class="form-group api-section">
+          <button type="button" class="collapsible-header" id="apiToggleBtn">
+            <span>⚙️ LLM API Configuration</span>
+            <span class="arrow-indicator">▼</span>
+          </button>
+          <div class="collapsible-content" id="apiContent">
+            <label class="form-label mini-label" for="geminiApiKey">Google Gemini API Key (stored in browser local storage)</label>
+            <div class="input-with-button">
+              <input type="password" id="geminiApiKey" class="input-text" placeholder="AI Studio Key (AIzaSy...)">
+              <span class="status-indicator icon-badge" id="keyStatus">🔑 Local</span>
+            </div>
+            <p class="helper-text">If left blank, the app will fall back to using the backend's environment key.</p>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+          Compass Curation 🧭
+        </button>
+      </form>
+    </section>
+
+    <!-- Screen 3: Loading / Curation Screen -->
+    <section class="screen-card" id="loadingScreen">
+      <div class="loader-content">
+        <div class="radar-spinner">
+          <div class="radar-line"></div>
+          <div class="radar-dot dot-1"></div>
+          <div class="radar-dot dot-2"></div>
+        </div>
+        <h2>Curation Agent Orchestrating</h2>
+        <p class="loading-subtitle" id="loaderMessage">Reading your Spotify taste profile...</p>
+        
+        <div class="steps-tracker">
+          <div class="step-row active" id="step1">
+            <span class="step-check">✓</span>
+            <span class="step-text">Ingesting active top taste context</span>
+          </div>
+          <div class="step-row" id="step2">
+            <span class="step-check">✓</span>
+            <span class="step-text">Querying Gemini Curation Model</span>
+          </div>
+          <div class="step-row" id="step3">
+            <span class="step-check">✓</span>
+            <span class="step-text">Searching Spotify Catalogue</span>
+          </div>
+          <div class="step-row" id="step4">
+            <span class="step-check">✓</span>
+            <span class="step-text">Instantiating Playlist</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screen 4: Results Screen -->
+    <section class="screen-card" id="resultsScreen">
+      <div class="results-header">
+        <div class="results-title-group">
+          <span class="results-badge">🧭 Session Generated</span>
+          <h2 id="sessionTitle">Playlist Session Title</h2>
+          <p id="explanationOverview" class="explanation-overview">Detailed session overview from Gemini.</p>
+        </div>
+        <a href="" target="_blank" class="btn btn-primary" id="openPlaylistBtn">
+          <svg class="spotify-logo-svg" viewBox="0 0 24 24" width="20" height="20">
+            <path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.565.387-.86.207-2.377-1.454-5.37-1.783-8.893-.982-.336.075-.668-.135-.744-.47-.077-.337.136-.669.472-.745 3.848-.876 7.14-.502 9.817 1.135.295.18.386.565.208.855zm1.223-2.722c-.226.367-.707.487-1.074.26-2.72-1.672-6.87-2.157-10.082-1.182-.413.125-.847-.107-.972-.52-.125-.413.107-.847.52-.972 3.676-1.116 8.243-.574 11.348 1.334.368.226.488.707.26 1.08zm.105-2.833C14.73 8.847 9.475 8.672 6.435 9.596c-.463.14-1.02-.12-1.16-.583-.14-.463.12-1.02.583-1.16 3.528-1.07 9.33-.87 13.007 1.312.417.248.552.784.304 1.2-.248.416-.783.552-1.2.304z"/>
+          </svg>
+          Open Playlist in Spotify
+        </a>
+      </div>
+
+      <div class="session-structure-overview">
+        <span class="structure-bar warmup" style="width: 25%;">Warmup</span>
+        <span class="structure-bar discovery" style="width: 50%;">Discovery</span>
+        <span class="structure-bar fallback" style="style: 25%;">Fallback</span>
+      </div>
+
+      <div class="tracks-list-container" id="tracksList">
+        <!-- Tracks will be dynamically populated here -->
+      </div>
+      
+      <div class="action-footer">
+        <button class="btn btn-secondary" id="regenerateBtn">🧭 New Commute</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="app-footer">
+    <p>Commute Compass © 2026 · AI Curation Engine and explanation layers</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

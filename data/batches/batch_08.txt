@@ -1,0 +1,146 @@
+Analyze the following batch of 40 user reviews for Spotify. Identify if they describe any recommendations or discovery barriers.
+Return ONLY a markdown table with the following 7 columns:
+ID | Sentiment | Barrier Type | Themes | Listening Behavior | Unmet Need | Summary Insight
+
+Guidelines:
+- ID: EXACTLY the ID provided for each review. Do not change, modify, or truncate the ID.
+- Sentiment: "positive", "neutral", or "negative".
+- Barrier Type: Categorize the main recommendation/discovery barrier. Choose EXACTLY one from:
+  * "Repetition" (getting same songs/playlists repeatedly, algorithm feels stuck)
+  * "OverPersonalization" (everything is tailored, echo chambers, lack of organic discovery)
+  * "BlockedArtistsIgnored" (algorithm plays blocked/hidden artists)
+  * "SmartShuffleIssues" (complaints about smart shuffle repeating or playing bad songs)
+  * "UI_UX_Friction" (navigation, layout changes, adding music is annoying)
+  * "PricingIncrease" (dislike of price increases vs. quality)
+  * "AlgorithmMismatch" (totally wrong genres/moods, unrelated recommendations)
+  * "Other" (other technical issues/complaints about recommendations)
+  * "None" (no barrier mentioned, e.g., positive review, simple audio bug)
+- Themes: A comma-separated list of keywords (e.g. "Discover Weekly", "Smart Shuffle", "Price Hike", "Repeat Listening").
+- Listening Behavior: Context/goal user wants (e.g. "commute listening", "background music", "finding new artists", "playlist curation", or "Not specified").
+- Unmet Need: What control/feature is missing (e.g. "exclude genres", "better block list", "more variety", or "Not specified").
+- Summary Insight: A 1-2 sentence summary of the specific user pain point.
+
+CRITICAL: Return ONLY the raw markdown table (starting with the header row). Do not include introductory text, code block backticks (like ```), or conclusion text.
+
+Batch to analyze:
+================
+ID: a4f1683e-9b82-4310-9138-a9d5652c9c6e
+Text: Good music nd sound but also controlling my songs
+---
+ID: 7d94f0e4-34d4-4e72-973c-5034d9916d65
+Text: Ad bundaiya podathada dvdya
+---
+ID: 92ebb678-6e2f-40ea-8d42-c1c71e211789
+Text: EDIT: Replying to your dismissive reply that it's my device... That's wrong. It's a known Spotify issue for ALL devices, and you have acknowledged it on your own website. So instead of being lazy and gaslighting users, fix your bugs. ORIGINAL: can't disable auto play when connected to Bluetooth.
+---
+ID: 7f90ed81-9a05-4eef-800e-b1137427ab1c
+Text: Too many ads!!!!!!!!
+---
+ID: cffe20c8-e426-43ff-8b5a-4ac390b53fd1
+Text: Cool... Now they put ads on podcasts while you pay premium. You keep raising prices and give less benefits
+---
+ID: 2b521c9d-18eb-4298-8027-292919994af4
+Text: Oh, brilliant job, Spotify. Limiting free users to a whopping six skips an hour and blasting non-stop, vibe-killing ads is truly a masterclass in making an app feel like total garbage. I honestly have no clue what kind of corporate genius is running their business right now, but they are messing absolutely everything up with these completely stupid restrictions. It’s so aggressively awful that literally any other music alternative on the planet sounds better than dealing with this dumpster fire.
+---
+ID: 3e1edbe1-657b-4b01-93ab-128144bde55e
+Text: overall good app but the price of the subscription is little higher and don't have any plan for teen students
+---
+ID: f8662044-8109-498f-91ea-2804dd06d3ad
+Text: Free version is Bogus..
+---
+ID: a34de0b1-df39-4c16-b329-3d6b9b171cf8
+Text: it does not give to listen unlimeted song to listen by free
+---
+ID: faa22d03-1aca-49c9-86af-905876527580
+Text: it have to many ads ...I don't like that...but have my fav songs it's good
+---
+ID: f6d1a67f-4cf7-4cfd-88d8-e99ae6a03c61
+Text: one of the worst music app since it's last update. like you have not to skip and choose what you want to listen.👎👎👎
+---
+ID: 1acf7bac-42cc-443a-b3d5-3d01e5bd4095
+Text: അവന്റെ ഒകെ അച്ഛന്റെ premium
+---
+ID: 9a4a4408-e46c-4fd7-9c87-c08f0ee2a66d
+Text: They introduced a new, bigger and more obnoxious home screen widget that you have to replace the prior one with, and now it doesn't work. What a waste.
+---
+ID: b704302e-4364-4285-8bae-d8db555ee130
+Text: not good but not bad
+---
+ID: faea8c51-499d-4181-b9f6-32bbf4d9bcb1
+Text: stop using ai
+---
+ID: 29f90260-b297-46b6-9dff-edac191f4aaf
+Text: Spotify used to be good, but it's become insufferable with the amlunt of ads there are, limited skips, and playing SUGGESTED songs while Im playing the playlist :/ Until it gets better (which it likely won't) I won't be usinh spotify for a while
+---
+ID: 0c0f7089-f887-439e-b54b-32a07e30e6f0
+Text: down load songs not working
+---
+ID: e4fbdc2e-1bfe-452b-9fc7-c9f7e257fbac
+Text: the new widget doesn't do what it is supposed to do, and I keep getting harassed if I try to use the old one.
+---
+ID: 5051e0a1-2057-4a3c-aa22-677291ab024f
+Text: you guys goofed big time with removing the 4x1 widget. squeezing the new 4x2 into 4x1 looks bad. after being a client for ~ 7 years this is the last month ill be paying the sub. one person does not matter. ill not change the billions you make, but i am just leaving here as a honest and disappointed feedback
+---
+ID: 695bf053-80ab-4ac8-8c40-14726a05bdd7
+Text: pretty good
+---
+ID: caa24fcc-70ef-4177-a1e4-731e01ca1c54
+Text: over net,slow motion,waste
+---
+ID: 77043713-1144-487f-95a2-c9e890584d9e
+Text: amazing I love it so much so easy to use and read 100% recommend
+---
+ID: 12953a7a-603a-4c06-9904-488f862d6b69
+Text: drop the premium
+---
+ID: bf256586-aef6-48b2-95e2-070852a1ed3b
+Text: i can't play songs according to me because of the premium version. It shows that I have to take premium subscription just to play a song of my own choice otherwise I have to listen the songs which is recommended by the app not of my own will and I just hate this program .
+---
+ID: 64911fd6-3d4a-426f-ad29-a7e60c012fd7
+Text: this app alway say for perium but i have no money
+---
+ID: 927f68bd-5d29-40ab-8af2-853691ad5746
+Text: got a terrible experience, I have got a subscription for 3 months and now that my subscription expired it started showing add and stuff prior 1 day to the end of my subscription end date. now even when I open Spotify it's popping up multiple times to upgrade to premium and now that I am not at all allowed to choose the song I wish to listen to it's like forcing me to listen to whatever song it plays . completely dissatisfied and disappointed with the application, uninstalled it. it is a trash
+---
+ID: 8089f1cb-f59a-42dc-8415-01365ea7f9cd
+Text: The app doesn't show any improvement, the new widget is absolutely the worst, the company doesn't support artists. I'm one short step away from moving from Spotify to some other bad app like Amazon Music, which at least could be cheaper.
+---
+ID: 68028d29-242e-4ec6-8b40-4b422eed4c2e
+Text: WHAT HAVE YOU DONE TO THE WIDGET AGAIN!!! Why are you enforcing us to use the new HIGE AND POOR EXCUSE FOR A WIDGET when you have a perfectly working one!!! Outrageous!!!
+---
+ID: 97b3d948-1412-455d-b548-998093d09104
+Text: so many options. but after all these years shuffle options, still lets me hear the same song 10 times in the first 50 tracks of a 2500 track playlist. smart shuffle option does not change that.
+---
+ID: bf771100-811d-40ea-bfff-31f1a7f6e009
+Text: so, the new widget sucks. I tried it a couple months ago and switched back to the old one. now I'm forced to use it. it does not have play controls on it. just a picture of my playlist. when I click it, all it does it open Spotify. so what's the point? and most of the time it freezes. call me when it's useful and maybe I'll change my review.
+---
+ID: c416a747-37da-4735-8696-d56069a6837c
+Text: Broken App, Horrible Support Today the app is 100% broken. Their support is insane. A different person answers each message and all they do is ask questions on repeat with absolutely no resolution.
+---
+ID: a382a39e-ce65-45af-9fec-face90585777
+Text: BEFORE YOU WASTE YOUR APP SPACE (its super glitchy and then it just randomly stopped working every time I open the app it shows the Spotify logo and then just darkness 100% do not download )
+---
+ID: 562a0720-de97-44ca-977f-bb6055c2720d
+Text: the fact that premium still has adds like a stripper has herpes is messed up, plus if you like audio books they will milk you dry for every penny. 10 hours a day at work is 13 dollars a day. your better off with the public library app and YouTube premium. unless they come up with a less predatory billing system.
+---
+ID: 74d21efe-dc95-4fc9-a864-82f562754dbc
+Text: could be a little more proactive in the discover weekly but other than that. great app
+---
+ID: 3ba93a7f-fdca-49ff-8856-0c5a3e837916
+Text: THIS IS A TRASH YOU GOTTA PAY FOR EVERYTHING!
+---
+ID: 1688fca6-621a-4ad2-802d-0c337d0e97ca
+Text: Spotify used to be great now its all ads on podcasts and all the Ai is awful. it makes the app slow and some days I can't even use the app because its so slow.
+---
+ID: a6afc8b3-fc1c-42d5-89b4-c97f2f7548a2
+Text: never had issues until today's crash, and not one notice on your end about it. users instead get a prompt to check connection when the issue is clearly on your end. pls fix it quickly.
+---
+ID: 2d8e82e9-8a5a-483b-996d-a22e0b96f7db
+Text: "Something went wrong, please try again." Even after uninstalling and reinstalling! IDK what is going on with Spotify hub, but it needs to get fixed ASAP!
+---
+ID: ab22df34-431b-4703-a1cf-4e3f1d985f23
+Text: Vibe coded slop. Can't sign in even after uninstall/reinstall, device restart, clear cache, etc.
+---
+ID: cdeea1a9-bc06-4b90-ba8a-2ca04851bd50
+Text: I can't even enter on the app lol XD.
+---

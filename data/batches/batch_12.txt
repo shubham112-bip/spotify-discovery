@@ -1,0 +1,146 @@
+Analyze the following batch of 40 user reviews for Spotify. Identify if they describe any recommendations or discovery barriers.
+Return ONLY a markdown table with the following 7 columns:
+ID | Sentiment | Barrier Type | Themes | Listening Behavior | Unmet Need | Summary Insight
+
+Guidelines:
+- ID: EXACTLY the ID provided for each review. Do not change, modify, or truncate the ID.
+- Sentiment: "positive", "neutral", or "negative".
+- Barrier Type: Categorize the main recommendation/discovery barrier. Choose EXACTLY one from:
+  * "Repetition" (getting same songs/playlists repeatedly, algorithm feels stuck)
+  * "OverPersonalization" (everything is tailored, echo chambers, lack of organic discovery)
+  * "BlockedArtistsIgnored" (algorithm plays blocked/hidden artists)
+  * "SmartShuffleIssues" (complaints about smart shuffle repeating or playing bad songs)
+  * "UI_UX_Friction" (navigation, layout changes, adding music is annoying)
+  * "PricingIncrease" (dislike of price increases vs. quality)
+  * "AlgorithmMismatch" (totally wrong genres/moods, unrelated recommendations)
+  * "Other" (other technical issues/complaints about recommendations)
+  * "None" (no barrier mentioned, e.g., positive review, simple audio bug)
+- Themes: A comma-separated list of keywords (e.g. "Discover Weekly", "Smart Shuffle", "Price Hike", "Repeat Listening").
+- Listening Behavior: Context/goal user wants (e.g. "commute listening", "background music", "finding new artists", "playlist curation", or "Not specified").
+- Unmet Need: What control/feature is missing (e.g. "exclude genres", "better block list", "more variety", or "Not specified").
+- Summary Insight: A 1-2 sentence summary of the specific user pain point.
+
+CRITICAL: Return ONLY the raw markdown table (starting with the header row). Do not include introductory text, code block backticks (like ```), or conclusion text.
+
+Batch to analyze:
+================
+ID: b0f19313-32b7-4dca-82b3-5b39bda6532a
+Text: always need premium for listening song in a line
+---
+ID: 0e5e510b-351c-4e77-a788-9d57665cd686
+Text: Why are there "promotions" for artists' upcoming albums that I don't even listen to on my home page?? There's not even an option to remove them or say "not interested." Remove this rubbish from my page!!
+---
+ID: c9bd0f52-7444-43ff-ba52-4e8a2ac555e4
+Text: I'm tired of spending 15-20 minutes making a Playlist of news of the day and then it gets deleted during my drive to work, playing only music.
+---
+ID: 563ec69a-e576-410d-b16a-803f9b7f3b0a
+Text: Not sure what happened, maybe it's all the vibe coded slop code they've been pushing into production, but the app keeps getting buggier and buggier
+---
+ID: 7b06c429-c6e0-4ac1-a0e4-536446f1aa07
+Text: I've been a premium subscriber for years but over the last few weeks the app has gotten painfully slow and unusable. It will play a podcast for 15 seconds and then take 2 minutes to load the next 15 seconds. I cleared cache, deleted and reinstalled the app... nothing. All other apps and downloads work fine. I'm paying a premium price for a terrible experience. Cancelled and uninstalled.
+---
+ID: 9d808110-2144-4451-89e1-4d6763015856
+Text: Existence Exceeds Essence, especiallywhen it comes to spotify features. they need a lite version with less useless bloat. given it takes 3 minutes to load individual pages I've cancelled my sub and recessed to recording YouTube with audacity
+---
+ID: 8efac0e1-3beb-46b8-abfb-761ccb3770d0
+Text: I'll be honest this is the worst app on the play store, I really don't understand why I even pay for a subscription.The app barely opens, does not work offline, when I am online tells me I'm offline and flat out refuses to allow me to search at times. It deletes content I have downloaded with no warning and has on multiple occasions randomly cut my audiobook hours to zero without warning. Please get this trash heap fixed or I'll be moving to Amazon music, as things stand this is disgraceful.
+---
+ID: 980a0140-93b1-47f0-b5cc-957c1b623f03
+Text: Smooth, reliable, and user‑friendly. The app runs fast, has a clean design, and makes everyday tasks easier. Spotify is highly recommended!
+---
+ID: 915e2b67-f8c8-4c74-bcef-4f764b85c469
+Text: User unfriendly - user interface not well designed; too many ads; can't make payments because unable to update payment method because unable to change country (on site + app).
+---
+ID: 4890844b-faf3-47af-a2eb-33bedea1d74a
+Text: Spotify Please add dolby Atoms song support to Spotify premium
+---
+ID: 5f326f20-1ca0-4f1e-b8d8-f689828a200a
+Text: 😘
+---
+ID: aa1d6df4-99be-4de3-86f8-4e42eb11ff14
+Text: Good app
+---
+ID: 30502705-ac02-4590-b689-08088c4e451f
+Text: I have grown quite annoyed that the "shuffle" feature has turned into a Playlist feature. when I want the songs to shuffle, I want them ALL shuffled. Not just put into a certain order everytime I tap on a new song
+---
+ID: faa1f598-988d-46a8-b9f1-3fb1630860cb
+Text: single handedly the worst app for a paid service out there. on average every action on the app takes more than 10 seconds to load. I'm really not willing to switch services, but I might actually have to
+---
+ID: d707d196-ed52-40cf-9142-384d79b3be8c
+Text: More times than not the app doesn't start up/load
+---
+ID: e9186f9e-c317-4d56-9fe1-62cf5eb868c6
+Text: half the audio books dont work. or they work you enough to invest and then start missing the last 2-5 mins of chapter. pathetic.
+---
+ID: 47a179e0-291e-4b8c-ab9a-48830d3ae4a3
+Text: home screen widget stopped working
+---
+ID: 1252c201-e2dc-41d0-9dd8-1c5469dec2c9
+Text: I swapped some of my adidas points for a 3 month premium subscription. Usually, I always cancel immediately after the subscription starts so that I don't forget. And usually for other apps, the subscription continues until the end date. But in this case, trial subscription ended immediately. So what I lost, some points in my adidas app..Is that a big deal, probably not. But surely, Spotify team can make this trial process fairer.
+---
+ID: aec7054c-3a86-4e7e-9f6d-69104aaab4f7
+Text: Been using Spotify for years and it just keeps getting better. The algorithm actually understands my taste, Discover Weekly is elite, and the sound quality is solid. Huge library, works offline, no major complaints. Best music app out there
+---
+ID: e088b628-7605-4905-8f3d-e74d803c7c3f
+Text: Spotify Free is very recommended to those without the budget, but because of a few updates here and there ads became overwhelming but it's occasionally and enduring.
+---
+ID: 4d7e733d-a2a7-4360-b8b1-0f10d98c71e5
+Text: Don't know if everyone is vibe coding at Spotify now but the performance of the app has tanked after the slew recent added "features" (slop). Subscriber since day 1. Seriously considering switching.
+---
+ID: 1edb63a8-3996-41da-a5e9-52a69d234a0e
+Text: this app only for premium persons
+---
+ID: 4661890d-c1ea-47d5-9bc9-e9ce109e2daa
+Text: New widget has issues.. Freezes and often displays the wrong title... Paid service and still get pop ups... And the price keeps going up.
+---
+ID: 791ee59e-a39d-423d-9266-c004133b1f86
+Text: What's happened to the widget?? Has now become just grey in colour with fewer controls!
+---
+ID: 421ac06c-3495-4542-9885-deb5a25ee9a3
+Text: wrost app I have ever downloaded in my phone
+---
+ID: b499822c-e3e9-47e1-bc8e-8b58b1c42f8f
+Text: a minute long ads is absolutely disrespectful
+---
+ID: 0f5998f4-17d8-47ee-92b1-cdee27cd2f9c
+Text: it seems at the moment Spotify are more interested in adding a bunch of random ai features than actually making the app work. The past few months it has all of a sudden been super slow to load anything, will often not play songs / podcasts that are downloaded, and half the time when I add a song to a playlist it won't work and I will have to add it 2-3 times. Probably because they're coding using ai. . .
+---
+ID: d8930efe-7867-4379-8878-de01fd02e911
+Text: My go-to for daily soundtracks. The personalized playlists are accurate, and the layout is incredibly smooth. And the lyrics section makes it so fun to sing along.
+---
+ID: f7b7b674-0e56-4bfd-b57f-912d2e32c480
+Text: worst app ever. absolutely useless. only good part is that it works in backround. but. -cant repeat -cant choose (auto mix) -premium is expensive -cant skip to a part of the song. you need to wait.
+---
+ID: 4fb11640-7b0a-4e94-8861-1321ff8a32de
+Text: unusable
+---
+ID: 823afdd2-e72a-429d-906f-7ba855da8853
+Text: why is the app taking so much storage when no music is on my phone!!??
+---
+ID: b40a37a7-9d3b-4f79-abfd-4cd1e722d15c
+Text: The latest update made it unable to play anything.
+---
+ID: 383f45a8-4a8b-4f3a-8d93-2b146171c090
+Text: This app is so painfully slow to load that it's almost unusable. I don't know why as it's been the same on multiple devices. I've tried clearing the cache as well as uninstalling and reinstalling but this hasn't helped.
+---
+ID: 8886abef-6a3d-4821-9cbb-b2a26701282f
+Text: The way you can manage your Playlists, the songs and plenty of library makes want to keep listening to music, podcasts and books!!
+---
+ID: b72214d8-49a0-4baa-8f2a-c7142ced446b
+Text: full 30 second ads time full problem it
+---
+ID: 827cbe2f-1bb1-46d4-a369-c5b36a159eb5
+Text: ads sucks this app nowadays
+---
+ID: 80879b7e-d931-4b1b-b1ba-015d3cb71951
+Text: I'm a premium user and yet the app is still genuinely unusable. It's consistently laggy, and to make things worse, I was denied access to a jam, a feature I'm actively paying for, with a message saying it's "premium only." I AM on premium. Fixing bugs is the bare minimum when you're charging a monthly fee.
+---
+ID: 61e5a9d1-a4a8-44e7-bc14-232809c32980
+Text: Ad version is completely useless. Yiu cannot even choose songs you want to listen. It is basically a trial version, but you have to pay for it, with your time watching ads.
+---
+ID: 0002d45e-5eea-4875-848d-1de2b333432b
+Text: The widget got worse. It doesnt open spotify all the time when I want to play something new. Tapping on it to refresh doesnt give feedback that it registered my tap, so I don't know if it worked. I find that I need both the old and new widget to keep it working
+---
+ID: 495d9f6b-2c76-4c53-a496-8f291697a357
+Text: In my phone Spotify new disco ball logo is not coming even my Spotify is up to date
+---

@@ -1,30 +1,52 @@
-# Review Analysis Engine
+# Review Analysis Engine & Dashboard
 
-AI pipeline to tag App Store, Play Store, and Reddit feedback at scale.
+AI pipeline and premium visual dashboard to tag, filter, and analyze Spotify user feedback at scale.
 
-## Pipeline
+---
 
+## Architecture Diagram
+
+```mermaid
+graph TD
+    A[data/raw/*.csv] -->|merge_data.js| B[data/raw/all_reviews.csv]
+    B -->|create_gemini_batches.js| C[data/batches/batch_*.txt]
+    C -->|Gemini Web/Sidebar Copy-Paste| D[data/analyzed/reviews_tagged.csv]
+    D -->|server.js JSON API| E[HTML/JS Dashboard]
+    B -->|server.js JSON API| E
+    E -->|Browser Fetch| F[Gemini 1.5 Flash API]
 ```
-data/raw/*.csv → analyze_reviews.py (or n8n) → data/analyzed/reviews_tagged.json → streamlit_app.py
-```
 
-## Files (created in Week 1)
+---
+
+## File Registry
 
 | File | Purpose |
 |------|---------|
-| `prompts/extract_review.txt` | LLM prompt for structured JSON per review |
-| `prompts/synthesize_corpus.txt` | Second-pass prompt for 6 assignment questions |
-| `analyze_reviews.py` | Python batch processor (Day 3) |
-| `streamlit_app.py` | Query demo (Day 5) |
-| `n8n-workflow.json` | Exported workflow (Day 5) |
+| [create_gemini_batches.js](create_gemini_batches.js) | Splits master CSV into 23 text batch files inside `data/batches/` with pre-compiled instructions for manual Gemini copy-pasting. |
+| [server.js](server.js) | Zero-dependency Node.js server. Hosts the dashboard static files, parses the CSV reviews on-the-fly, merges them with raw review text, and serves them via `/api/reviews`. |
+| [index.html](index.html) | Main HTML layout of the dashboard, including statistics metrics, sidebar filter panels, and the "Ask Gemini" query section. |
+| [styles.css](styles.css) | Custom dark-mode stylesheet tailored with Spotify green, Outfit fonts, HSL-based colors, and hover micro-animations. |
+| [app.js](app.js) | Client-side reactive rendering. Handles sentiment/barrier filters, regex text search highlights, and browser-to-Gemini API fetch querying. |
 
-## CSV input format
+---
 
-```csv
-id,source,date,rating,text,url
-1,app_store,2025-03-12,2,"Discover Weekly is always the same artists",https://...
-```
+## How to Run Locally
 
-## Output schema
+1. **Navigate to the review engine directory**:
+   ```bash
+   cd review-engine
+   ```
 
-See `SPOTIFY_DISCOVERY_PROJECT_PLAN.md` → Part 1 → LLM extraction schema.
+2. **Start the Node.js server**:
+   ```bash
+   npm start
+   ```
+   *(Ensure you have run `npm install` once beforehand to install development scrapers, though the server itself has **zero external dependencies**).*
+
+3. **Open the Dashboard**:
+   Go to [http://localhost:3000/](http://localhost:3000/) in your web browser.
+
+4. **Ask Gemini Questions**:
+   - Get a free API Key from [Google AI Studio](https://aistudio.google.com/).
+   - Paste the key in the top-right password field of the dashboard and click **Save Key**.
+   - Filter your reviews in the sidebar, type a question in the AI panel, and click **Ask AI**.

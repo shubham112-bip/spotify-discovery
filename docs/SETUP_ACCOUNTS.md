@@ -26,16 +26,32 @@ git push -u origin main
 
 ## 2. Spotify Developer Dashboard (for MVP — Week 2)
 
-- [ ] Go to [developer.spotify.com/dashboard](https://developer.spotify.com/dashboard)
-- [ ] Log in with Spotify account
+- [x] Register / log in at [developer.spotify.com/dashboard](https://developer.spotify.com/dashboard)
 - [ ] Click **Create app**
   - **App name:** Commute Compass
   - **App description:** AI commute music discovery MVP for fellowship project
-  - **Redirect URI:** `http://localhost:3000/api/auth/callback` (add production URL later)
-- [ ] Save **Client ID** and **Client Secret** → copy to `.env` (see `.env.example`)
-- [ ] Under Settings → enable **Web API**
+  - **Website:** your GitHub repo URL (optional): `https://github.com/shubham112-bip/spotify-discovery`
+  - **Redirect URI:** `http://127.0.0.1:3000/api/auth/callback`  
+    ⚠️ **`localhost` is NOT allowed** on new apps (Spotify rule since Apr 2025). Use `127.0.0.1` exactly.
+- [ ] Open app → **Settings** → copy **Client ID** and **Client Secret**
+- [ ] Add credentials to `.env` (copy from `.env.example` — never commit `.env`)
 
-**Note:** Spotify may require app review for production users >25. For assignment demo, test mode with your account is sufficient.
+```powershell
+cd "c:\Users\User\Graduation Project-2\spotify-discovery"
+copy .env.example .env
+# Edit .env and paste SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET
+```
+
+**Redirect URIs to add (Settings → Redirect URIs):**
+
+| Environment | URI |
+|-------------|-----|
+| Local dev | `http://127.0.0.1:3000/api/auth/callback` |
+| Production (add on Day 14) | `https://YOUR-APP.vercel.app/api/auth/callback` |
+
+**Do NOT use** `http://localhost:3000/...` — Spotify will reject it. See [Spotify redirect URI docs](https://developer.spotify.com/documentation/web-api/concepts/redirect_uri).
+
+**Note:** For the fellowship demo, testing with your own Spotify account is enough. Extended Quota Mode is only needed if many external users will log in.
 
 ---
 

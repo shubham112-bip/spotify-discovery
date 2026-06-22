@@ -1,0 +1,146 @@
+Analyze the following batch of 40 user reviews for Spotify. Identify if they describe any recommendations or discovery barriers.
+Return ONLY a markdown table with the following 7 columns:
+ID | Sentiment | Barrier Type | Themes | Listening Behavior | Unmet Need | Summary Insight
+
+Guidelines:
+- ID: EXACTLY the ID provided for each review. Do not change, modify, or truncate the ID.
+- Sentiment: "positive", "neutral", or "negative".
+- Barrier Type: Categorize the main recommendation/discovery barrier. Choose EXACTLY one from:
+  * "Repetition" (getting same songs/playlists repeatedly, algorithm feels stuck)
+  * "OverPersonalization" (everything is tailored, echo chambers, lack of organic discovery)
+  * "BlockedArtistsIgnored" (algorithm plays blocked/hidden artists)
+  * "SmartShuffleIssues" (complaints about smart shuffle repeating or playing bad songs)
+  * "UI_UX_Friction" (navigation, layout changes, adding music is annoying)
+  * "PricingIncrease" (dislike of price increases vs. quality)
+  * "AlgorithmMismatch" (totally wrong genres/moods, unrelated recommendations)
+  * "Other" (other technical issues/complaints about recommendations)
+  * "None" (no barrier mentioned, e.g., positive review, simple audio bug)
+- Themes: A comma-separated list of keywords (e.g. "Discover Weekly", "Smart Shuffle", "Price Hike", "Repeat Listening").
+- Listening Behavior: Context/goal user wants (e.g. "commute listening", "background music", "finding new artists", "playlist curation", or "Not specified").
+- Unmet Need: What control/feature is missing (e.g. "exclude genres", "better block list", "more variety", or "Not specified").
+- Summary Insight: A 1-2 sentence summary of the specific user pain point.
+
+CRITICAL: Return ONLY the raw markdown table (starting with the header row). Do not include introductory text, code block backticks (like ```), or conclusion text.
+
+Batch to analyze:
+================
+ID: 14185973476
+Text: Phế vật ap - Như lồn áp bú lồn
+---
+ID: 14185559802
+Text: super bad im disappointed - super angry when my list of ads is interrupted by a stupid song
+---
+ID: 14185523248
+Text: rất tệ - rất tệ quá tệ.
+---
+ID: 14185318502
+Text: ! - hay nma lắm quảng cáo vcc
+---
+ID: 14185021794
+Text: lỗi quài - k cho chuyển bài luôn ấy?????
+---
+ID: 14184280314
+Text: Computer and Mobile Apps Sync - Computer and Mobile apps are not sync; playlist folders, for example, cannot be created on mobile app. Payments update and sorting system too.
+---
+ID: 14184003346
+Text: đc 5s tự tắt - bài l nào cũng đc 5s xong tự chuyển rác vãi l
+---
+ID: 14183851229
+Text: Too many advertisements - Too many advertisements
+---
+ID: 14182765020
+Text: Tệ - Khó chịu, suốt ngày qc? Cách 1 bài qc 1 lần? Mỗi lần qc cx nhanh lắm chắc? Đéo hiểu
+---
+ID: 14182139416
+Text: Phiền - Đến chọn bài hát cũng phải nâng premium thì chịu
+---
+ID: 14181232203
+Text: Avatar - Sao cập nhật lên phiên bản mới lại mất avatar mới vậy đang đẹp mà hazzz biết thế chả cập nhật
+---
+ID: 14176632158
+Text: tệ - nghe dc 8s tự tắt
+---
+ID: 14176600395
+Text: Nhận xét - Quá nhiều quảng cáo nghe đc bnh bài là có bấy nhiêu quảng cáo
+---
+ID: 14175727850
+Text: Bị bóp tính năng - Doanh nghiệp thì không nói, nhưng đây là cá nhân thì lại không thể tìm nhạc, lẫn nghe nhạc, đều không nghe được. Thư viện nhạc mình từng lưu cũng không thể nghe được dù đã bật chế độ shuffled. Mọi thứ giờ hình như bắt buộc phải lên premium mới sử dụng được, vậy thì bản thường này có tác dụng gì?
+---
+ID: 14174572778
+Text: Quảng cáo lâu - Cái gì vậy trời riết quảng cáo cũng vừa vừa quảng cái cỡ một bảng nhạc luôn vậy
+---
+ID: 1896a502-6d2a-4f38-9f6e-c935a9302bd7
+Text: have been using the app for more than a year now. the app now does not load and I have to reinstall the app everyday
+---
+ID: a7b9d26f-a90e-4490-bec5-728903fd6ea5
+Text: too much adds
+---
+ID: db8d90c2-e3c1-4c61-aeb1-6e29140dcb1a
+Text: I don't want to hear about this app or service that's predatory with the music industry.
+---
+ID: 621122e2-6410-4d6e-8916-7064514ae050
+Text: They deducted my money even after disbanding my Spotify subscription. And they won't refund me back my money.
+---
+ID: b63c430d-43bc-4edf-8328-55d6e3763ea1
+Text: The message i received when I tried to update 👇👇 Can't install Spotify: Music and Podcasts Try again, and if it still doesn't work, see common ways to fix the problem
+---
+ID: 658bd80f-c136-4d5e-bc0f-be3e5271c343
+Text: time to time it gets updated and then so many ads and now you can't even skip the song you don't want to listen, cannot listen to the searched song so frustrating
+---
+ID: 9cdc376b-4c82-4d32-a228-a2b3f2d2149b
+Text: premium always asks , I don't care about ads but it always asks if it's better to buy a youtube premium we can even watch movie, videos, and ad free music. in background, I gave it 1 star because of sportify good choice of song selection .
+---
+ID: 98c73a0b-0b14-4b75-9d36-b6acfc0b2160
+Text: The ad is too much and it's long
+---
+ID: d85a4ca8-5717-4353-a485-9a3f85e36f4b
+Text: Always the ads are about premium stuff and you can't play songs for long time. the album doesn't come in order. even the ads are too many at same time like their time duration is longer as well as the number. Except that the songs are good. Few songs have lyrical mistakes
+---
+ID: 04a885e5-6967-4d27-8b0f-55db6b4cda75
+Text: too much ad
+---
+ID: 393e598f-d200-490b-abb5-bc9a14a0e5d9
+Text: this is not coming sound
+---
+ID: 84b7444a-0145-4205-9db9-790a0520568a
+Text: this app sucks it wont even let me listen to music anymore AT ALL like when i search up a song and try to play it, it says i discovered a premium feature. this is literally horrible
+---
+ID: ced5f396-f477-4a00-a648-52cdac04c8a7
+Text: Lots of music. Works well. Love the AI DJ.
+---
+ID: 394179ae-d1c6-400b-9e41-4c871a791100
+Text: good 👍
+---
+ID: 02e737d1-6c6b-4b14-804a-8484bfcf7848
+Text: it's good but the glitching that happens to the app to me gets annoying it locks me in a black screen and I gtt Uninstall every time
+---
+ID: 8f0284e1-c3e2-489d-a1f9-9ba646ec45d6
+Text: Great experience as usual, Playlists are quite good
+---
+ID: 6dc3b46f-d0cc-4dd0-8c66-2d10c0d2b869
+Text: all u need is premium version to listen....
+---
+ID: 5b080918-a701-42db-9155-e51358b94d89
+Text: I subscribed for a full control of my listening using my google account the money was deducted but the subscription did not happen so what is the meaning of that
+---
+ID: c20d8926-254d-4607-889b-86f6e0265d6b
+Text: THANK YOU FOR THE RESHUFFLE BUTTON. OVERDUE. but whys my search bar so slow? :(
+---
+ID: 545dcaf4-b207-4c3e-b254-e1f8b2d62119
+Text: vaishu
+---
+ID: b91705d1-d77b-4a5a-93f7-1ac00f6929f6
+Text: too many ads bro 😭😭😭
+---
+ID: 8d824a6a-bccc-4fdb-a99e-171a405c9196
+Text: As a loyal Spotify user for years, this app has easily become the ultimate soundtrack to my daily routine. The absolute best part is its incredibly smart algorithm features like Discover Weekly always introduce me to amazing new tracks that perfectly match my vibe. I also love Spotify Connect, which lets me easily switch my music from my phone to my home speakers with just one tap.
+---
+ID: ceaf1114-d688-4cfa-bf83-07e12d6a87a5
+Text: I pay for premium but as of a few days ago I can't queue anything. The support website also kinda sucks and didn't help me at all and there's not real help or support inside of the app itself. It also doesn't give me the option to reorganize queue.
+---
+ID: 5a0ea393-7c0f-445f-80c8-83c0e73a9101
+Text: ads ads ads all day
+---
+ID: fd8db51d-c25d-488d-a7c7-9b35ce356fe5
+Text: prefer the previous version of how it looked when I went to add a song to a playlist. I'd also like if I could have certain songs excluded from my Spotify Wrapped. Every year, mine is just songs I go to sleep to. 😭 shuffle could also be better. Love everything else, though!
+---

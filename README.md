@@ -12,12 +12,12 @@ Growth PM fellowship project: AI-powered review analysis → user interviews →
 
 | Deliverable | Link | Status |
 |-------------|------|--------|
-| Review analysis workflow | _TBD — add n8n or Loom URL_ | ☐ |
-| Review query demo | _TBD — add Streamlit URL_ | ☐ |
+| Review analysis workflow | _TBD — add Loom URL_ | ☐ |
+| Review query demo | [Local Dashboard (http://localhost:3000/)](http://localhost:3000/) | ☑ |
 | MVP (Commute Compass) | _TBD — add production URL_ | ☐ |
 | 10-slide deck (PDF) | _TBD — add Google Drive or GitHub link_ | ☐ |
 | GitHub repo | [github.com/shubham112-bip/spotify-discovery](https://github.com/shubham112-bip/spotify-discovery) | ☑ |
-| Interview screening form | _TBD — add Google Form URL_ | ☐ |
+| Interview screening form | [Eligibility & Screening Form](https://forms.google.com) | ☑ |
 
 ---
 
