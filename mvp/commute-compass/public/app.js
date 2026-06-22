@@ -50,30 +50,58 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 2. Manage Spotify Authentication
-  function checkSpotifyAuth() {
-    const hash = window.location.hash;
-    
-    // Parse token from redirect hash parameter
-    if (hash && hash.includes('access_token=')) {
-      const params = new URLSearchParams(hash.substring(1));
-      spotifyToken = params.get('access_token');
-      sessionStorage.setItem('spotify_access_token', spotifyToken);
-      
-      // Clean url hash representation
-      history.pushState('', document.title, window.location.pathname + window.location.search);
+  async function checkSpotifyAuth() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get('code');
+
+    if (code) {
+      // Show intermediate status and exchange code
+      showScreen(loadingScreen);
+      loaderMessage.textContent = 'Connecting to Spotify...';
+      await exchangeCodeForToken(code);
     } else {
       spotifyToken = sessionStorage.getItem('spotify_access_token');
+      if (spotifyToken) {
+        showScreen(formScreen);
+        userBadge.style.display = 'flex';
+        fetchUserProfile();
+      } else {
+        showScreen(authScreen);
+        userBadge.style.display = 'none';
+      }
     }
+  }
 
-    if (spotifyToken) {
-      // Transition to Context Form Screen
-      showScreen(formScreen);
-      userBadge.style.display = 'flex';
-      fetchUserProfile();
-    } else {
-      // Show login landing page
+  // Exchange Auth Code for Access Token on Backend
+  async function exchangeCodeForToken(code) {
+    try {
+      const res = await fetch('/api/auth/token', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code })
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        spotifyToken = data.access_token;
+        sessionStorage.setItem('spotify_access_token', spotifyToken);
+        
+        // Clean url query parameters
+        history.pushState('', document.title, window.location.pathname);
+        
+        showScreen(formScreen);
+        userBadge.style.display = 'flex';
+        fetchUserProfile();
+      } else {
+        const errText = await res.text();
+        console.error('Failed code exchange:', errText);
+        alert('Spotify Connection Failed. Please try connecting again.');
+        showScreen(authScreen);
+      }
+    } catch (err) {
+      console.error('Error during code exchange:', err);
+      alert('Network error connecting to Spotify.');
       showScreen(authScreen);
-      userBadge.style.display = 'none';
     }
   }
 
@@ -99,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     const scopes = 'user-top-read playlist-modify-public playlist-modify-private';
-    const authUrl = `https://accounts.spotify.com/authorize?client_id=${config.clientId}&response_type=token&redirect_uri=${encodeURIComponent(config.redirectUri)}&scope=${encodeURIComponent(scopes)}`;
+    const authUrl = `https://accounts.spotify.com/authorize?client_id=${config.clientId}&response_type=code&redirect_uri=${encodeURIComponent(config.redirectUri)}&scope=${encodeURIComponent(scopes)}`;
     window.location.href = authUrl;
   });
 

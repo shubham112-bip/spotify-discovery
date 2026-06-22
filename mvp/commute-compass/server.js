@@ -19,6 +19,46 @@ app.get('/api/config', (req, res) => {
   });
 });
 
+// API endpoint to exchange Spotify Auth Code for Access Token
+app.post('/api/auth/token', async (req, res) => {
+  try {
+    const { code } = req.body;
+    if (!code) {
+      return res.status(400).json({ error: 'Missing auth code' });
+    }
+
+    const clientId = process.env.SPOTIFY_CLIENT_ID;
+    const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
+    const redirectUri = process.env.SPOTIFY_REDIRECT_URI || 'http://localhost:3001/';
+
+    const basicAuth = Buffer.from(`${clientId}:${clientSecret}`).toString('base64');
+
+    const tokenRes = await fetch('https://accounts.spotify.com/api/token', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Basic ${basicAuth}`,
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: new URLSearchParams({
+        grant_type: 'authorization_code',
+        code: code,
+        redirect_uri: redirectUri
+      })
+    });
+
+    if (tokenRes.ok) {
+      const tokenData = await tokenRes.json();
+      res.json(tokenData);
+    } else {
+      const errText = await tokenRes.text();
+      res.status(tokenRes.status).json({ error: `Spotify token exchange error: ${errText}` });
+    }
+  } catch (err) {
+    console.error('[Token Exchange Error]', err);
+    res.status(500).json({ error: 'Internal server error during token exchange' });
+  }
+});
+
 // Endpoint to generate session plan and playlist
 app.post('/api/generate-session', async (req, res) => {
   try {
