@@ -132,6 +132,11 @@ You must structure the playlist as follows:
 - 4-5 Discovery tracks (new, exploratory songs outside the user's immediate top artists but aligned with their favorite genres/vibes).
 - 1-2 Fallback tracks (reliable favorites or safe recommendations to close the session).
 
+CRITICAL REQUIREMENT - LANGUAGE & REGION MATCHING:
+- You must carefully analyze the "User Taste Profile" below to detect the user's preferred music languages and regions (e.g. Hindi, Punjabi, Spanish, K-Pop, English, etc.).
+- The recommended tracks must match the language and cultural distribution of the user's taste profile. If the user listens primarily to Hindi music, or a mix of Hindi and English, the output playlist MUST reflect this mix. Do not default to English/Western pop unless that is the dominant category in their taste profile.
+- For "Discovery" tracks, suggest new artists and tracks in the same language categories as their favorites (e.g., if they like Hindi romantic tracks, recommend other Hindi or regional Indian artists they may not have in their top-15 list).
+
 Inputs:
 - Commute Duration: ${duration} minutes
 - Current Mood: ${mood}
@@ -234,7 +239,7 @@ You must output a single, raw JSON object matching the JSON Schema provided. Do 
     if (validUris.length > 0) {
       try {
         // Create Playlist
-        const createPlaylistRes = await fetch(`https://api.spotify.com/v1/users/${userId}/playlists`, {
+        const createPlaylistRes = await fetch('https://api.spotify.com/v1/me/playlists', {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${spotify_access_token}`,
