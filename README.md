@@ -1,23 +1,21 @@
-# Spotify Music Discovery — Commute Compass
+# Commute Compass — Spotify Music Discovery MVP
 
-Growth PM fellowship project: AI-powered review analysis → user interviews → problem definition → AI-native MVP.
+AI-powered context-aware music discovery for daily commute listeners. Built as a Growth PM Fellowship project.
 
 **Product:** Spotify  
 **Segment:** Commute listeners (daily 30–60 min, repeat playlists)  
-**MVP:** Commute Compass — context-aware AI discovery agent with explanations
+**Solution:** Commute Compass — context-aware AI discovery agent with natural-language explanations
 
 ---
 
-## Submission Links
+## How It Works
 
-| Deliverable | Link | Status |
-|-------------|------|--------|
-| Review analysis workflow | _TBD — add Loom URL_ | ☐ |
-| Review query demo | [Local Dashboard (http://localhost:3000/)](http://localhost:3000/) | ☑ |
-| MVP (Commute Compass) | _TBD — add production URL_ | ☐ |
-| 10-slide deck (PDF) | _TBD — add Google Drive or GitHub link_ | ☐ |
-| GitHub repo | [github.com/shubham112-bip/spotify-discovery](https://github.com/shubham112-bip/spotify-discovery) | ☑ |
-| Interview screening form | [Eligibility & Screening Form](https://forms.google.com) | ☑ |
+User provides context (duration, mood, adventure level) → Gemini AI generates an 8-track session with **"why this song"** explanations → creates a Spotify playlist on the user's account.
+
+### Playlist Architecture
+- **1–2 Warm-up tracks** — familiar, low-risk songs matching the current mood
+- **4–5 Discovery tracks** — new songs outside the user's top artists, aligned with their genres
+- **1–2 Fallback tracks** — reliable favorites to close the session
 
 ---
 
@@ -25,29 +23,57 @@ Growth PM fellowship project: AI-powered review analysis → user interviews →
 
 ```
 spotify-discovery/
-├── data/raw/           # App Store, Play Store, Reddit exports
-├── data/analyzed/      # LLM-tagged JSON output
-├── review-engine/      # Pipeline + Streamlit demo
-├── research/           # Interviews, synthesis, problem statement
-├── mvp/commute-compass/ # Deployed MVP
-└── deck/               # NL Spotify.pdf
+├── mvp/commute-compass/    # Main MVP app (Express + Vanilla JS)
+│   ├── server.js           # Backend: Spotify OAuth, Gemini AI, playlist creation
+│   ├── vercel.json         # Vercel deployment config
+│   └── public/             # Frontend: index.html, app.js, styles.css
+│
+└── review-engine/          # Review analysis pipeline + dashboard
+    ├── server.js            # Express server for review dashboard
+    ├── analyze_reviews.js   # Gemini-powered review tagging
+    ├── collect_reviews.js   # App Store / Play Store scraper
+    └── index.html           # Interactive review dashboard
 ```
 
 ---
 
-## Quick Start
+## Tech Stack
 
-1. **Accounts:** See [docs/SETUP_ACCOUNTS.md](docs/SETUP_ACCOUNTS.md)
-2. **Day 1 plan:** See parent folder `SPOTIFY_DISCOVERY_PROJECT_PLAN.md`
-3. **Collect reviews:** Save CSVs to `data/raw/` with columns: `id, source, date, rating, text, url`
+| Component | Technology |
+|-----------|-----------|
+| Backend | Node.js + Express |
+| Frontend | Vanilla HTML/CSS/JS |
+| AI | Google Gemini API (structured JSON output) |
+| Music | Spotify Web API (OAuth + Client Credentials) |
+| Deployment | Vercel (serverless) |
 
 ---
 
-## Timeline
+## Local Development
 
-| Milestone | Date |
-|-----------|------|
-| Part 1 complete (review engine live) | 22 Jun 2026 |
-| 6 interviews done | 26 Jun 2026 |
-| MVP production deploy | 30 Jun 2026 |
-| **Submit** | **6 Jul 2026** |
+```bash
+# Clone and install
+git clone https://github.com/shubham112-bip/spotify-discovery.git
+cd spotify-discovery/mvp/commute-compass
+npm install
+
+# Set up environment variables
+cp .env.example .env
+# Fill in SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, GEMINI_API_KEY
+
+# Run
+npm start
+# → http://localhost:3001
+```
+
+---
+
+## Live URL
+
+_TBD — will be updated after Vercel deployment_
+
+---
+
+## License
+
+ISC

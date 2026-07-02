@@ -2,20 +2,21 @@
 .env
 .env.local
 .env.*.local
+.env.example
 *.pem
-
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-.env/
 
 # Node
 node_modules/
 .next/
 out/
 dist/
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
 
 # IDE
 .idea/
@@ -26,11 +27,10 @@ dist/
 .DS_Store
 Thumbs.db
 
-# Large or generated data (keep samples only)
-data/raw/*.csv
-!data/raw/.gitkeep
-data/analyzed/*.json
-!data/analyzed/.gitkeep
-
-# Deck exports (optional — remove if you want PDF in repo)
-deck/*.pdf
+# Non-code directories (research, data, docs, deck, scratch)
+data/
+research/
+docs/
+deck/
+scratch/
+mvp/plans/
