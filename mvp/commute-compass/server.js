@@ -94,7 +94,35 @@ function getMockSession(mood, preferredTaste) {
   const tasteLower = (preferredTaste || '').toLowerCase();
   const moodVal = (mood || 'calm').toLowerCase();
   
-  if (tasteLower.includes('hindi') || tasteLower.includes('bollywood') || tasteLower.includes('arijit') || tasteLower.includes('diljit') || tasteLower.includes('punjabi') || tasteLower.includes('ar rahman') || tasteLower.includes('pritam')) {
+  const isHindi = tasteLower.includes('hindi') || tasteLower.includes('bollywood') || tasteLower.includes('arijit') || tasteLower.includes('diljit') || tasteLower.includes('punjabi') || tasteLower.includes('ar rahman') || tasteLower.includes('pritam');
+
+  if (isHindi && moodVal === 'nostalgic') {
+    title = `Bollywood & Hindi Vibe: NOSTALGIC Commute`;
+    explanation = `Demo Mode Fallback: Selected highly rated Hindi throwback tracks matching your nostalgic mood (Gemini API quota exceeded).`;
+    tracks = [
+      { song: "Kal Ho Naa Ho", artist: "Sonu Nigam", phase: "warmup", why: "A timeless classic that instantly transports you to a nostalgic headspace." },
+      { song: "Tujh Mein Rab Dikhta Hai", artist: "Roop Kumar Rathod", phase: "warmup", why: "A comforting melody that warms you up with familiar emotional depth." },
+      { song: "Chaiyya Chaiyya", artist: "Sukhwinder Singh", phase: "discovery", why: "An unforgettable rhythm that injects a burst of energy without breaking the nostalgic vibe." },
+      { song: "Maa Tujhe Salaam", artist: "A.R. Rahman", phase: "discovery", why: "A powerful, soul-stirring composition that resonates deeply during your commute." },
+      { song: "Pehla Nasha", artist: "Udit Narayan", phase: "discovery", why: "Takes you straight back to the 90s — perfect for a relaxed, nostalgic drive." },
+      { song: "Yeh Dosti", artist: "Kishore Kumar", phase: "discovery", why: "The ultimate throwback track that brings a smile and classic energy." },
+      { song: "Kabhi Kabhie Mere Dil Mein", artist: "Mukesh", phase: "fallback", why: "A soft, poetic melody to gently close out your throwback session." },
+      { song: "Lag Ja Gale", artist: "Lata Mangeshkar", phase: "fallback", why: "A hauntingly beautiful classic that leaves a lasting, peaceful impression." }
+    ];
+  } else if (isHindi && moodVal === 'happy') {
+    title = `Bollywood & Hindi Vibe: HAPPY Commute`;
+    explanation = `Demo Mode Fallback: Selected highly rated upbeat Hindi tracks matching your happy mood (Gemini API quota exceeded).`;
+    tracks = [
+      { song: "Galti Se Mistake", artist: "Arijit Singh", phase: "warmup", why: "Matches your happy energy right from the first beat — instant smile guaranteed." },
+      { song: "Kar Gayi Chull", artist: "Badshah", phase: "warmup", why: "An upbeat pop track to lift your spirits and set a bright tone." },
+      { song: "Kala Chashma", artist: "Amar Arshi", phase: "discovery", why: "A bouncy party track that keeps the upbeat momentum going without breaking the vibe." },
+      { song: "Gallan Goodiyaan", artist: "Yashita Sharma", phase: "discovery", why: "Confident and joyful — this one lifts your energy another notch during the middle of your commute." },
+      { song: "Zingaat", artist: "Ajay-Atul", phase: "discovery", why: "A high-energy banger that matches the feeling of everything going right today." },
+      { song: "Desi Girl", artist: "Sunidhi Chauhan", phase: "discovery", why: "A timeless, fun classic to keep the positive energy flowing." },
+      { song: "London Thumakda", artist: "Labh Janjua", phase: "fallback", why: "A reliable closer that guarantees your commute ends on a high note." },
+      { song: "Aankh Marey", artist: "Neha Kakkar", phase: "fallback", why: "A warm, fun track to gently close your feel-good session." }
+    ];
+  } else if (isHindi) {
     title = `Bollywood & Hindi Vibe: ${moodVal.toUpperCase()} Commute`;
     explanation = `Demo Mode Fallback: Selected highly rated Hindi, Punjabi, and Bollywood tracks matching your ${moodVal} mood (Gemini API quota exceeded).`;
     tracks = [
