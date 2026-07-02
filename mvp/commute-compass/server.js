@@ -107,19 +107,45 @@ function getMockSession(mood, preferredTaste) {
       { song: "O Bedardeya", artist: "Arijit Singh", phase: "fallback", why: "A heavy, emotional ballad to close the session with deep vocals." },
       { song: "Agar Tum Saath Ho", artist: "Alka Yagnik", phase: "fallback", why: "A beautiful acoustic duet that leaves a lasting, soothing impression." }
     ];
+  } else if (moodVal === 'happy') {
+    title = `Feel-Good Vibes: HAPPY Commute`;
+    explanation = `Demo Mode Fallback: Curated uplifting, feel-good tracks to match your happy mood and keep the positive energy flowing.`;
+    tracks = [
+      { song: "Walking on Sunshine", artist: "Katrina and the Waves", phase: "warmup", why: "Matches your happy energy right from the first beat — instant smile guaranteed." },
+      { song: "Happy", artist: "Pharrell Williams", phase: "warmup", why: "The ultimate feel-good anthem that locks in your bright mood for the ride." },
+      { song: "Levitating", artist: "Dua Lipa", phase: "discovery", why: "A bouncy disco-pop track that keeps the upbeat momentum going without breaking the vibe." },
+      { song: "Good as Hell", artist: "Lizzo", phase: "discovery", why: "Confident and joyful — this one lifts your energy another notch during the middle of your commute." },
+      { song: "Sunflower", artist: "Post Malone", phase: "discovery", why: "A mellow-happy track that balances your mood with a laid-back groove." },
+      { song: "On Top of the World", artist: "Imagine Dragons", phase: "discovery", why: "A soaring anthem that matches the feeling of everything going right today." },
+      { song: "Don't Stop Me Now", artist: "Queen", phase: "fallback", why: "A timeless closer that guarantees your commute ends on a high note." },
+      { song: "Three Little Birds", artist: "Bob Marley", phase: "fallback", why: "A warm, reassuring track to gently close your feel-good session." }
+    ];
+  } else if (moodVal === 'nostalgic') {
+    title = `Throwback Session: NOSTALGIC Commute`;
+    explanation = `Demo Mode Fallback: Curated classic deep cuts and throwback tracks to take you back to the golden era.`;
+    tracks = [
+      { song: "Bohemian Rhapsody", artist: "Queen", phase: "warmup", why: "A song you know by heart — eases you into the throwback mindset from the very first note." },
+      { song: "Hotel California", artist: "Eagles", phase: "warmup", why: "That familiar guitar intro instantly transports you back — the perfect nostalgic warm-up." },
+      { song: "Dreams", artist: "Fleetwood Mac", phase: "discovery", why: "You may have heard it before but forgotten how good it feels — a deep cut worth rediscovering." },
+      { song: "Africa", artist: "Toto", phase: "discovery", why: "A timeless track that hits different on a commute — layers of nostalgia in every chorus." },
+      { song: "Take On Me", artist: "a-ha", phase: "discovery", why: "An 80s classic with an instantly recognizable synth riff — pure throwback energy." },
+      { song: "Everybody Wants to Rule the World", artist: "Tears for Fears", phase: "discovery", why: "A song that captures a specific era — perfect for your nostalgic headspace right now." },
+      { song: "Sweet Child O' Mine", artist: "Guns N' Roses", phase: "fallback", why: "That guitar riff is wired into your memory — a reliable closer that never gets old." },
+      { song: "Don't Stop Believin'", artist: "Journey", phase: "fallback", why: "The ultimate nostalgic send-off — you'll be humming this the rest of the day." }
+    ];
   } else {
     // English / Global Pop Lofi fallback
     title = `Lofi & Acoustic: ${moodVal.toUpperCase()} Commute`;
     explanation = `Demo Mode Fallback: Selected popular global acoustic and lofi tracks matching your ${moodVal} mood (Gemini API quota exceeded).`;
     tracks = [
-      { song: "Blinding Lights", artist: "The Weeknd", phase: "warmup", why: "A synth-pop anthem to bring energy and tempo to the start of your drive." },
-      { song: "Yellow", artist: "Coldplay", phase: "warmup", why: "An iconic, comforting alternative rock track to set a positive headspace." },
-      { song: "Sweater Weather", artist: "The Neighbourhood", phase: "discovery", why: "A moody indie pop track that fits a cool, relaxed driving pace." },
-      { song: "Nightcall", artist: "Kavinsky", phase: "discovery", why: "A retro synthwave classic that turns your commute into a cinematic experience." },
-      { song: "Circles", artist: "Post Malone", phase: "discovery", why: "An easygoing indie-pop track with a continuous driving bassline." },
-      { song: "Ocean Eyes", artist: "Billie Eilish", phase: "discovery", why: "A sparse, beautiful ambient pop track for a calm focus session." },
-      { song: "Let Me Down Slowly", artist: "Alec Benjamin", phase: "fallback", why: "A melodic acoustic-pop ballad that acts as a safe, comforting closing track." },
-      { song: "Fix You", artist: "Coldplay", phase: "fallback", why: "A building anthem with a powerful resolution to complete your trip." }
+      { song: "Blinding Lights", artist: "The Weeknd", phase: "warmup", why: "Matches your current energy with a driving synth-pop pulse — you'll know within 5 seconds if it fits." },
+      { song: "Yellow", artist: "Coldplay", phase: "warmup", why: "A safe, comforting start that eases you into the session without demanding attention." },
+      { song: "Sweater Weather", artist: "The Neighbourhood", phase: "discovery", why: "Fits your relaxed driving pace — moody enough to feel fresh, familiar enough to feel safe." },
+      { song: "Nightcall", artist: "Kavinsky", phase: "discovery", why: "Turns your commute into a cinematic moment — the retro synths hit within the first 10 seconds." },
+      { song: "Circles", artist: "Post Malone", phase: "discovery", why: "A continuous, flowing groove that matches the rhythm of your drive without any jarring shifts." },
+      { song: "Ocean Eyes", artist: "Billie Eilish", phase: "discovery", why: "Sparse and ambient — perfect if you need calm focus without complete silence." },
+      { song: "Let Me Down Slowly", artist: "Alec Benjamin", phase: "fallback", why: "A gentle acoustic track that brings your session to a soft, satisfying close." },
+      { song: "Fix You", artist: "Coldplay", phase: "fallback", why: "Builds from quiet to powerful — a reliable emotional resolution to end your commute." }
     ];
   }
 
@@ -256,7 +282,7 @@ You must output a single, raw JSON object matching the JSON Schema provided. Do 
                   song: { type: 'STRING', description: 'The exact song title.' },
                   artist: { type: 'STRING', description: 'The artist name.' },
                   phase: { type: 'STRING', enum: ['warmup', 'discovery', 'fallback'], description: 'The structural role of this song in the session.' },
-                  why: { type: 'STRING', description: 'A short, 2-sentence explanation of why this song fits the user\'s specific context and tastes.' }
+                  why: { type: 'STRING', description: 'A short, 2-sentence explanation of why this song fits the user\'s specific context and mood right now. Lead with the FEELING or CONTEXT match (e.g., "Matches your low-energy morning mood") NOT with genre metadata (e.g., "A synth-pop anthem"). Mention the song\'s energy arc (does it hit immediately or build slowly?) to help the user decide within 20-30 seconds.' }
                 },
                 required: ['song', 'artist', 'phase', 'why']
               }

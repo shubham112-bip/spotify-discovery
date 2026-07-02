@@ -40,6 +40,32 @@
           <div class="feat-badge">🧠 Explorable Explanations</div>
         </div>
 
+        <!-- Social Proof Quotes from User Interviews -->
+        <div class="social-proof" id="socialProof">
+          <blockquote class="proof-quote active" id="quote0">
+            <p>"Decision fatigue is real and music shouldn't add to it."</p>
+            <cite>— Daily commuter, 22</cite>
+          </blockquote>
+          <blockquote class="proof-quote" id="quote1">
+            <p>"I don't always know what I want until I hear the first song. That first track decides the mood for the next half hour."</p>
+            <cite>— Daily driver, 25</cite>
+          </blockquote>
+          <blockquote class="proof-quote" id="quote2">
+            <p>"I'm not looking for variety, I'm looking for comfort."</p>
+            <cite>— Weekend listener, 29</cite>
+          </blockquote>
+          <blockquote class="proof-quote" id="quote3">
+            <p>"Even if I want similar music, I still want a few fresh tracks mixed in without completely changing my vibe."</p>
+            <cite>— Gym listener, 19</cite>
+          </blockquote>
+          <div class="proof-dots">
+            <span class="proof-dot active" data-index="0"></span>
+            <span class="proof-dot" data-index="1"></span>
+            <span class="proof-dot" data-index="2"></span>
+            <span class="proof-dot" data-index="3"></span>
+          </div>
+        </div>
+
         <div class="landing-actions">
           <button class="btn btn-primary" id="connectSpotifyBtn">
             <svg class="spotify-logo-svg" viewBox="0 0 24 24" width="24" height="24">
@@ -57,8 +83,33 @@
     <!-- Screen 2: Context Form Screen -->
     <section class="screen-card" id="formScreen">
       <div class="card-header">
-        <h2>Define Your Vibe</h2>
-        <p class="subtitle">Tell the AI agent about your commute moment</p>
+        <div class="card-header-row">
+          <div>
+            <h2>Define Your Vibe</h2>
+            <p class="subtitle">Tell the AI agent about your commute moment</p>
+          </div>
+          <div class="quick-start-toggle">
+            <button class="btn btn-quick" id="quickStartToggle">⚡ Quick Start</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Start Panel -->
+      <div class="quick-start-panel" id="quickStartPanel" style="display: none;">
+        <p class="quick-start-subtitle">One tap. No thinking. Just press play.</p>
+        <div class="quick-start-grid">
+          <button class="quick-btn quick-energetic" id="quickEnergetic">
+            <span class="quick-emoji">⚡</span>
+            <span class="quick-label">Fast & Energetic</span>
+            <span class="quick-meta">High energy, upbeat, driving</span>
+          </button>
+          <button class="quick-btn quick-calm" id="quickCalm">
+            <span class="quick-emoji">🌊</span>
+            <span class="quick-label">Slow & Calm</span>
+            <span class="quick-meta">Relaxed, ambient, peaceful</span>
+          </button>
+        </div>
+        <button class="btn-link" id="switchToFull">or customize your session →</button>
       </div>
 
       <form id="vibeForm" class="vibe-form">
@@ -114,11 +165,27 @@
               </div>
             </label>
             <label class="btn-radio-mood">
+              <input type="radio" name="mood" value="happy">
+              <div class="mood-card">
+                <span class="mood-emoji">😊</span>
+                <span class="mood-name">Happy</span>
+                <span class="mood-meta">Feel-good vibes</span>
+              </div>
+            </label>
+            <label class="btn-radio-mood">
               <input type="radio" name="mood" value="tired">
               <div class="mood-card">
                 <span class="mood-emoji">😴</span>
                 <span class="mood-name">Tired</span>
                 <span class="mood-meta">Gentle motivation</span>
+              </div>
+            </label>
+            <label class="btn-radio-mood">
+              <input type="radio" name="mood" value="nostalgic">
+              <div class="mood-card">
+                <span class="mood-emoji">💭</span>
+                <span class="mood-name">Nostalgic</span>
+                <span class="mood-meta">Throwback deep cuts</span>
               </div>
             </label>
           </div>
@@ -136,6 +203,7 @@
             <span>Balanced Vibe</span>
             <span>Uncharted Discovery</span>
           </div>
+          <p class="time-hint" id="timeHint"></p>
         </div>
 
         <!-- Preferred Taste -->

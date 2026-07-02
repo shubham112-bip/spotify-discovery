@@ -35,6 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const regenerateBtn = document.getElementById('regenerateBtn');
 
+  // Quick Start elements
+  const quickStartToggle = document.getElementById('quickStartToggle');
+  const quickStartPanel = document.getElementById('quickStartPanel');
+  const quickEnergetic = document.getElementById('quickEnergetic');
+  const quickCalm = document.getElementById('quickCalm');
+  const switchToFull = document.getElementById('switchToFull');
+  const timeHint = document.getElementById('timeHint');
+
   // App State Variables
   let config = { clientId: '', redirectUri: '' };
   let spotifyToken = null;
@@ -171,6 +179,66 @@ document.addEventListener('DOMContentLoaded', () => {
     adventureValue.textContent = adventureTexts[val] || val;
   });
 
+  // Time-of-day adventure auto-default
+  function applyTimeOfDayDefaults() {
+    const hour = new Date().getHours();
+    const day = new Date().getDay();
+    const isWeekend = (day === 0 || day === 6);
+    let defaultAdventure = 3;
+    let hint = '';
+
+    if (isWeekend) {
+      defaultAdventure = 4;
+      hint = '🌟 Weekend mode — great time to explore new music';
+    } else if (hour >= 6 && hour < 10) {
+      defaultAdventure = 2;
+      hint = '☀️ Morning mode — keeping it safe and familiar';
+    } else if (hour >= 17 && hour < 21) {
+      defaultAdventure = 3;
+      hint = '🌆 Evening mode — balanced discovery';
+    } else if (hour >= 21 || hour < 6) {
+      defaultAdventure = 2;
+      hint = '🌙 Night mode — calm and familiar';
+    }
+
+    adventureSlider.value = defaultAdventure;
+    adventureValue.textContent = adventureTexts[defaultAdventure] || defaultAdventure;
+    if (timeHint) timeHint.textContent = hint;
+  }
+
+  applyTimeOfDayDefaults();
+
+  // Social proof quote rotation
+  const quotes = document.querySelectorAll('.proof-quote');
+  const dots = document.querySelectorAll('.proof-dot');
+  let currentQuote = 0;
+  let quoteInterval;
+
+  function showQuote(index) {
+    quotes.forEach(q => q.classList.remove('active'));
+    dots.forEach(d => d.classList.remove('active'));
+    if (quotes[index]) quotes[index].classList.add('active');
+    if (dots[index]) dots[index].classList.add('active');
+    currentQuote = index;
+  }
+
+  function startQuoteRotation() {
+    quoteInterval = setInterval(() => {
+      showQuote((currentQuote + 1) % quotes.length);
+    }, 5000);
+  }
+
+  if (quotes.length > 0) {
+    startQuoteRotation();
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        clearInterval(quoteInterval);
+        showQuote(parseInt(dot.dataset.index));
+        startQuoteRotation();
+      });
+    });
+  }
+
   // Collapsible toggle for settings
   apiToggleBtn.addEventListener('click', () => {
     apiToggleBtn.classList.toggle('open');
@@ -238,22 +306,47 @@ document.addEventListener('DOMContentLoaded', () => {
     screen.classList.add('active');
   }
 
-  // 4. Form Submission and Orchestration Lifecycle
-  vibeForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    
-    const duration = document.querySelector('input[name="duration"]:checked').value;
-    const mood = document.querySelector('input[name="mood"]:checked').value;
-    const adventure = adventureSlider.value;
-    const userApiKey = geminiApiKeyInput.value.trim();
-    const geminiModel = geminiModelSelect.value;
-    const preferredTaste = preferredTasteInput.value.trim();
+  // Quick Start toggle
+  if (quickStartToggle) {
+    quickStartToggle.addEventListener('click', () => {
+      const isQuickMode = quickStartPanel.style.display === 'none';
+      quickStartPanel.style.display = isQuickMode ? 'block' : 'none';
+      vibeForm.style.display = isQuickMode ? 'none' : 'flex';
+      quickStartToggle.classList.toggle('active', isQuickMode);
+      quickStartToggle.textContent = isQuickMode ? '📝 Full Form' : '⚡ Quick Start';
+    });
+  }
 
-    // Trigger Loading Screen
+  if (switchToFull) {
+    switchToFull.addEventListener('click', () => {
+      quickStartPanel.style.display = 'none';
+      vibeForm.style.display = 'flex';
+      quickStartToggle.classList.remove('active');
+      quickStartToggle.textContent = '⚡ Quick Start';
+    });
+  }
+
+  // Quick Start button handlers
+  function triggerQuickSession(mood, adventure) {
+    submitSession({ mood, duration: '30', adventure: String(adventure) });
+  }
+
+  if (quickEnergetic) {
+    quickEnergetic.addEventListener('click', () => triggerQuickSession('energized', 3));
+  }
+  if (quickCalm) {
+    quickCalm.addEventListener('click', () => triggerQuickSession('calm', 2));
+  }
+
+  // Shared session submission logic
+  async function submitSession({ mood, duration, adventure, preferredTaste, userApiKey, geminiModel: model }) {
+    const apiKey = userApiKey || geminiApiKeyInput.value.trim();
+    const gemModel = model || geminiModelSelect.value;
+    const taste = preferredTaste || preferredTasteInput.value.trim();
+
     showScreen(loadingScreen);
     resetLoadingSteps();
 
-    // Visual sequence mock for the Curation Agent Steps
     setTimeout(() => advanceStep(step1, 'Consulting Gemini Curation Model...'), 1800);
     setTimeout(() => advanceStep(step2, 'Searching Spotify Catalog...'), 4200);
     setTimeout(() => advanceStep(step3, 'Instantiating Playlist...'), 6500);
@@ -264,9 +357,9 @@ document.addEventListener('DOMContentLoaded', () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           spotify_access_token: spotifyToken,
-          gemini_api_key: userApiKey || null,
-          gemini_model: geminiModel,
-          preferred_taste: preferredTaste || null,
+          gemini_api_key: apiKey || null,
+          gemini_model: gemModel,
+          preferred_taste: taste || null,
           mood,
           duration,
           adventure
@@ -279,19 +372,27 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       const sessionData = await response.json();
-      
-      // Advance final step
       advanceStep(step4, 'Complete!');
       setTimeout(() => {
         renderResults(sessionData);
         showScreen(resultsScreen);
       }, 1000);
-
     } catch (err) {
       console.error(err);
       alert(`Compass Curation Failed: ${err.message}`);
       showScreen(formScreen);
     }
+  }
+
+  // 4. Form Submission and Orchestration Lifecycle
+  vibeForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const duration = document.querySelector('input[name="duration"]:checked').value;
+    const mood = document.querySelector('input[name="mood"]:checked').value;
+    const adventure = adventureSlider.value;
+
+    submitSession({ mood, duration, adventure });
   });
 
   // Loader Visual Steps Controllers
