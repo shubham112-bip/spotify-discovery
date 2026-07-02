@@ -70,7 +70,7 @@ npm start
 
 ## Live URL
 
-_TBD — will be updated after Vercel deployment_
+🚀 **[https://spotify-discovery-gamma.vercel.app/](https://spotify-discovery-gamma.vercel.app/)**
 
 ---
 
