@@ -6,9 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const resultsScreen = document.getElementById('resultsScreen');
 
   const connectSpotifyBtn = document.getElementById('connectSpotifyBtn');
+  const demoModeBtn = document.getElementById('demoModeBtn');
   const userBadge = document.getElementById('userBadge');
   const userNameText = document.getElementById('userNameText');
   const logoutBtn = document.getElementById('logoutBtn');
+  const demoNotice = document.getElementById('demoNotice');
 
   const vibeForm = document.getElementById('vibeForm');
   const adventureSlider = document.getElementById('adventureSlider');
@@ -109,6 +111,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Fetch Spotify User name to display in header
   async function fetchUserProfile() {
+    if (spotifyToken === 'demo_token') {
+      userNameText.innerHTML = 'Guest Commuter <span class="demo-badge">Demo</span>';
+      logoutBtn.textContent = 'Exit Demo';
+      return;
+    }
     try {
       const res = await fetch('https://api.spotify.com/v1/me', {
         headers: { 'Authorization': `Bearer ${spotifyToken}` }
@@ -116,6 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (res.ok) {
         const profile = await res.json();
         userNameText.textContent = profile.display_name || profile.id;
+        logoutBtn.textContent = 'Disconnect';
       }
     } catch (err) {
       console.warn('Could not load user profile', err);
@@ -132,6 +140,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const authUrl = `https://accounts.spotify.com/authorize?client_id=${config.clientId}&response_type=code&redirect_uri=${encodeURIComponent(config.redirectUri)}&scope=${encodeURIComponent(scopes)}&show_dialog=true`;
     window.location.href = authUrl;
   });
+
+  if (demoModeBtn) {
+    demoModeBtn.addEventListener('click', () => {
+      spotifyToken = 'demo_token';
+      sessionStorage.setItem('spotify_access_token', spotifyToken);
+      showScreen(formScreen);
+      userBadge.style.display = 'flex';
+      fetchUserProfile();
+    });
+  }
 
   // Disconnect/Logout action
   logoutBtn.addEventListener('click', () => {
@@ -300,6 +318,17 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderResults(data) {
     sessionTitle.textContent = data.sessionTitle;
     explanationOverview.textContent = data.explanationOverview;
+    
+    if (spotifyToken === 'demo_token') {
+      if (data.fallbackUsed) {
+        demoNotice.innerHTML = '⚡ <strong>Demo Mode (API Quota Fallback)</strong>: The Gemini API is currently rate-limited or keyless. We loaded a high-quality pre-curated session matching your active options, resolved with actual Spotify search results!';
+      } else {
+        demoNotice.textContent = 'Demo Mode: Spotify playlist creation is simulated. Connect your Spotify Premium account to save generated sessions directly to your library.';
+      }
+      demoNotice.style.display = 'block';
+    } else {
+      demoNotice.style.display = 'none';
+    }
     
     if (data.playlistUrl) {
       openPlaylistBtn.href = data.playlistUrl;

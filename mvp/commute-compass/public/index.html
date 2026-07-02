@@ -40,12 +40,17 @@
           <div class="feat-badge">🧠 Explorable Explanations</div>
         </div>
 
-        <button class="btn btn-primary" id="connectSpotifyBtn">
-          <svg class="spotify-logo-svg" viewBox="0 0 24 24" width="24" height="24">
-            <path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.565.387-.86.207-2.377-1.454-5.37-1.783-8.893-.982-.336.075-.668-.135-.744-.47-.077-.337.136-.669.472-.745 3.848-.876 7.14-.502 9.817 1.135.295.18.386.565.208.855zm1.223-2.722c-.226.367-.707.487-1.074.26-2.72-1.672-6.87-2.157-10.082-1.182-.413.125-.847-.107-.972-.52-.125-.413.107-.847.52-.972 3.676-1.116 8.243-.574 11.348 1.334.368.226.488.707.26 1.08zm.105-2.833C14.73 8.847 9.475 8.672 6.435 9.596c-.463.14-1.02-.12-1.16-.583-.14-.463.12-1.02.583-1.16 3.528-1.07 9.33-.87 13.007 1.312.417.248.552.784.304 1.2-.248.416-.783.552-1.2.304z"/>
-          </svg>
-          Connect Spotify Premium
-        </button>
+        <div class="landing-actions">
+          <button class="btn btn-primary" id="connectSpotifyBtn">
+            <svg class="spotify-logo-svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.565.387-.86.207-2.377-1.454-5.37-1.783-8.893-.982-.336.075-.668-.135-.744-.47-.077-.337.136-.669.472-.745 3.848-.876 7.14-.502 9.817 1.135.295.18.386.565.208.855zm1.223-2.722c-.226.367-.707.487-1.074.26-2.72-1.672-6.87-2.157-10.082-1.182-.413.125-.847-.107-.972-.52-.125-.413.107-.847.52-.972 3.676-1.116 8.243-.574 11.348 1.334.368.226.488.707.26 1.08zm.105-2.833C14.73 8.847 9.475 8.672 6.435 9.596c-.463.14-1.02-.12-1.16-.583-.14-.463.12-1.02.583-1.16 3.528-1.07 9.33-.87 13.007 1.312.417.248.552.784.304 1.2-.248.416-.783.552-1.2.304z"/>
+            </svg>
+            Connect Spotify Premium
+          </button>
+          <button class="btn btn-secondary btn-demo" id="demoModeBtn">
+            ⚡ Try Live Demo (No Spotify Login)
+          </button>
+        </div>
       </div>
     </section>
 
@@ -217,6 +222,8 @@
           Open Playlist in Spotify
         </a>
       </div>
+
+      <div id="demoNotice" class="demo-notice-banner" style="display: none;"></div>
 
       <div class="session-structure-overview">
         <span class="structure-bar warmup" style="width: 25%;">Warmup</span>

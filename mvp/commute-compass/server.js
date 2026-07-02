@@ -59,6 +59,77 @@ app.post('/api/auth/token', async (req, res) => {
   }
 });
 
+// Helper to get Spotify client credentials token (for guest/demo mode searches)
+async function getClientCredentialsToken() {
+  const clientId = process.env.SPOTIFY_CLIENT_ID;
+  const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
+  if (!clientId || !clientSecret) {
+    throw new Error('Missing SPOTIFY_CLIENT_ID or SPOTIFY_CLIENT_SECRET in backend configuration.');
+  }
+  const basicAuth = Buffer.from(`${clientId}:${clientSecret}`).toString('base64');
+  const response = await fetch('https://accounts.spotify.com/api/token', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Basic ${basicAuth}`,
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: new URLSearchParams({
+      grant_type: 'client_credentials'
+    })
+  });
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(`Failed to retrieve client credentials token: ${text}`);
+  }
+  const data = await response.json();
+  return data.access_token;
+}
+
+// Mock Curation Session fallback generator for rate-limited/keyless demo modes
+function getMockSession(mood, preferredTaste) {
+  let title = "Commute Compass: Dynamic Session";
+  let explanation = "This session was generated using pre-curated tracks because the Gemini API is currently rate-limited on the free tier.";
+  let tracks = [];
+
+  const tasteLower = (preferredTaste || '').toLowerCase();
+  const moodVal = (mood || 'calm').toLowerCase();
+  
+  if (tasteLower.includes('hindi') || tasteLower.includes('bollywood') || tasteLower.includes('arijit') || tasteLower.includes('diljit') || tasteLower.includes('punjabi') || tasteLower.includes('ar rahman') || tasteLower.includes('pritam')) {
+    title = `Bollywood & Hindi Vibe: ${moodVal.toUpperCase()} Commute`;
+    explanation = `Demo Mode Fallback: Selected highly rated Hindi, Punjabi, and Bollywood tracks matching your ${moodVal} mood (Gemini API quota exceeded).`;
+    tracks = [
+      { song: "Kesariya", artist: "Arijit Singh", phase: "warmup", why: "A comforting and melodic track by Arijit Singh to ease you into your commute." },
+      { song: "Lover", artist: "Diljit Dosanjh", phase: "warmup", why: "An upbeat Punjabi pop track to lift your spirits and set a bright tone." },
+      { song: "Kun Faya Kun", artist: "A.R. Rahman", phase: "discovery", why: "A soulful Sufi masterpiece by A.R. Rahman, offering deep focus and immersion." },
+      { song: "Pasoori", artist: "Ali Sethi", phase: "discovery", why: "A modern classic blending indie folk and pop elements, great for discovery." },
+      { song: "Tum Se Hi", artist: "Pritam", phase: "discovery", why: "A nostalgic melody that matches a relaxed, flowing commute vibe." },
+      { song: "Kabira", artist: "Pritam", phase: "discovery", why: "An acoustic folk-pop favorite to accompany your scenic window views." },
+      { song: "O Bedardeya", artist: "Arijit Singh", phase: "fallback", why: "A heavy, emotional ballad to close the session with deep vocals." },
+      { song: "Agar Tum Saath Ho", artist: "Alka Yagnik", phase: "fallback", why: "A beautiful acoustic duet that leaves a lasting, soothing impression." }
+    ];
+  } else {
+    // English / Global Pop Lofi fallback
+    title = `Lofi & Acoustic: ${moodVal.toUpperCase()} Commute`;
+    explanation = `Demo Mode Fallback: Selected popular global acoustic and lofi tracks matching your ${moodVal} mood (Gemini API quota exceeded).`;
+    tracks = [
+      { song: "Blinding Lights", artist: "The Weeknd", phase: "warmup", why: "A synth-pop anthem to bring energy and tempo to the start of your drive." },
+      { song: "Yellow", artist: "Coldplay", phase: "warmup", why: "An iconic, comforting alternative rock track to set a positive headspace." },
+      { song: "Sweater Weather", artist: "The Neighbourhood", phase: "discovery", why: "A moody indie pop track that fits a cool, relaxed driving pace." },
+      { song: "Nightcall", artist: "Kavinsky", phase: "discovery", why: "A retro synthwave classic that turns your commute into a cinematic experience." },
+      { song: "Circles", artist: "Post Malone", phase: "discovery", why: "An easygoing indie-pop track with a continuous driving bassline." },
+      { song: "Ocean Eyes", artist: "Billie Eilish", phase: "discovery", why: "A sparse, beautiful ambient pop track for a calm focus session." },
+      { song: "Let Me Down Slowly", artist: "Alec Benjamin", phase: "fallback", why: "A melodic acoustic-pop ballad that acts as a safe, comforting closing track." },
+      { song: "Fix You", artist: "Coldplay", phase: "fallback", why: "A building anthem with a powerful resolution to complete your trip." }
+    ];
+  }
+
+  return {
+    session_title: title,
+    explanation_overview: explanation,
+    recommended_tracks: tracks
+  };
+}
+
 // Endpoint to generate session plan and playlist
 app.post('/api/generate-session', async (req, res) => {
   try {
@@ -76,56 +147,68 @@ app.post('/api/generate-session', async (req, res) => {
       return res.status(400).json({ error: 'Missing Spotify Access Token' });
     }
 
+    const isDemoMode = spotify_access_token === 'demo_token';
+
     // Resolve Gemini API key (client-provided or backend .env)
     const apiKey = gemini_api_key || process.env.GEMINI_API_KEY;
-    if (!apiKey) {
+    if (!apiKey && !isDemoMode) {
       return res.status(400).json({ error: 'Missing Gemini API Key. Please provide one in the UI or backend environment.' });
     }
 
     console.log(`[Compass Server] Generating session: mood=${mood}, duration=${duration}m, adventure=${adventure}`);
 
-    // 1. Fetch Spotify User Profile
+    // 1. Fetch Spotify User Profile (Bypassed in Demo Mode)
     let userId = '';
-    let userName = 'Commuter';
-    try {
-      const userProfileRes = await fetch('https://api.spotify.com/v1/me', {
-        headers: { 'Authorization': `Bearer ${spotify_access_token}` }
-      });
-      if (userProfileRes.ok) {
-        const userProfile = await userProfileRes.json();
-        userId = userProfile.id;
-        userName = userProfile.display_name || userProfile.id;
-      } else {
-        throw new Error(`Failed to fetch profile: ${userProfileRes.statusText}`);
+    let userName = 'Guest Commuter';
+
+    if (!isDemoMode) {
+      try {
+        const userProfileRes = await fetch('https://api.spotify.com/v1/me', {
+          headers: { 'Authorization': `Bearer ${spotify_access_token}` }
+        });
+        if (userProfileRes.ok) {
+          const userProfile = await userProfileRes.json();
+          userId = userProfile.id;
+          userName = userProfile.display_name || userProfile.id;
+        } else {
+          throw new Error(`Failed to fetch profile: ${userProfileRes.statusText}`);
+        }
+      } catch (err) {
+        console.error('[Spotify API Error]', err);
+        return res.status(401).json({ error: 'Unauthorized. Spotify access token might be invalid or expired.' });
       }
-    } catch (err) {
-      console.error('[Spotify API Error]', err);
-      return res.status(401).json({ error: 'Unauthorized. Spotify access token might be invalid or expired.' });
     }
 
-    // 2. Fetch User's Top Artists & Tracks to capture taste context
+    // 2. Fetch User's Top Artists & Tracks to capture taste context (Mocked in Demo Mode)
     let topArtistsText = 'Unknown';
     let topTracksText = 'Unknown';
-    try {
-      const topArtistsRes = await fetch('https://api.spotify.com/v1/me/top/artists?limit=15', {
-        headers: { 'Authorization': `Bearer ${spotify_access_token}` }
-      });
-      const topTracksRes = await fetch('https://api.spotify.com/v1/me/top/tracks?limit=15', {
-        headers: { 'Authorization': `Bearer ${spotify_access_token}` }
-      });
 
-      if (topArtistsRes.ok) {
-        const topArtistsData = await topArtistsRes.json();
-        topArtistsText = topArtistsData.items.map(a => `${a.name} (${a.genres.slice(0,2).join(', ')})`).join(', ') || 'None';
+    if (isDemoMode) {
+      topArtistsText = "Arijit Singh (Bollywood, Pop), Diljit Dosanjh (Punjabi, Pop), AR Rahman (Soundtrack, Classical), Coldplay (Pop, Rock), The Weeknd (R&B, Pop), Pritam (Bollywood, Soundtrack), Ed Sheeran (Pop, Singer-Songwriter)";
+      topTracksText = "Kesariya by Arijit Singh & Pritam, Blinding Lights by The Weeknd, Kun Faya Kun by AR Rahman, Yellow by Coldplay, Lover by Diljit Dosanjh, Shape of You by Ed Sheeran, Pasoori by Ali Sethi & Shae Gill";
+      console.log(`[Compass Server] Demo Mode: loaded mock user taste profile.`);
+    } else {
+      try {
+        const topArtistsRes = await fetch('https://api.spotify.com/v1/me/top/artists?limit=15', {
+          headers: { 'Authorization': `Bearer ${spotify_access_token}` }
+        });
+        const topTracksRes = await fetch('https://api.spotify.com/v1/me/top/tracks?limit=15', {
+          headers: { 'Authorization': `Bearer ${spotify_access_token}` }
+        });
+
+        if (topArtistsRes.ok) {
+          const topArtistsData = await topArtistsRes.json();
+          topArtistsText = topArtistsData.items.map(a => `${a.name} (${a.genres.slice(0,2).join(', ')})`).join(', ') || 'None';
+        }
+        if (topTracksRes.ok) {
+          const topTracksData = await topTracksRes.json();
+          topTracksText = topTracksData.items.map(t => `${t.name} by ${t.artists.map(a => a.name).join('&')}`).join(', ') || 'None';
+        }
+        console.log(`[Compass Server] Spotify top artists: "${topArtistsText}"`);
+        console.log(`[Compass Server] Spotify top tracks: "${topTracksText}"`);
+      } catch (err) {
+        console.warn('[Spotify API Warning] Could not fetch top taste profile, using defaults.', err);
       }
-      if (topTracksRes.ok) {
-        const topTracksData = await topTracksRes.json();
-        topTracksText = topTracksData.items.map(t => `${t.name} by ${t.artists.map(a => a.name).join('&')}`).join(', ') || 'None';
-      }
-      console.log(`[Compass Server] Spotify top artists: "${topArtistsText}"`);
-      console.log(`[Compass Server] Spotify top tracks: "${topTracksText}"`);
-    } catch (err) {
-      console.warn('[Spotify API Warning] Could not fetch top taste profile, using defaults.', err);
     }
 
     // 3. Construct Gemini Prompt
@@ -184,30 +267,62 @@ You must output a single, raw JSON object matching the JSON Schema provided. Do 
       }
     };
 
-    const geminiRes = await fetch(geminiUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(geminiPayload)
-    });
+    let parsedSession;
+    let fallbackUsed = false;
 
-    if (!geminiRes.ok) {
-      const errText = await geminiRes.text();
-      throw new Error(`Gemini API returned error ${geminiRes.status}: ${errText}`);
-    }
+    try {
+      if (!apiKey && isDemoMode) {
+        throw new Error('No Gemini API key supplied, triggering fallback session generation.');
+      }
+      const geminiRes = await fetch(geminiUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(geminiPayload)
+      });
 
-    const geminiData = await geminiRes.json();
-    const rawResultText = geminiData.candidates[0].content.parts[0].text;
-    
-    // Clean potential markdown backticks
-    let cleanedText = rawResultText.trim();
-    if (cleanedText.startsWith('```')) {
-      cleanedText = cleanedText.replace(/^```json\s*/i, '').replace(/```\s*$/, '');
+      if (!geminiRes.ok) {
+        const errText = await geminiRes.text();
+        console.warn(`[Gemini API Warning] Gemini returned error ${geminiRes.status}: ${errText}`);
+        if (isDemoMode) {
+          fallbackUsed = true;
+          parsedSession = getMockSession(mood, preferred_taste);
+        } else {
+          throw new Error(`Gemini API returned error ${geminiRes.status}: ${errText}`);
+        }
+      } else {
+        const geminiData = await geminiRes.json();
+        const rawResultText = geminiData.candidates[0].content.parts[0].text;
+        
+        // Clean potential markdown backticks
+        let cleanedText = rawResultText.trim();
+        if (cleanedText.startsWith('```')) {
+          cleanedText = cleanedText.replace(/^```json\s*/i, '').replace(/```\s*$/, '');
+        }
+        
+        parsedSession = JSON.parse(cleanedText);
+        console.log(`[Compass Server] AI generated: "${parsedSession.session_title}"`);
+      }
+    } catch (geminiErr) {
+      console.warn('[Gemini Request Error]', geminiErr.message);
+      if (isDemoMode) {
+        fallbackUsed = true;
+        parsedSession = getMockSession(mood, preferred_taste);
+      } else {
+        throw geminiErr;
+      }
     }
-    
-    const parsedSession = JSON.parse(cleanedText);
-    console.log(`[Compass Server] AI generated: "${parsedSession.session_title}"`);
 
     // 5. Match tracks using Spotify Search API
+    let searchToken = spotify_access_token;
+    if (isDemoMode) {
+      try {
+        searchToken = await getClientCredentialsToken();
+      } catch (tokenErr) {
+        console.error('[Client Credentials Token Error]', tokenErr);
+        return res.status(500).json({ error: 'Failed to acquire client credentials token for guest search.' });
+      }
+    }
+
     const tracksWithUris = [];
     for (const track of parsedSession.recommended_tracks) {
       let spotifyUri = null;
@@ -215,7 +330,7 @@ You must output a single, raw JSON object matching the JSON Schema provided. Do 
       try {
         const query = encodeURIComponent(`track:${track.song} artist:${track.artist}`);
         const searchRes = await fetch(`https://api.spotify.com/v1/search?q=${query}&type=track&limit=1`, {
-          headers: { 'Authorization': `Bearer ${spotify_access_token}` }
+          headers: { 'Authorization': `Bearer ${searchToken}` }
         });
         
         if (searchRes.ok) {
@@ -241,7 +356,7 @@ You must output a single, raw JSON object matching the JSON Schema provided. Do 
     let playlistId = null;
     const validUris = tracksWithUris.filter(t => t.spotifyUri).map(t => t.spotifyUri);
 
-    if (validUris.length > 0) {
+    if (validUris.length > 0 && !isDemoMode) {
       try {
         // Create Playlist
         const createPlaylistRes = await fetch('https://api.spotify.com/v1/me/playlists', {
@@ -290,7 +405,8 @@ You must output a single, raw JSON object matching the JSON Schema provided. Do 
       tracks: tracksWithUris,
       playlistUrl,
       playlistId,
-      userName
+      userName,
+      fallbackUsed
     });
 
   } catch (err) {
@@ -308,8 +424,12 @@ app.use((req, res, next) => {
 });
 
 // Launch server
-app.listen(PORT, () => {
-  console.log(`===================================================`);
-  console.log(`Commute Compass MVP running at http://localhost:${PORT}/`);
-  console.log(`===================================================`);
-});
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`===================================================`);
+    console.log(`Commute Compass MVP running at http://localhost:${PORT}/`);
+    console.log(`===================================================`);
+  });
+}
+
+module.exports = app;
