@@ -166,14 +166,14 @@ function getMockSession(mood, preferredTaste) {
     title = `Lofi & Acoustic: ${moodVal.toUpperCase()} Commute`;
     explanation = `Demo Mode Fallback: Selected popular global acoustic and lofi tracks matching your ${moodVal} mood (Gemini API quota exceeded).`;
     tracks = [
-      { song: "Blinding Lights", artist: "The Weeknd", phase: "warmup", why: "Matches your current energy with a driving synth-pop pulse — you'll know within 5 seconds if it fits." },
-      { song: "Yellow", artist: "Coldplay", phase: "warmup", why: "A safe, comforting start that eases you into the session without demanding attention." },
-      { song: "Sweater Weather", artist: "The Neighbourhood", phase: "discovery", why: "Fits your relaxed driving pace — moody enough to feel fresh, familiar enough to feel safe." },
-      { song: "Nightcall", artist: "Kavinsky", phase: "discovery", why: "Turns your commute into a cinematic moment — the retro synths hit within the first 10 seconds." },
-      { song: "Circles", artist: "Post Malone", phase: "discovery", why: "A continuous, flowing groove that matches the rhythm of your drive without any jarring shifts." },
-      { song: "Ocean Eyes", artist: "Billie Eilish", phase: "discovery", why: "Sparse and ambient — perfect if you need calm focus without complete silence." },
-      { song: "Let Me Down Slowly", artist: "Alec Benjamin", phase: "fallback", why: "A gentle acoustic track that brings your session to a soft, satisfying close." },
-      { song: "Fix You", artist: "Coldplay", phase: "fallback", why: "Builds from quiet to powerful — a reliable emotional resolution to end your commute." }
+      { song: "Blinding Lights", artist: "The Weeknd", phase: "warmup", why: "Matches your current energy with a driving synth-pop pulse — you'll know within 5 seconds if it fits.", spotifyUri: "spotify:track:0VjIjW4GlUZAMYd2vXMi3b" },
+      { song: "Yellow", artist: "Coldplay", phase: "warmup", why: "A safe, comforting start that eases you into the session without demanding attention.", spotifyUri: "spotify:track:3AJwUDP919kvQ9QcozQPxg" },
+      { song: "Sweater Weather", artist: "The Neighbourhood", phase: "discovery", why: "Fits your relaxed driving pace — moody enough to feel fresh, familiar enough to feel safe.", spotifyUri: "spotify:track:2QjOHFCd6WlkIww2puxzR8" },
+      { song: "Nightcall", artist: "Kavinsky", phase: "discovery", why: "Turns your commute into a cinematic moment — the retro synths hit within the first 10 seconds.", spotifyUri: "spotify:track:0U0ldCRj9Txq43PBUxg5kG" },
+      { song: "Circles", artist: "Post Malone", phase: "discovery", why: "A continuous, flowing groove that matches the rhythm of your drive without any jarring shifts.", spotifyUri: "spotify:track:21jGcNKet2qwijlDFuPiPb" },
+      { song: "Ocean Eyes", artist: "Billie Eilish", phase: "discovery", why: "Sparse and ambient — perfect if you need calm focus without complete silence.", spotifyUri: "spotify:track:7hDVYcFAQwZleDUvQcZj48" },
+      { song: "Let Me Down Slowly", artist: "Alec Benjamin", phase: "fallback", why: "A gentle acoustic track that brings your session to a soft, satisfying close.", spotifyUri: "spotify:track:2qxmye6gAegTMjLKEBoR3d" },
+      { song: "Fix You", artist: "Coldplay", phase: "fallback", why: "Builds from quiet to powerful — a reliable emotional resolution to end your commute.", spotifyUri: "spotify:track:47BBI51FKFwOMlIjX6m8ya" }
     ];
   }
 
@@ -379,23 +379,26 @@ You must output a single, raw JSON object matching the JSON Schema provided. Do 
 
     const tracksWithUris = [];
     for (const track of parsedSession.recommended_tracks) {
-      let spotifyUri = null;
-      let externalUrl = null;
-      try {
-        const query = encodeURIComponent(`track:${track.song} artist:${track.artist}`);
-        const searchRes = await fetch(`https://api.spotify.com/v1/search?q=${query}&type=track&limit=1`, {
-          headers: { 'Authorization': `Bearer ${searchToken}` }
-        });
-        
-        if (searchRes.ok) {
-          const searchData = await searchRes.json();
-          if (searchData.tracks.items.length > 0) {
-            spotifyUri = searchData.tracks.items[0].uri;
-            externalUrl = searchData.tracks.items[0].external_urls.spotify;
+      let spotifyUri = track.spotifyUri || null;
+      let externalUrl = track.externalUrl || null;
+      
+      if (!spotifyUri) {
+        try {
+          const query = encodeURIComponent(`track:${track.song} artist:${track.artist}`);
+          const searchRes = await fetch(`https://api.spotify.com/v1/search?q=${query}&type=track&limit=1`, {
+            headers: { 'Authorization': `Bearer ${searchToken}` }
+          });
+          
+          if (searchRes.ok) {
+            const searchData = await searchRes.json();
+            if (searchData.tracks.items.length > 0) {
+              spotifyUri = searchData.tracks.items[0].uri;
+              externalUrl = searchData.tracks.items[0].external_urls.spotify;
+            }
           }
+        } catch (err) {
+          console.warn(`[Spotify Search Warning] Failed search for: ${track.song} by ${track.artist}`, err);
         }
-      } catch (err) {
-        console.warn(`[Spotify Search Warning] Failed search for: ${track.song} by ${track.artist}`, err);
       }
       
       tracksWithUris.push({

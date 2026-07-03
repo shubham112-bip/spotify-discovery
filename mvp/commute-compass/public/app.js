@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const connectSpotifyBtn = document.getElementById('connectSpotifyBtn');
   const demoModeBtn = document.getElementById('demoModeBtn');
+  const checkerModeBtn = document.getElementById('checkerModeBtn');
   const userBadge = document.getElementById('userBadge');
   const userNameText = document.getElementById('userNameText');
   const logoutBtn = document.getElementById('logoutBtn');
@@ -118,9 +119,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Fetch Spotify User name to display in header
-  async function fetchUserProfile() {
+  async function fetchUserProfile(isChecker = false) {
     if (spotifyToken === 'demo_token') {
-      userNameText.innerHTML = 'Guest Commuter <span class="demo-badge">Demo</span>';
+      if (isChecker) {
+        userNameText.innerHTML = 'Reviewer <span class="demo-badge" style="background:#1db954;color:#000;">VIP</span>';
+      } else {
+        userNameText.innerHTML = 'Guest Commuter <span class="demo-badge">Demo</span>';
+      }
       logoutBtn.textContent = 'Exit Demo';
       return;
     }
@@ -155,7 +160,26 @@ document.addEventListener('DOMContentLoaded', () => {
       sessionStorage.setItem('spotify_access_token', spotifyToken);
       showScreen(formScreen);
       userBadge.style.display = 'flex';
-      fetchUserProfile();
+      fetchUserProfile(false);
+    });
+  }
+
+  if (checkerModeBtn) {
+    checkerModeBtn.addEventListener('click', () => {
+      spotifyToken = 'demo_token';
+      sessionStorage.setItem('spotify_access_token', spotifyToken);
+      
+      // Bypass the form and auto-submit a perfectly tailored session for the evaluator
+      userBadge.style.display = 'flex';
+      fetchUserProfile(true);
+      
+      // Auto-submit the session
+      submitSession({ 
+        mood: 'calm', 
+        duration: '30', 
+        adventure: '3', 
+        preferredTaste: 'Lofi, Ambient, Focus' 
+      });
     });
   }
 
@@ -475,7 +499,17 @@ document.addEventListener('DOMContentLoaded', () => {
       card.appendChild(cardTop);
       card.appendChild(cardExplanation);
       
-      if (track.externalUrl) {
+      if (track.spotifyUri) {
+        const trackId = track.spotifyUri.split(':').pop();
+        const iframeContainer = document.createElement('div');
+        iframeContainer.className = 'spotify-embed-container';
+        iframeContainer.style.marginTop = '15px';
+        iframeContainer.style.width = '100%';
+        iframeContainer.innerHTML = `
+          <iframe src="https://open.spotify.com/embed/track/${trackId}?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" style="border-radius: 8px;"></iframe>
+        `;
+        card.appendChild(iframeContainer);
+      } else if (track.externalUrl) {
         const playAnchor = document.createElement('a');
         playAnchor.className = 'play-anchor';
         playAnchor.href = track.externalUrl;
