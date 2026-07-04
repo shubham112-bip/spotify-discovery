@@ -323,16 +323,18 @@ You must output a single, raw JSON object matching the JSON Schema provided. Do 
 
     let parsedSession;
     let fallbackUsed = false;
+    let generationTimeMs = 0;
+    const modelUsed = modelName;
+    const contextSummary = `Mood: ${mood} • Duration: ${duration} min • Adventure: ${adventure}\nTaste Profile: ${preferred_taste || topArtistsText.substring(0, 60) + '...'}`;
 
     try {
-      if (!apiKey && isDemoMode) {
-        throw new Error('No Gemini API key supplied, triggering fallback session generation.');
-      }
+      const startTime = Date.now();
       const geminiRes = await fetch(geminiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(geminiPayload)
       });
+      generationTimeMs = Date.now() - startTime;
 
       if (!geminiRes.ok) {
         const errText = await geminiRes.text();
@@ -463,7 +465,11 @@ You must output a single, raw JSON object matching the JSON Schema provided. Do 
       playlistUrl,
       playlistId,
       userName,
-      fallbackUsed
+      fallbackUsed,
+      aiGenerated: !fallbackUsed,
+      generationTimeMs,
+      modelUsed,
+      contextSummary
     });
 
   } catch (err) {

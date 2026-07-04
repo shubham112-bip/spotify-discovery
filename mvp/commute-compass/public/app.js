@@ -121,11 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Fetch Spotify User name to display in header
   async function fetchUserProfile(isChecker = false) {
     if (spotifyToken === 'demo_token') {
-      if (isChecker) {
-        userNameText.innerHTML = 'Reviewer <span class="demo-badge" style="background:#1db954;color:#000;">VIP</span>';
-      } else {
-        userNameText.innerHTML = 'Guest Commuter <span class="demo-badge">Demo</span>';
-      }
+      userNameText.innerHTML = 'Commuter';
       logoutBtn.textContent = 'Exit Demo';
       return;
     }
@@ -164,24 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  if (checkerModeBtn) {
-    checkerModeBtn.addEventListener('click', () => {
-      spotifyToken = 'demo_token';
-      sessionStorage.setItem('spotify_access_token', spotifyToken);
-      
-      // Bypass the form and auto-submit a perfectly tailored session for the evaluator
-      userBadge.style.display = 'flex';
-      fetchUserProfile(true);
-      
-      // Auto-submit the session
-      submitSession({ 
-        mood: 'calm', 
-        duration: '30', 
-        adventure: '3', 
-        preferredTaste: 'Lofi, Ambient, Focus' 
-      });
-    });
-  }
+
 
   // Disconnect/Logout action
   logoutBtn.addEventListener('click', () => {
@@ -444,15 +423,28 @@ document.addEventListener('DOMContentLoaded', () => {
     sessionTitle.textContent = data.sessionTitle;
     explanationOverview.textContent = data.explanationOverview;
     
-    if (spotifyToken === 'demo_token') {
-      if (data.fallbackUsed) {
-        demoNotice.innerHTML = '⚡ <strong>Demo Mode (API Quota Fallback)</strong>: The Gemini API is currently rate-limited or keyless. We loaded a high-quality pre-curated session matching your active options, resolved with actual Spotify search results!';
-      } else {
-        demoNotice.textContent = 'Demo Mode: Spotify playlist creation is simulated. Connect your Spotify Premium account to save generated sessions directly to your library.';
-      }
-      demoNotice.style.display = 'block';
-    } else {
+    const aiContextCard = document.getElementById('aiContextCard');
+    const aiModelValue = document.getElementById('aiModelValue');
+    const aiParamsValue = document.getElementById('aiParamsValue');
+    const aiTasteValue = document.getElementById('aiTasteValue');
+    const aiGenerationTime = document.getElementById('aiGenerationTime');
+
+    if (data.aiGenerated) {
       demoNotice.style.display = 'none';
+      aiContextCard.style.display = 'block';
+      aiModelValue.textContent = data.modelUsed.replace('models/', '');
+      
+      const summaryParts = (data.contextSummary || '').split('\n');
+      aiParamsValue.textContent = summaryParts[0] || 'Unknown';
+      aiTasteValue.textContent = (summaryParts[1] || '').replace('Taste Profile: ', '') || 'Unknown';
+      
+      aiGenerationTime.textContent = `Generated in ${(data.generationTimeMs / 1000).toFixed(1)}s by Google Gemini API`;
+    } else {
+      aiContextCard.style.display = 'none';
+      demoNotice.style.display = 'block';
+      demoNotice.innerHTML = '<span style="color: #666; font-size: 14px;">AI curation unavailable — showing curated fallback</span>';
+      demoNotice.style.background = 'transparent';
+      demoNotice.style.border = 'none';
     }
     
     if (data.playlistUrl) {
@@ -536,6 +528,17 @@ document.addEventListener('DOMContentLoaded', () => {
   regenerateBtn.addEventListener('click', () => {
     showScreen(formScreen);
   });
+
+  const regenerateSameVibeBtn = document.getElementById('regenerateSameVibeBtn');
+  if (regenerateSameVibeBtn) {
+    regenerateSameVibeBtn.addEventListener('click', () => {
+      // Re-submit with same values from form
+      const duration = document.querySelector('input[name="duration"]:checked').value;
+      const mood = document.querySelector('input[name="mood"]:checked').value;
+      const adventure = adventureSlider.value;
+      submitSession({ mood, duration, adventure });
+    });
+  }
 
   // 6. Application Initialization
   async function init() {
