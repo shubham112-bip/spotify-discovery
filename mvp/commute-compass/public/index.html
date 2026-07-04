@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=1.0.1">
+  <link rel="stylesheet" href="styles.css?v=1.0.2">
 </head>
 <body>
 
@@ -31,7 +31,7 @@
         <h2>Your commute isn't generic.<br>Why is your music?</h2>
         <p class="hero-desc">
           Spotify's algorithms optimize for similarity, trapping you in repetitive loops. 
-          Commute Compass is an AI-native agent that design sessions based on your **commute duration**, **current mood**, and **desired exploration level**, explaining *why* every song fits.
+          Commute Compass is an AI-native agent that designs sessions based on your commute duration, current mood, and desired exploration level, explaining why every song fits.
         </p>
         
         <div class="features-preview">
@@ -40,31 +40,6 @@
           <div class="feat-badge">🧠 Explorable Explanations</div>
         </div>
 
-        <!-- Social Proof Quotes from User Interviews -->
-        <div class="social-proof" id="socialProof">
-          <blockquote class="proof-quote active" id="quote0">
-            <p>"Decision fatigue is real and music shouldn't add to it."</p>
-            <cite>— Daily commuter, 22</cite>
-          </blockquote>
-          <blockquote class="proof-quote" id="quote1">
-            <p>"I don't always know what I want until I hear the first song. That first track decides the mood for the next half hour."</p>
-            <cite>— Daily driver, 25</cite>
-          </blockquote>
-          <blockquote class="proof-quote" id="quote2">
-            <p>"I'm not looking for variety, I'm looking for comfort."</p>
-            <cite>— Weekend listener, 29</cite>
-          </blockquote>
-          <blockquote class="proof-quote" id="quote3">
-            <p>"Even if I want similar music, I still want a few fresh tracks mixed in without completely changing my vibe."</p>
-            <cite>— Gym listener, 19</cite>
-          </blockquote>
-          <div class="proof-dots">
-            <span class="proof-dot active" data-index="0"></span>
-            <span class="proof-dot" data-index="1"></span>
-            <span class="proof-dot" data-index="2"></span>
-            <span class="proof-dot" data-index="3"></span>
-          </div>
-        </div>
 
         <div class="landing-actions">
           <button class="btn btn-primary btn-experience" id="demoModeBtn">
@@ -210,29 +185,7 @@
           <p class="helper-text">Direct the AI curation (useful if your Spotify history is empty or you want a specific style like Hindi/Punjabi).</p>
         </div>
 
-        <!-- API Key Entry (Collapsible) -->
-        <div class="form-group api-section">
-          <button type="button" class="collapsible-header" id="apiToggleBtn">
-            <span>⚙️ LLM API Configuration</span>
-            <span class="arrow-indicator">▼</span>
-          </button>
-          <div class="collapsible-content" id="apiContent">
-            <label class="form-label mini-label" for="geminiApiKey">Google Gemini API Key (stored in browser local storage)</label>
-            <div class="input-with-button">
-              <input type="password" id="geminiApiKey" class="input-text" placeholder="AI Studio Key (AIzaSy...)">
-              <span class="status-indicator icon-badge" id="keyStatus">🔑 Local</span>
-            </div>
-            <p class="helper-text">If left blank, the app will fall back to using the backend's environment key.</p>
 
-            <label class="form-label mini-label" for="geminiModel">Curation Model</label>
-            <select id="geminiModel" class="input-text">
-              <option value="models/gemini-2.5-flash">gemini-2.5-flash (Default)</option>
-              <option value="models/gemini-1.5-flash">gemini-1.5-flash</option>
-              <option value="models/gemini-1.5-pro">gemini-1.5-pro</option>
-              <option value="models/gemini-pro">gemini-pro (Legacy)</option>
-            </select>
-          </div>
-        </div>
 
         <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
           Compass Curation 🧭
@@ -338,6 +291,6 @@
     <p>Commute Compass © 2026 · AI Curation Engine and explanation layers</p>
   </footer>
 
-  <script src="app.js?v=1.0.3"></script>
+  <script src="app.js?v=1.0.4"></script>
 </body>
 </html>

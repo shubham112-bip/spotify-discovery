@@ -18,10 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const adventureValue = document.getElementById('adventureValue');
   const preferredTasteInput = document.getElementById('preferredTaste');
   
-  const apiToggleBtn = document.getElementById('apiToggleBtn');
-  const apiContent = document.getElementById('apiContent');
-  const geminiApiKeyInput = document.getElementById('geminiApiKey');
-  const geminiModelSelect = document.getElementById('geminiModel');
 
   const loaderMessage = document.getElementById('loaderMessage');
   const step1 = document.getElementById('step1');
@@ -211,95 +207,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   applyTimeOfDayDefaults();
 
-  // Social proof quote rotation
-  const quotes = document.querySelectorAll('.proof-quote');
-  const dots = document.querySelectorAll('.proof-dot');
-  let currentQuote = 0;
-  let quoteInterval;
 
-  function showQuote(index) {
-    quotes.forEach(q => q.classList.remove('active'));
-    dots.forEach(d => d.classList.remove('active'));
-    if (quotes[index]) quotes[index].classList.add('active');
-    if (dots[index]) dots[index].classList.add('active');
-    currentQuote = index;
-  }
 
-  function startQuoteRotation() {
-    quoteInterval = setInterval(() => {
-      showQuote((currentQuote + 1) % quotes.length);
-    }, 5000);
-  }
 
-  if (quotes.length > 0) {
-    startQuoteRotation();
-    dots.forEach(dot => {
-      dot.addEventListener('click', () => {
-        clearInterval(quoteInterval);
-        showQuote(parseInt(dot.dataset.index));
-        startQuoteRotation();
-      });
-    });
-  }
-
-  // Collapsible toggle for settings
-  apiToggleBtn.addEventListener('click', () => {
-    apiToggleBtn.classList.toggle('open');
-    apiContent.classList.toggle('show');
-  });
-
-  // Fetch available models from Google AI Studio dynamically
-  async function loadAvailableModels() {
-    const apiKey = geminiApiKeyInput.value.trim();
-    if (!apiKey) return;
-
-    try {
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
-      if (!response.ok) return;
-      const data = await response.json();
-      if (data.models && data.models.length > 0) {
-        // Filter models that support generateContent
-        const generateModels = data.models.filter(m => 
-          m.supportedGenerationMethods && m.supportedGenerationMethods.includes('generateContent')
-        );
-
-        if (generateModels.length > 0) {
-          // Clear previous options
-          geminiModelSelect.innerHTML = '';
-          generateModels.forEach(m => {
-            const opt = document.createElement('option');
-            opt.value = m.name; // e.g. "models/gemini-1.5-flash"
-            opt.textContent = m.displayName || m.name.replace('models/', '');
-            geminiModelSelect.appendChild(opt);
-          });
-          
-          // Auto-select a flash model if available, prioritizing gemini-2.5-flash
-          const flashOpt = Array.from(geminiModelSelect.options).find(o => o.value.includes('gemini-2.5-flash'));
-          if (flashOpt) {
-            geminiModelSelect.value = flashOpt.value;
-          } else {
-            const genericFlashOpt = Array.from(geminiModelSelect.options).find(o => o.value.toLowerCase().includes('flash'));
-            if (genericFlashOpt) {
-              geminiModelSelect.value = genericFlashOpt.value;
-            }
-          }
-        }
-      }
-    } catch (err) {
-      console.warn('Could not load models dynamically:', err);
-    }
-  }
-
-  // Manage loaded Gemini API Key
-  const storedKey = localStorage.getItem('gemini_api_key');
-  if (storedKey) {
-    geminiApiKeyInput.value = storedKey;
-    loadAvailableModels();
-  }
-  geminiApiKeyInput.addEventListener('input', (e) => {
-    localStorage.setItem('gemini_api_key', e.target.value);
-    loadAvailableModels();
-  });
 
   // Helper function to handle screen swaps
   function showScreen(screen) {
@@ -342,9 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Shared session submission logic
-  async function submitSession({ mood, duration, adventure, preferredTaste, userApiKey, geminiModel: model }) {
-    const apiKey = userApiKey || geminiApiKeyInput.value.trim();
-    const gemModel = model || geminiModelSelect.value;
+  async function submitSession({ mood, duration, adventure, preferredTaste }) {
     const taste = preferredTaste || preferredTasteInput.value.trim();
 
     showScreen(loadingScreen);
@@ -360,8 +268,8 @@ document.addEventListener('DOMContentLoaded', () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           spotify_access_token: spotifyToken,
-          gemini_api_key: apiKey || null,
-          gemini_model: gemModel,
+          gemini_api_key: null,
+          gemini_model: 'models/gemini-2.5-flash',
           preferred_taste: taste || null,
           mood,
           duration,
