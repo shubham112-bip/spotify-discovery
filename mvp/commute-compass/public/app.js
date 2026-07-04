@@ -273,8 +273,8 @@ document.addEventListener('DOMContentLoaded', () => {
             geminiModelSelect.appendChild(opt);
           });
           
-          // Auto-select a flash model if available, prioritizing gemini-1.5-flash
-          const flashOpt = Array.from(geminiModelSelect.options).find(o => o.value.includes('gemini-1.5-flash'));
+          // Auto-select a flash model if available, prioritizing gemini-2.5-flash
+          const flashOpt = Array.from(geminiModelSelect.options).find(o => o.value.includes('gemini-2.5-flash'));
           if (flashOpt) {
             geminiModelSelect.value = flashOpt.value;
           } else {

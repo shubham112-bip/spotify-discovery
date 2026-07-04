@@ -1,6 +1,6 @@
-require('dotenv').config();
-const express = require('express');
 const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '.env') });
+const express = require('express');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -289,7 +289,7 @@ Output:
 You must output a single, raw JSON object matching the JSON Schema provided. Do not wrap the JSON in Markdown formatting codeblocks. Do not include any introductory or concluding text.`;
 
     // 4. Query Gemini API
-    const modelName = gemini_model || 'models/gemini-1.5-flash';
+    const modelName = gemini_model || 'models/gemini-2.5-flash';
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/${modelName}:generateContent?key=${apiKey}`;
     const geminiPayload = {
       contents: [{
